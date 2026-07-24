@@ -16,4 +16,7 @@
 ## Documents
 
 <!-- AUTO-DOCS:START -->
+- [Cours N08 — Suites numériques : modèles discrets](../cours/COURS_N08_SUITES_NUMERIQUES_MODELES_DISCRETS.pdf)
+- [TD N08 — Suites numériques : modèles discrets](../td/TD_N08_SUITES_NUMERIQUES_MODELES_DISCRETS.pdf)
+- [Automatismes N08](../automatismes/AUTOMATISMES_N08_SUITES_NUMERIQUES_MODELES_DISCRETS.pdf)
 <!-- AUTO-DOCS:END -->

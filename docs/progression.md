@@ -15,4 +15,4 @@ L'objectif est de montrer :
 
 ## Carte de progression
 
-[Ouvrir la carte de progression spiralée (PDF)](assets/documents/Progression_1STMG.pdf)
+[![Progression spiralée en Première STMG mathématiques](assets/images/Progression_1STMG_site.png)](assets/images/Progression_1STMG_site.png)

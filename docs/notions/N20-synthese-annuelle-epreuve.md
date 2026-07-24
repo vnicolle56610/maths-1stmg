@@ -15,4 +15,5 @@
 ## Documents
 
 <!-- AUTO-DOCS:START -->
+- [Automatismes N20](../automatismes/AUTOMATISMES_N20_SYNTHESE_ANNUELLE_PREPARATION_EPREUVE_ANTICIPEE.pdf)
 <!-- AUTO-DOCS:END -->
