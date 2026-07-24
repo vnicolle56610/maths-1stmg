@@ -1,0 +1,14 @@
+# Configuration du site — seul fichier à adapter pour réutiliser
+# scripts/synchronisation/ sur un autre niveau (Seconde, Terminale, Expertes).
+
+# Dossier source (unique source de vérité).
+# Contrairement à Seconde et Première spécialité, ce site pointe directement
+# sur le dépôt CLAUDE (Niveau_1stmg), sans copie intermédiaire "GPT-stmg".
+source: "~/ENSEIGNEMENT/CLAUDE/Niveau_1stmg"
+
+# Racine du site MkDocs (contient docs/ et mkdocs.yml).
+# "." signifie : le dossier qui contient ce fichier config_site.yaml.
+destination: "."
+
+# Nom affiché du niveau (informatif, utilisé dans les rapports).
+niveau: "Première STMG"
