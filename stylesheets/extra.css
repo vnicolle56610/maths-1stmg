@@ -111,7 +111,8 @@
   border-radius: 1.25rem;
   background:
     radial-gradient(circle at 15% 20%, rgba(31, 143, 85, 0.10), transparent 30%),
-    linear-gradient(120deg, #ffffff 0%, #f4f1ec 42%, #cdc5b8 100%);
+    radial-gradient(circle at 88% 12%, rgba(141, 156, 122, 0.18), transparent 40%),
+    linear-gradient(120deg, #ffffff 0%, #f6f1e7 40%, #d8c7ab 82%, #c7b6a0 100%);
   box-shadow: var(--maths-shadow);
   overflow: hidden;
 }
