@@ -1,4 +1,11 @@
+---
+title: "Suites numériques : modèles discrets"
+description: "Cours et exercices de Première STMG pour définir une suite, calculer des termes, utiliser différents modes de génération et représenter un modèle discret."
+---
+
 # N08 — Suites numériques : modèles discrets
+
+Une suite numérique décrit une grandeur observée par étapes, souvent année après année ou période après période. Les ressources font utiliser différents modes de génération, calculer des termes et représenter graphiquement une suite. Le chapitre prépare les modèles arithmétiques et géométriques.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -11,7 +18,11 @@
 
 - Comprendre une suite comme modèle discret.
 - Utiliser différents modes de génération.
-- Calculer des termes et représenter graphiquement une suite.
+- Calculer des termes et représenter une suite.
+
+## Voir aussi
+
+- [N09 — Suites arithmétiques et géométriques](N09-suites-arithmetiques-geometriques.md)
 
 ## Documents
 

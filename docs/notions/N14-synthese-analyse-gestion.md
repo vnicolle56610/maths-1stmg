@@ -1,4 +1,11 @@
-# N14 — Synthèse d'analyse et problèmes de gestion
+---
+title: "Synthèse d’analyse et problèmes de gestion"
+description: "Révisions de Première STMG pour articuler fonctions, suites, dérivation et modèles dans des problèmes de gestion."
+---
+
+# N14 — Synthèse d’analyse et problèmes de gestion
+
+Cette synthèse rassemble les outils d’analyse utiles dans des situations de gestion : fonctions, suites, dérivation, modèles discrets ou continus. Les exercices demandent de choisir une représentation, d’exploiter un calcul et d’interpréter le résultat. La page reste large car elle prépare des exercices plus longs et moins guidés.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -11,7 +18,12 @@
 
 - Articuler fonctions, suites et dérivation.
 - Choisir un modèle discret ou continu.
-- Préparer les exercices longs de l'épreuve anticipée.
+- Préparer les exercices longs de l’épreuve anticipée.
+
+## Voir aussi
+
+- [N10 — Modèles d’évolution, seuils, tableur et Python](N10-evolution-seuils-python.md)
+- [N13 — Variations et extremums par dérivation](N13-variations-extremums.md)
 
 ## Documents
 

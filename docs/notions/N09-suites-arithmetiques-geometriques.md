@@ -1,4 +1,11 @@
+---
+title: "Suites arithmétiques et géométriques en STMG"
+description: "Cours et exercices de Première STMG pour reconnaître des modèles discrets linéaires ou exponentiels, travailler récurrence et formule explicite."
+---
+
 # N09 — Suites arithmétiques et géométriques
+
+Les suites arithmétiques et géométriques modélisent deux types d’évolutions discrètes. Les ressources font reconnaître un ajout constant ou une multiplication constante, travailler récurrence et formule explicite, puis comparer croissance linéaire et croissance exponentielle dans des situations accessibles. Les tableaux de valeurs aident à garder le sens des calculs.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -12,6 +19,11 @@
 - Reconnaître un modèle discret linéaire ou exponentiel.
 - Travailler récurrence et formule explicite.
 - Comparer croissances arithmétique et géométrique.
+
+## Voir aussi
+
+- [N08 — Suites numériques : modèles discrets](N08-suites-numeriques-modeles.md)
+- [N10 — Modèles d’évolution, seuils, tableur et Python](N10-evolution-seuils-python.md)
 
 ## Documents
 

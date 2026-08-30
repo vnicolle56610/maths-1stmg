@@ -1,4 +1,11 @@
+---
+title: "Variations et extremums par dérivation"
+description: "Cours et exercices de Première STMG pour utiliser le signe de la dérivée, construire un tableau de variations et résoudre une optimisation simple."
+---
+
 # N13 — Variations et extremums par dérivation
+
+Le signe de la dérivée permet d’organiser l’étude des variations d’une fonction. Les ressources font construire des tableaux de variations, repérer des extremums et traiter des problèmes simples d’optimisation. L’attention porte sur le lien entre calcul de dérivée, signe et interprétation graphique ou économique.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -11,7 +18,11 @@
 
 - Relier le signe de la dérivée aux variations.
 - Construire un tableau de variations.
-- Résoudre un problème d'optimisation simple.
+- Résoudre un problème d’optimisation simple.
+
+## Voir aussi
+
+- [N12 — Fonction dérivée et polynômes de degré au plus 3](N12-fonction-derivee-polynomes.md)
 
 ## Documents
 

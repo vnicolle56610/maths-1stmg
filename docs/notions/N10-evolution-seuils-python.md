@@ -1,4 +1,11 @@
-# N10 — Modèles d'évolution, seuils, tableur et Python
+---
+title: "Modèles d’évolution, seuils, tableur et Python"
+description: "Cours et exercices de Première STMG pour utiliser suites et fonctions dans des modèles d’évolution, chercher un seuil et structurer une démarche avec tableur ou Python."
+---
+
+# N10 — Modèles d’évolution, seuils, tableur et Python
+
+Les modèles d’évolution servent à prévoir quand une quantité franchit un seuil. Les ressources mobilisent suites, fonctions, tableur et Python pour organiser les calculs. L’objectif est de choisir un modèle, produire des valeurs fiables et interpréter le rang ou la date obtenue.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -12,6 +19,11 @@
 - Utiliser suites et fonctions pour étudier des évolutions.
 - Chercher un rang seuil.
 - Structurer une démarche avec tableur ou Python.
+
+## Voir aussi
+
+- [N02 — Proportions, pourcentages et taux d’évolution](N02-proportions-pourcentages-evolutions.md)
+- [N09 — Suites arithmétiques et géométriques](N09-suites-arithmetiques-geometriques.md)
 
 ## Documents
 

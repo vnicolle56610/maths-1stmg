@@ -1,4 +1,11 @@
+---
+title: "Variables aléatoires, espérance et simulation"
+description: "Cours et exercices de Première STMG pour définir une variable aléatoire discrète, calculer une loi, une espérance et simuler une loi de Bernoulli."
+---
+
 # N19 — Variables aléatoires, espérance et simulation
+
+Une variable aléatoire associe une valeur numérique aux issues d’une expérience. Les ressources font établir une loi de probabilité, calculer une espérance et utiliser la simulation, notamment autour de la loi de Bernoulli. L’objectif est d’interpréter le résultat moyen attendu, pas seulement d’appliquer une formule.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -12,6 +19,10 @@
 - Définir une variable aléatoire discrète en contexte.
 - Calculer une loi de probabilité et une espérance.
 - Reconnaître et simuler une loi de Bernoulli.
+
+## Voir aussi
+
+- [N18 — Épreuves indépendantes de Bernoulli et arbres](N18-bernoulli-arbres.md)
 
 ## Documents
 

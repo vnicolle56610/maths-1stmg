@@ -1,4 +1,11 @@
+---
+title: "Fonctions : registres et lectures graphiques"
+description: "Cours et exercices de Première STMG pour modéliser une dépendance, passer entre phrase, tableau, formule et graphique, et lire images ou antécédents."
+---
+
 # N04 — Fonctions : registres et lectures graphiques
+
+Une fonction décrit la dépendance entre deux grandeurs. Les ressources font passer d’une phrase à un tableau, une formule ou un graphique, puis lire images, antécédents, équations et inéquations graphiques. Cette base sera réutilisée dans les variations, les suites et les modèles.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -10,8 +17,12 @@
 ## Objectifs
 
 - Modéliser la dépendance entre deux grandeurs.
-- Passer d'une phrase à un tableau, une formule ou un graphique.
+- Passer d’un registre de fonction à un autre.
 - Lire images, antécédents, équations et inéquations graphiques.
+
+## Voir aussi
+
+- [N05 — Taux de variation et fonctions monotones](N05-taux-variation-fonctions.md)
 
 ## Documents
 
