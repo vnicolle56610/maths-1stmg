@@ -1,4 +1,11 @@
+---
+title: "Taux de variation et fonctions monotones"
+description: "Cours et exercices de Première STMG pour interpréter un taux de variation, le relier à une pente de sécante et caractériser la monotonie."
+---
+
 # N05 — Taux de variation et fonctions monotones
+
+Le taux de variation mesure une évolution moyenne entre deux valeurs. Les documents le relient à la pente d’une sécante et à la monotonie d’une fonction sur un intervalle. Le travail fait le lien entre calcul, lecture graphique et interprétation d’une situation.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -10,8 +17,13 @@
 ## Objectifs
 
 - Définir et interpréter un taux de variation.
-- Faire le lien entre taux de variation et pente d'une sécante.
+- Relier taux de variation et pente d’une sécante.
 - Caractériser une fonction monotone sur un intervalle.
+
+## Voir aussi
+
+- [N04 — Fonctions : registres et lectures graphiques](N04-fonctions-registres-lectures.md)
+- [N11 — Nombre dérivé : sécantes, tangentes, interprétation](N11-nombre-derive-tangentes.md)
 
 ## Documents
 

@@ -1,4 +1,11 @@
+---
+title: "Second degré : paraboles et formes simples"
+description: "Cours et exercices de Première STMG pour reconnaître une parabole, lire son sommet, son axe et ses variations dans des formes simples."
+---
+
 # N06 — Fonctions du second degré : paraboles et formes simples
+
+Une fonction du second degré se reconnaît souvent à sa parabole. Les ressources travaillent l’allure de la courbe, l’axe de symétrie, le sommet, les variations et l’association entre une expression simple et sa représentation. Cette première approche reste graphique avant l’utilisation de formes factorisées.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -12,6 +19,10 @@
 - Reconnaître une parabole.
 - Associer une courbe à une expression simple.
 - Identifier allure, axe de symétrie, sommet et variations.
+
+## Voir aussi
+
+- [N07 — Second degré factorisé : racines, signe et problèmes](N07-second-degre-factorise.md)
 
 ## Documents
 

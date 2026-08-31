@@ -1,4 +1,11 @@
+---
+title: "Fonction dérivée et polynômes de degré au plus 3"
+description: "Cours et exercices de Première STMG pour calculer des dérivées simples, utiliser la linéarité et préparer l’étude des variations de polynômes."
+---
+
 # N12 — Fonction dérivée et polynômes de degré au plus 3
+
+La fonction dérivée donne une méthode de calcul pour étudier les variations. Les ressources portent sur les dérivées simples, la linéarité et les polynômes de degré au plus 3. Cette étape prépare les tableaux de variations : il faut d’abord calculer correctement avant d’interpréter le signe de la dérivée.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -11,7 +18,12 @@
 
 - Calculer des dérivées simples.
 - Utiliser les règles de linéarité.
-- Préparer l'étude de variations par le signe de la dérivée.
+- Préparer l’étude de variations par le signe de la dérivée.
+
+## Voir aussi
+
+- [N11 — Nombre dérivé : sécantes, tangentes, interprétation](N11-nombre-derive-tangentes.md)
+- [N13 — Variations et extremums par dérivation](N13-variations-extremums.md)
 
 ## Documents
 

@@ -1,4 +1,11 @@
+---
+title: "Nombre dérivé : sécantes, tangentes et interprétation"
+description: "Cours et exercices de Première STMG pour introduire le nombre dérivé, interpréter des pentes de sécante et de tangente, et lire une variation instantanée."
+---
+
 # N11 — Nombre dérivé : sécantes, tangentes, interprétation
+
+Le nombre dérivé apparaît comme une pente limite : on part des sécantes pour arriver à la tangente. Les ressources privilégient l’interprétation graphique et le lien avec une variation instantanée. Ce chapitre prépare la fonction dérivée et les tableaux de variations.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -12,6 +19,11 @@
 - Introduire le nombre dérivé par un point de vue graphique.
 - Interpréter une pente de sécante puis de tangente.
 - Relier le nombre dérivé à une variation instantanée.
+
+## Voir aussi
+
+- [N05 — Taux de variation et fonctions monotones](N05-taux-variation-fonctions.md)
+- [N12 — Fonction dérivée et polynômes de degré au plus 3](N12-fonction-derivee-polynomes.md)
 
 ## Documents
 

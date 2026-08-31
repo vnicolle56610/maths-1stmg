@@ -1,4 +1,11 @@
+---
+title: "Calcul algébrique, équations et signes"
+description: "Cours et exercices de Première STMG pour consolider le calcul littéral, résoudre des équations produit nul et étudier le signe d’expressions simples."
+---
+
 # N03 — Calcul algébrique, équations et signes
+
+Le calcul algébrique permet de transformer des expressions et de résoudre des problèmes. Les ressources consolident le calcul littéral simple, les équations produit nul et le signe d’une expression du premier degré. Ces outils servent ensuite dans les fonctions et le second degré.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -11,7 +18,11 @@
 
 - Consolider le calcul littéral simple.
 - Résoudre des équations produit nul.
-- Déterminer le signe d'une expression du premier degré.
+- Déterminer le signe d’une expression du premier degré.
+
+## Voir aussi
+
+- [N06 — Fonctions du second degré : paraboles et formes simples](N06-second-degre-paraboles.md)
 
 ## Documents
 

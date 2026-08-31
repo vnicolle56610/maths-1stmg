@@ -1,4 +1,11 @@
-# N02 — Proportions, pourcentages et évolutions
+---
+title: "Pourcentages, proportions et taux d’évolution"
+description: "Cours et exercices de Première STMG sur proportions, pourcentages, coefficients multiplicateurs, taux d’évolution et évolutions successives."
+---
+
+# N02 — Proportions, pourcentages et taux d’évolution
+
+Un pourcentage permet de comparer des parts, mesurer une évolution et interpréter des données économiques ou sociales. Les ressources font travailler le passage entre taux et coefficient multiplicateur, le calcul d’une valeur initiale ou finale, les évolutions successives et les évolutions réciproques.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -9,9 +16,14 @@
 
 ## Objectifs
 
-- Stabiliser les coefficients multiplicateurs.
-- Calculer valeur initiale, valeur finale et taux d'évolution.
-- Traiter évolutions successives et réciproques.
+- Passer d’un taux à un coefficient multiplicateur.
+- Calculer une valeur initiale ou finale.
+- Traiter des évolutions successives ou réciproques.
+
+## Voir aussi
+
+- [N05 — Taux de variation et fonctions monotones](N05-taux-variation-fonctions.md)
+- [N10 — Modèles d’évolution, seuils, tableur et Python](N10-evolution-seuils-python.md)
 
 ## Documents
 

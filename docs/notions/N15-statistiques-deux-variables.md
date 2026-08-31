@@ -1,4 +1,11 @@
+---
+title: "Statistiques à deux variables : nuages et point moyen"
+description: "Cours et exercices de Première STMG pour représenter une série à deux variables, calculer le point moyen et discuter une tendance."
+---
+
 # N15 — Statistiques à deux variables : nuages et point moyen
+
+Une série statistique à deux variables met en relation deux grandeurs observées. Les ressources font représenter un nuage de points, calculer le point moyen et discuter l’existence d’une tendance. Cette lecture prépare l’ajustement affine, sans supposer qu’un modèle linéaire est toujours pertinent.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -9,9 +16,13 @@
 
 ## Objectifs
 
-- Représenter une série statistique à deux variables quantitatives.
+- Représenter une série statistique à deux variables.
 - Calculer le point moyen.
 - Lire un nuage de points et discuter une tendance.
+
+## Voir aussi
+
+- [N16 — Ajustement affine, interpolation et extrapolation](N16-ajustement-affine.md)
 
 ## Documents
 

@@ -1,4 +1,11 @@
+---
+title: "Épreuves indépendantes de Bernoulli et arbres"
+description: "Cours et exercices de Première STMG pour reconnaître une épreuve de Bernoulli et représenter des répétitions indépendantes avec un arbre."
+---
+
 # N18 — Épreuves indépendantes de Bernoulli et arbres
+
+Une épreuve de Bernoulli n’a que deux issues : succès ou échec. Les ressources font reconnaître ce modèle, représenter des répétitions indépendantes et construire des arbres jusqu’à un nombre limité d’épreuves. Le calcul reste guidé par la structure de l’arbre.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -11,7 +18,12 @@
 
 - Reconnaître une épreuve de Bernoulli.
 - Représenter des répétitions indépendantes.
-- Construire et exploiter un arbre jusqu'à n ≤ 4.
+- Construire et exploiter un arbre jusqu’à n ≤ 4.
+
+## Voir aussi
+
+- [N17 — Probabilités conditionnelles et indépendance](N17-probabilites-conditionnelles.md)
+- [N19 — Variables aléatoires, espérance et simulation](N19-variables-aleatoires-esperance.md)
 
 ## Documents
 

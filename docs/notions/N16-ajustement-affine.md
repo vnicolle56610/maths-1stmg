@@ -1,4 +1,11 @@
+---
+title: "Ajustement affine, interpolation et extrapolation"
+description: "Cours et exercices de Première STMG pour déterminer un ajustement affine, l’utiliser en interpolation ou extrapolation et critiquer le modèle."
+---
+
 # N16 — Ajustement affine, interpolation et extrapolation
+
+L’ajustement affine propose une droite pour résumer une tendance statistique. Les documents font déterminer cette droite, l’utiliser pour interpoler ou extrapoler, puis critiquer la pertinence du modèle. Les prévisions doivent rester liées au contexte et aux limites des données, surtout lorsque l’on sort de la zone observée.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -10,8 +17,12 @@
 ## Objectifs
 
 - Déterminer un ajustement affine.
-- Utiliser une droite d'ajustement pour interpoler ou extrapoler.
-- Critiquer la pertinence d'un modèle.
+- Utiliser une droite d’ajustement pour interpoler ou extrapoler.
+- Critiquer la pertinence d’un modèle.
+
+## Voir aussi
+
+- [N15 — Statistiques à deux variables : nuages et point moyen](N15-statistiques-deux-variables.md)
 
 ## Documents
 

@@ -1,4 +1,11 @@
+---
+title: "Rentrée, données, logique et automatismes"
+description: "Cours et exercices de Première STMG pour diagnostiquer les acquis de Seconde et réactiver calculs, données, lectures graphiques et logique."
+---
+
 # N01 — Rentrée, données, logique et automatismes
+
+Le début d’année sert à installer les routines de travail et à repérer les acquis utiles. Les ressources réactivent les calculs simples, les proportions, les lectures graphiques, les données et quelques réflexes de logique. Cette page reste diagnostique : elle prépare les chapitres suivants sans annoncer un cours complet sur chacun d’eux.
 
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
@@ -9,7 +16,7 @@
 ## Objectifs
 
 - Installer les routines de travail.
-- Diagnostiquer les acquis de Seconde utiles à la STMG.
+- Diagnostiquer les acquis de Seconde utiles en STMG.
 - Réactiver proportions, lectures graphiques, calculs simples et logique.
 
 ## Documents
