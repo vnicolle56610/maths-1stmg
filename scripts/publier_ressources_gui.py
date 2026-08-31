@@ -11,7 +11,7 @@ import tkinter as tk
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-from tkinter import messagebox, scrolledtext, ttk
+from tkinter import messagebox, scrolledtext, simpledialog, ttk
 
 
 # Permet aussi bien « python scripts/publier_ressources_gui.py » qu'un import
@@ -66,6 +66,13 @@ class DeployPreflightResult:
     details: str
 
 
+@dataclass(frozen=True)
+class PreparedPublication:
+    worktree: Path
+    base_sha: str
+    staged_paths: tuple[str, ...]
+
+
 def run_git(project_root: Path, *args: str) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
         ["git", *args],
@@ -91,6 +98,55 @@ def classify_git_status(porcelain: str) -> str:
     if any("D" in line[:2] for line in statuses):
         return "fichiers supprimés localement"
     return "fichiers locaux non enregistrés dans Git"
+
+
+def classify_staging_status(
+    porcelain: str,
+) -> tuple[list[str], list[str], list[str], list[str]]:
+    added: list[str] = []
+    modified: list[str] = []
+    deleted: list[str] = []
+    untracked: list[str] = []
+
+    for line in porcelain.splitlines():
+        if not line:
+            continue
+        status = line[:2]
+        path = line[3:] if len(line) > 3 else line[2:].strip()
+        if status == "??":
+            untracked.append(path)
+            continue
+        if "D" in status:
+            deleted.append(path)
+        elif "A" in status:
+            added.append(path)
+        elif status.strip():
+            modified.append(path)
+
+    return added, modified, deleted, untracked
+
+
+def paths_to_stage(
+    added: list[str],
+    modified: list[str],
+    untracked: list[str],
+) -> list[str]:
+    return sorted({*added, *modified, *untracked}, key=str.casefold)
+
+
+def ensure_no_staged_deletion(worktree: Path) -> tuple[bool, str]:
+    completed = run_git(worktree, "diff", "--cached", "--name-status")
+    output = git_output(completed)
+    if completed.returncode != 0:
+        return False, output
+    deleted = [
+        line
+        for line in output.splitlines()
+        if line.startswith("D") or line.startswith("R")
+    ]
+    if deleted:
+        return False, "\n".join(deleted)
+    return True, output
 
 
 def check_deploy_preflight(project_root: Path) -> DeployPreflightResult:
@@ -189,6 +245,16 @@ def add_section(lines: list[str], title: str, items: list[str]) -> None:
     lines.append("")
 
 
+def add_staging_section(lines: list[str], title: str, items: list[str]) -> None:
+    lines.append(title)
+    lines.append("-" * len(title))
+    if items:
+        lines.extend(f"- {item}" for item in items)
+    else:
+        lines.append("(aucun)")
+    lines.append("")
+
+
 def format_report(report: publisher.PublicationReport) -> str:
     """Produire un bilan adapté à la zone de texte de l'interface."""
     if report.dry_run:
@@ -276,6 +342,8 @@ class PublicationApp:
         self.ignored_pdf_count = 0
         self.variables: dict[publisher.Resource, tk.BooleanVar] = {}
         self.mkdocs_process: subprocess.Popen[bytes] | None = None
+        self.prepared_worktree: Path | None = None
+        self.prepared_publication: PreparedPublication | None = None
 
         self.status = tk.StringVar(value="Analyse des ressources…")
         self._build_interface()
@@ -380,6 +448,20 @@ class PublicationApp:
             command=self.publish,
         )
         self.publish_button.pack(side="left", padx=6)
+        self.prepare_online_button = ttk.Button(
+            action_buttons,
+            text="Préparer la mise en ligne",
+            command=self.prepare_online_publication,
+            state="disabled",
+        )
+        self.prepare_online_button.pack(side="left", padx=6)
+        self.commit_push_button = ttk.Button(
+            action_buttons,
+            text="Commit + push la source",
+            command=self.commit_and_push_prepared_publication,
+            state="disabled",
+        )
+        self.commit_push_button.pack(side="left", padx=6)
         self.deploy_button = ttk.Button(
             action_buttons,
             text="Déployer sur GitHub Pages",
@@ -476,6 +558,113 @@ class PublicationApp:
         )
         self.status.set("MkDocs n'est pas disponible.")
         return None
+
+    def _cleanup_prepared_worktree(self) -> None:
+        if self.prepared_worktree is None:
+            return
+        self._remove_git_worktree(self.prepared_worktree)
+        self.prepared_worktree = None
+        self.prepared_publication = None
+        self.commit_push_button.configure(state="disabled")
+
+    def _remove_git_worktree(self, worktree: Path) -> None:
+        if (worktree / ".git").exists():
+            subprocess.run(
+                ["git", "worktree", "remove", "--force", str(worktree)],
+                cwd=publisher.PROJECT_ROOT,
+                text=True,
+                capture_output=True,
+                check=False,
+            )
+        shutil.rmtree(worktree, ignore_errors=True)
+
+    def _remap_resources_to_docs_root(
+        self,
+        docs_root: Path,
+        selected: list[publisher.Resource],
+    ) -> tuple[list[publisher.Resource], list[publisher.Resource]]:
+        selected_set = set(selected)
+        remapped_resources: list[publisher.Resource] = []
+        remapped_selected: list[publisher.Resource] = []
+
+        for resource in self.resources:
+            relative_destination = resource.destination.relative_to(
+                publisher.DOCS_ROOT
+            )
+            remapped = publisher.Resource(
+                source=resource.source,
+                destination=docs_root / relative_destination,
+                kind=resource.kind,
+                notion=resource.notion,
+            )
+            remapped_resources.append(remapped)
+            if resource in selected_set:
+                remapped_selected.append(remapped)
+
+        return remapped_resources, remapped_selected
+
+    def _run_command(
+        self,
+        cwd: Path,
+        *args: str,
+    ) -> tuple[subprocess.CompletedProcess[str], str]:
+        completed = subprocess.run(
+            list(args),
+            cwd=cwd,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        output = "\n".join(
+            part.strip()
+            for part in (completed.stdout, completed.stderr)
+            if part.strip()
+        )
+        return completed, output
+
+    def _git_output_or_error(self, cwd: Path, *args: str) -> str:
+        completed, output = self._run_command(cwd, "git", *args)
+        if completed.returncode != 0:
+            command = "git " + " ".join(args)
+            raise RuntimeError(f"Commande Git échouée : {command}\n\n{output}")
+        return output
+
+    def _rev_parse(self, cwd: Path, ref: str) -> str:
+        return self._git_output_or_error(cwd, "rev-parse", "--verify", ref).strip()
+
+    def _prepare_report(
+        self,
+        worktree: Path,
+        publication_report: publisher.PublicationReport,
+        build_output: str,
+        added: list[str],
+        modified: list[str],
+        deleted: list[str],
+        untracked: list[str],
+    ) -> str:
+        lines = [
+            "PRÉPARATION DE LA MISE EN LIGNE",
+            "================================",
+            "",
+            f"Worktree temporaire : {worktree}",
+            "",
+            format_report(publication_report),
+            "",
+            "BUILD STRICT",
+            "------------",
+            build_output or "mkdocs build --strict terminé sans sortie.",
+            "",
+        ]
+        add_staging_section(lines, "AJOUTÉS", added)
+        add_staging_section(lines, "MODIFIÉS", modified)
+        add_staging_section(lines, "SUPPRIMÉS", deleted)
+        add_staging_section(lines, "NON SUIVIS", untracked)
+        lines.extend(
+            [
+                "Aucun commit, push ou déploiement n'a été exécuté.",
+            ]
+        )
+        return "\n".join(lines)
 
     def scan_resources(self) -> None:
         try:
@@ -621,6 +810,9 @@ class PublicationApp:
 
     def _update_selection_status(self) -> None:
         self.deploy_button.configure(state="disabled")
+        self.prepare_online_button.configure(state="disabled")
+        self.commit_push_button.configure(state="disabled")
+        self.prepared_publication = None
         selected_count = len(self.selected_resources())
         self.status.set(
             f"{selected_count} document(s) sélectionné(s) sur "
@@ -704,9 +896,9 @@ class PublicationApp:
         selected = self.selected_resources()
         confirmation = (
             f"Publier {len(selected)} document(s) sélectionné(s) ?\n\n"
-            "Les liens des documents non sélectionnés seront retirés des "
-            "zones AUTO-DOCS. Les PDF déjà présents dans docs/ ne seront "
-            "pas supprimés."
+            "Les documents sélectionnés seront copiés dans docs/. Les liens "
+            "des PDF déjà présents dans docs/ resteront dans les zones "
+            "AUTO-DOCS."
         )
         if not messagebox.askyesno(
             "Confirmer la publication",
@@ -716,6 +908,7 @@ class PublicationApp:
             return
 
         self.deploy_button.configure(state="disabled")
+        self.commit_push_button.configure(state="disabled")
         self._set_busy(True)
         try:
             report = self._run_publication(selected, dry_run=False)
@@ -737,11 +930,12 @@ class PublicationApp:
             self._set_busy(False)
 
         self._set_output(format_report(report))
-        self.deploy_button.configure(state="normal")
+        self.prepare_online_button.configure(state="normal")
+        self.deploy_button.configure(state="disabled")
         self.status.set(
             f"Publication terminée : {len(report.copied_files)} fichier(s) "
             f"copié(s), {len(report.modified_pages)} page(s) modifiée(s). "
-            "Le déploiement GitHub Pages est maintenant disponible."
+            "La préparation de mise en ligne est maintenant disponible."
         )
 
         if report.missing_pages or report.warnings:
@@ -766,10 +960,344 @@ class PublicationApp:
             messagebox.showinfo(
                 "Publication terminée",
                 "Les fichiers locaux ont été mis à jour.\n\n"
-                "Cliquez maintenant sur « Déployer sur GitHub Pages » "
-                "pour actualiser le site public.",
+                "Cliquez maintenant sur « Préparer la mise en ligne » "
+                "pour construire un worktree propre depuis origin/main.",
                 parent=self.root,
             )
+
+    def prepare_online_publication(self) -> None:
+        executable = self._mkdocs_executable_or_error()
+        if executable is None:
+            return
+
+        selected = self.selected_resources()
+        if not selected:
+            messagebox.showwarning(
+                "Aucune sélection",
+                "Aucun document n'est sélectionné.",
+                parent=self.root,
+            )
+            return
+
+        confirmed = messagebox.askyesno(
+            "Préparer la mise en ligne",
+            "Cette opération va créer un worktree temporaire propre depuis "
+            "origin/main, y rejouer la sélection actuelle, puis lancer "
+            "mkdocs build --strict.\n\n"
+            "Aucun commit, push ou déploiement ne sera effectué.\n\n"
+            "Continuer ?",
+            parent=self.root,
+        )
+        if not confirmed:
+            return
+
+        self._set_busy(True)
+        self._cleanup_prepared_worktree()
+        worktree = Path(
+            tempfile.mkdtemp(prefix=f"{publisher.PROJECT_ROOT.name}-prepare-")
+        )
+        build_dir = Path(
+            tempfile.mkdtemp(prefix=f"{publisher.PROJECT_ROOT.name}-build-")
+        )
+        try:
+            fetch, fetch_output = self._run_command(
+                publisher.PROJECT_ROOT,
+                "git",
+                "fetch",
+                "origin",
+            )
+            if fetch.returncode != 0:
+                raise RuntimeError(
+                    "Impossible d'actualiser origin/main.\n\n"
+                    + fetch_output
+                )
+
+            base_sha = self._rev_parse(publisher.PROJECT_ROOT, "origin/main")
+            add_worktree, add_worktree_output = self._run_command(
+                publisher.PROJECT_ROOT,
+                "git",
+                "worktree",
+                "add",
+                "--detach",
+                str(worktree),
+                "origin/main",
+            )
+            if add_worktree.returncode != 0:
+                raise RuntimeError(
+                    "Impossible de créer le worktree temporaire.\n\n"
+                    + add_worktree_output
+                )
+
+            docs_root = worktree / "docs"
+            resources, selected_resources = self._remap_resources_to_docs_root(
+                docs_root,
+                selected,
+            )
+            publication_report = publisher.publish_selected_resources(
+                resources,
+                selected_resources,
+                docs_root,
+                self.pdf_count,
+                self.ignored_pdf_count,
+                dry_run=False,
+            )
+
+            build, build_output = self._run_command(
+                worktree,
+                executable,
+                "build",
+                "--strict",
+                "--site-dir",
+                str(build_dir),
+            )
+            if build.returncode != 0:
+                raise RuntimeError(
+                    "mkdocs build --strict a échoué dans le worktree.\n\n"
+                    + build_output
+                )
+
+            status, status_output = self._run_command(
+                worktree,
+                "git",
+                "status",
+                "--porcelain",
+            )
+            if status.returncode != 0:
+                raise RuntimeError(
+                    "Impossible de lire l'état Git du worktree.\n\n"
+                    + status_output
+                )
+            added, modified, deleted, untracked = classify_staging_status(
+                status_output
+            )
+            if deleted:
+                raise RuntimeError(
+                    "Préparation bloquée : une suppression est détectée "
+                    "dans le worktree préparé.\n\n"
+                    + "\n".join(f"- {path}" for path in deleted)
+                )
+            staged_paths = tuple(paths_to_stage(added, modified, untracked))
+
+            self.prepared_worktree = worktree
+            self.prepared_publication = PreparedPublication(
+                worktree=worktree,
+                base_sha=base_sha,
+                staged_paths=staged_paths,
+            )
+            self._set_output(
+                self._prepare_report(
+                    worktree,
+                    publication_report,
+                    build_output,
+                    added,
+                    modified,
+                    deleted,
+                    untracked,
+                )
+            )
+            self.status.set(
+                "Worktree propre préparé depuis origin/main. "
+                "Aucun commit, push ou déploiement n'a été exécuté."
+            )
+            self.commit_push_button.configure(state="normal")
+            messagebox.showinfo(
+                "Préparation terminée",
+                "Le worktree temporaire a été préparé et le build strict "
+                "a réussi.\n\n"
+                f"{worktree}\n\n"
+                "Aucun commit, push ou déploiement n'a été exécuté.",
+                parent=self.root,
+            )
+        except (OSError, RuntimeError, ValueError) as error:
+            self._remove_git_worktree(worktree)
+            self._set_output(f"ERREUR DE PRÉPARATION\n\n{error}")
+            messagebox.showerror(
+                "Préparation impossible",
+                str(error),
+                parent=self.root,
+            )
+            self.status.set("Préparation de mise en ligne interrompue.")
+        finally:
+            shutil.rmtree(build_dir, ignore_errors=True)
+            self._set_busy(False)
+
+    def commit_and_push_prepared_publication(self) -> None:
+        prepared = self.prepared_publication
+        if prepared is None:
+            messagebox.showwarning(
+                "Aucune préparation",
+                "Préparez d'abord la mise en ligne.",
+                parent=self.root,
+            )
+            return
+        if not prepared.worktree.is_dir():
+            self.prepared_publication = None
+            self.commit_push_button.configure(state="disabled")
+            messagebox.showerror(
+                "Worktree introuvable",
+                "Le worktree temporaire préparé n'existe plus.",
+                parent=self.root,
+            )
+            return
+        if not prepared.staged_paths:
+            messagebox.showinfo(
+                "Aucun changement",
+                "Aucun fichier n'est à commiter dans le worktree préparé.",
+                parent=self.root,
+            )
+            return
+
+        message = simpledialog.askstring(
+            "Message de commit",
+            "Message de commit :",
+            initialvalue="Publication ressources STMG",
+            parent=self.root,
+        )
+        if message is None:
+            return
+        message = message.strip()
+        if not message:
+            messagebox.showwarning(
+                "Message vide",
+                "Le message de commit ne peut pas être vide.",
+                parent=self.root,
+            )
+            return
+
+        confirmed = messagebox.askyesno(
+            "Confirmer commit + push",
+            "Cette opération va créer un commit dans le worktree temporaire "
+            "puis pousser HEAD vers origin/main.\n\n"
+            "Aucun gh-deploy ne sera exécuté.\n\n"
+            "Continuer ?",
+            parent=self.root,
+        )
+        if not confirmed:
+            return
+
+        self._set_busy(True)
+        try:
+            self._git_output_or_error(
+                prepared.worktree,
+                "add",
+                "--",
+                *prepared.staged_paths,
+            )
+            cached_stat = self._git_output_or_error(
+                prepared.worktree,
+                "diff",
+                "--cached",
+                "--stat",
+            )
+            no_delete, cached_name_status = ensure_no_staged_deletion(
+                prepared.worktree
+            )
+            if not no_delete:
+                raise RuntimeError(
+                    "Commit bloqué : une suppression est stageée.\n\n"
+                    + cached_name_status
+                )
+            if not cached_name_status.strip():
+                raise RuntimeError("Commit bloqué : aucun changement stageé.")
+
+            fetch_output = self._git_output_or_error(
+                prepared.worktree,
+                "fetch",
+                "origin",
+            )
+            current_origin_main = self._rev_parse(
+                prepared.worktree, "origin/main"
+            )
+            if current_origin_main != prepared.base_sha:
+                raise RuntimeError(
+                    "Push bloqué : origin/main a changé depuis la préparation.\n\n"
+                    f"Base préparée : {prepared.base_sha}\n"
+                    f"origin/main actuel : {current_origin_main}"
+                )
+
+            commit_output = self._git_output_or_error(
+                prepared.worktree,
+                "commit",
+                "-m",
+                message,
+            )
+            commit_sha = self._rev_parse(prepared.worktree, "HEAD")
+            ancestor = run_git(
+                prepared.worktree,
+                "merge-base",
+                "--is-ancestor",
+                prepared.base_sha,
+                commit_sha,
+            )
+            if ancestor.returncode != 0:
+                raise RuntimeError(
+                    "Push bloqué : le commit créé n'est pas descendant "
+                    "direct de la base préparée."
+                )
+
+            push_output = self._git_output_or_error(
+                prepared.worktree,
+                "push",
+                "origin",
+                "HEAD:refs/heads/main",
+            )
+            self._git_output_or_error(prepared.worktree, "fetch", "origin")
+            final_origin_main = self._rev_parse(prepared.worktree, "origin/main")
+            if final_origin_main != commit_sha:
+                raise RuntimeError(
+                    "Source Git non synchronisée après push.\n\n"
+                    f"Commit local : {commit_sha}\n"
+                    f"origin/main : {final_origin_main}"
+                )
+
+            self._append_output(
+                "COMMIT + PUSH SOURCE\n"
+                "====================\n\n"
+                "✓ Build strict réussi\n"
+                "✓ Diff contrôlé\n"
+                f"✓ Commit créé : {commit_sha}\n"
+                "✓ origin/main mis à jour\n"
+                "✓ Source Git synchronisée\n\n"
+                "DIFF STAGÉ --STAT\n"
+                "-----------------\n"
+                f"{cached_stat or '(aucun)'}\n\n"
+                "DIFF STAGÉ --NAME-STATUS\n"
+                "------------------------\n"
+                f"{cached_name_status}\n\n"
+                "SORTIE FETCH AVANT PUSH\n"
+                "-----------------------\n"
+                f"{fetch_output or '(aucune sortie)'}\n\n"
+                "SORTIE COMMIT\n"
+                "-------------\n"
+                f"{commit_output}\n\n"
+                "SORTIE PUSH\n"
+                "-----------\n"
+                f"{push_output or '(aucune sortie)'}\n\n"
+                "Aucun déploiement GitHub Pages n'a été exécuté."
+            )
+            self.status.set(
+                "Source Git synchronisée. Le déploiement GitHub Pages "
+                "est maintenant disponible."
+            )
+            self.commit_push_button.configure(state="disabled")
+            self.deploy_button.configure(state="normal")
+            messagebox.showinfo(
+                "Source synchronisée",
+                "Le commit a été créé et origin/main est à jour.\n\n"
+                f"{commit_sha}\n\n"
+                "Aucun déploiement GitHub Pages n'a été exécuté.",
+                parent=self.root,
+            )
+        except (OSError, RuntimeError, ValueError) as error:
+            self._append_output(f"ERREUR COMMIT + PUSH SOURCE\n\n{error}")
+            messagebox.showerror(
+                "Commit + push impossible",
+                str(error),
+                parent=self.root,
+            )
+            self.status.set("Commit + push source interrompu.")
+        finally:
+            self._set_busy(False)
 
     def deploy_github_pages(self) -> None:
         executable = self._mkdocs_executable_or_error()
@@ -925,6 +1453,7 @@ class PublicationApp:
         self.mkdocs_process = None
 
     def quit(self) -> None:
+        self._cleanup_prepared_worktree()
         if (
             self.mkdocs_process is not None
             and self.mkdocs_process.poll() is None
