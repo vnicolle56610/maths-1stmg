@@ -6,11 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Cours, TD, méthodes et progression de Première STMG mathématiques.">
+        <meta name="description" content="Cours et exercices de Première STMG pour représenter une série à deux variables, calculer le point moyen et discuter une tendance.">
       
       
         <meta name="author" content="Vincent NICOLLE">
       
+      
+        <link rel="canonical" href="https://www.maths-nicolle.fr/maths-1stmg/notions/N15-statistiques-deux-variables/">
       
       
         <link rel="prev" href="../N14-synthese-analyse-gestion/">
@@ -22,16 +24,16 @@
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <link rel="icon" href="../../assets/images/logo_lycee_franklin.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>N15 — Statistiques à deux variables - Maths Première STMG</title>
+        <title>Statistiques à deux variables : nuages et point moyen - Maths Première STMG</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -96,8 +98,7 @@
   <nav class="md-header__inner md-grid" aria-label="En-tête">
     <a href="../.." title="Maths Première STMG" class="md-header__button md-logo" aria-label="Maths Première STMG" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/images/logo_lycee_franklin.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -114,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              N15 — Statistiques à deux variables
+              Statistiques à deux variables : nuages et point moyen
             
           </span>
         </div>
@@ -372,8 +373,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Maths Première STMG" class="md-nav__button md-logo" aria-label="Maths Première STMG" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/images/logo_lycee_franklin.png" alt="logo">
 
     </a>
     Maths Première STMG
@@ -962,6 +962,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#voir-aussi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voir aussi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#documents" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1301,6 +1312,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#voir-aussi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Voir aussi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#documents" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1329,6 +1351,7 @@
 
 
 <h1 id="n15-statistiques-a-deux-variables-nuages-et-point-moyen">N15 — Statistiques à deux variables : nuages et point moyen</h1>
+<p>Une série statistique à deux variables met en relation deux grandeurs observées. Les ressources font représenter un nuage de points, calculer le point moyen et discuter l’existence d’une tendance. Cette lecture prépare l’ajustement affine, sans supposer qu’un modèle linéaire est toujours pertinent.</p>
 <!-- NOTION-NAV:START -->
 <nav class="notion-nav" aria-label="Navigation entre notions">
 <a class="notion-nav__btn notion-nav__btn--prev" href="../N14-synthese-analyse-gestion/"><span class="notion-nav__icon"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M16 6v12L6 12z" fill="currentColor"/></svg></span><span class="notion-nav__text"><small>Notion précédente</small><span class="notion-nav__title">N14 — Synthèse d'analyse et problèmes de gestion</span></span></a>
@@ -1338,9 +1361,13 @@
 
 <h2 id="objectifs">Objectifs</h2>
 <ul>
-<li>Représenter une série statistique à deux variables quantitatives.</li>
+<li>Représenter une série statistique à deux variables.</li>
 <li>Calculer le point moyen.</li>
 <li>Lire un nuage de points et discuter une tendance.</li>
+</ul>
+<h2 id="voir-aussi">Voir aussi</h2>
+<ul>
+<li><a href="../N16-ajustement-affine/">N16 — Ajustement affine, interpolation et extrapolation</a></li>
 </ul>
 <h2 id="documents">Documents</h2>
 <!-- AUTO-DOCS:START -->
@@ -1355,6 +1382,9 @@
 
 
 
+
+  
+  
 
 
 
@@ -1412,7 +1442,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
