@@ -73,6 +73,14 @@ class PreparedPublication:
     staged_paths: tuple[str, ...]
 
 
+@dataclass(frozen=True)
+class DeploymentResult:
+    source_sha: str
+    command_output: str
+    post_deploy_details: str
+    cleanup_warnings: tuple[str, ...]
+
+
 def run_git(project_root: Path, *args: str) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
         ["git", *args],
@@ -89,6 +97,10 @@ def git_output(completed: subprocess.CompletedProcess[str]) -> str:
         for part in (completed.stdout, completed.stderr)
         if part.strip()
     )
+
+
+def format_command_output(completed: subprocess.CompletedProcess[str]) -> str:
+    return git_output(completed)
 
 
 def classify_git_status(porcelain: str) -> str:
@@ -344,6 +356,7 @@ class PublicationApp:
         self.mkdocs_process: subprocess.Popen[bytes] | None = None
         self.prepared_worktree: Path | None = None
         self.prepared_publication: PreparedPublication | None = None
+        self.pushed_source_sha: str | None = None
 
         self.status = tk.StringVar(value="Analyse des ressources…")
         self._build_interface()
@@ -565,18 +578,26 @@ class PublicationApp:
         self._remove_git_worktree(self.prepared_worktree)
         self.prepared_worktree = None
         self.prepared_publication = None
+        self.pushed_source_sha = None
         self.commit_push_button.configure(state="disabled")
 
-    def _remove_git_worktree(self, worktree: Path) -> None:
+    def _remove_git_worktree(self, worktree: Path) -> str | None:
+        cleanup_errors: list[str] = []
         if (worktree / ".git").exists():
-            subprocess.run(
+            completed = subprocess.run(
                 ["git", "worktree", "remove", "--force", str(worktree)],
                 cwd=publisher.PROJECT_ROOT,
                 text=True,
                 capture_output=True,
                 check=False,
             )
-        shutil.rmtree(worktree, ignore_errors=True)
+            if completed.returncode != 0:
+                cleanup_errors.append(format_command_output(completed))
+        try:
+            shutil.rmtree(worktree, ignore_errors=True)
+        except OSError as error:
+            cleanup_errors.append(str(error))
+        return "\n".join(item for item in cleanup_errors if item) or None
 
     def _remap_resources_to_docs_root(
         self,
@@ -631,6 +652,174 @@ class PublicationApp:
 
     def _rev_parse(self, cwd: Path, ref: str) -> str:
         return self._git_output_or_error(cwd, "rev-parse", "--verify", ref).strip()
+
+    def _validate_gh_pages_artifact(
+        self,
+        cwd: Path,
+        source_sha: str,
+        expected_resources: tuple[str, ...],
+    ) -> str:
+        fetch_output = self._git_output_or_error(cwd, "fetch", "origin")
+        current_origin_main = self._rev_parse(cwd, "origin/main")
+        if current_origin_main != source_sha:
+            raise RuntimeError(
+                "Contrôle post-déploiement échoué : origin/main a changé.\n\n"
+                f"Source déployée : {source_sha}\n"
+                f"origin/main actuel : {current_origin_main}"
+            )
+
+        gh_pages_sha = self._rev_parse(cwd, "origin/gh-pages")
+        required_paths = [".nojekyll", "sitemap.xml", *expected_resources]
+        missing_paths: list[str] = []
+        for path in required_paths:
+            check = run_git(cwd, "cat-file", "-e", f"origin/gh-pages:{path}")
+            if check.returncode != 0:
+                missing_paths.append(path)
+        if missing_paths:
+            raise RuntimeError(
+                "Contrôle post-déploiement échoué : fichier(s) absent(s) "
+                "dans origin/gh-pages.\n\n"
+                + "\n".join(f"- {path}" for path in missing_paths)
+            )
+
+        lines = [
+            f"Source SHA : {source_sha}",
+            f"origin/gh-pages : {gh_pages_sha}",
+            f"Fetch après déploiement : {fetch_output or '(aucune sortie)'}",
+            "Contrôles gh-pages :",
+        ]
+        lines.extend(f"- {path}" for path in required_paths)
+        return "\n".join(lines)
+
+    def _deploy_from_clean_worktree(
+        self,
+        executable: str,
+        source_sha: str,
+        expected_resources: tuple[str, ...],
+    ) -> DeploymentResult:
+        deploy_worktree = Path(
+            tempfile.mkdtemp(
+                prefix=f"{publisher.PROJECT_ROOT.name}-deploy-{source_sha[:12]}-"
+            )
+        )
+        site_directory = Path(
+            tempfile.mkdtemp(prefix=f"{publisher.PROJECT_ROOT.name}-gh-pages-")
+        )
+        cleanup_warnings: list[str] = []
+        command_output = ""
+        post_deploy_details = ""
+        try:
+            fetch, fetch_output = self._run_command(
+                publisher.PROJECT_ROOT,
+                "git",
+                "fetch",
+                "origin",
+            )
+            if fetch.returncode != 0:
+                raise RuntimeError(
+                    "Impossible d'actualiser origin/main avant déploiement.\n\n"
+                    + fetch_output
+                )
+
+            origin_main = self._rev_parse(publisher.PROJECT_ROOT, "origin/main")
+            if origin_main != source_sha:
+                raise RuntimeError(
+                    "Déploiement bloqué : origin/main a changé avant le "
+                    "déploiement.\n\n"
+                    f"Source attendue : {source_sha}\n"
+                    f"origin/main actuel : {origin_main}"
+                )
+
+            add_worktree, add_worktree_output = self._run_command(
+                publisher.PROJECT_ROOT,
+                "git",
+                "worktree",
+                "add",
+                "--detach",
+                str(deploy_worktree),
+                "origin/main",
+            )
+            if add_worktree.returncode != 0:
+                raise RuntimeError(
+                    "Impossible de créer le worktree de déploiement.\n\n"
+                    + add_worktree_output
+                )
+
+            status = self._git_output_or_error(
+                deploy_worktree, "status", "--porcelain"
+            )
+            if status.strip():
+                raise RuntimeError(
+                    "Déploiement bloqué : le worktree de déploiement "
+                    "n'est pas propre.\n\n"
+                    + status
+                )
+
+            deploy_head = self._rev_parse(deploy_worktree, "HEAD")
+            deploy_origin_main = self._rev_parse(deploy_worktree, "origin/main")
+            if deploy_head != source_sha or deploy_origin_main != source_sha:
+                raise RuntimeError(
+                    "Déploiement bloqué : la source du worktree ne correspond "
+                    "pas au SHA attendu.\n\n"
+                    f"Source attendue : {source_sha}\n"
+                    f"HEAD : {deploy_head}\n"
+                    f"origin/main : {deploy_origin_main}"
+                )
+
+            build, build_output = self._run_command(
+                deploy_worktree,
+                executable,
+                "build",
+                "--strict",
+                "--site-dir",
+                str(site_directory),
+            )
+            if build.returncode != 0:
+                raise RuntimeError(
+                    "mkdocs build --strict a échoué avant déploiement.\n\n"
+                    + build_output
+                )
+
+            deploy = subprocess.run(
+                [
+                    executable,
+                    "gh-deploy",
+                    "--strict",
+                    "--force",
+                    "--site-dir",
+                    str(site_directory),
+                ],
+                cwd=deploy_worktree,
+                text=True,
+                capture_output=True,
+                check=False,
+            )
+            command_output = format_command_output(deploy)
+            if deploy.returncode != 0:
+                raise RuntimeError(
+                    command_output
+                    or f"mkdocs gh-deploy a renvoyé le code {deploy.returncode}."
+                )
+
+            post_deploy_details = self._validate_gh_pages_artifact(
+                deploy_worktree,
+                source_sha,
+                expected_resources,
+            )
+        finally:
+            cleanup_error = self._remove_git_worktree(deploy_worktree)
+            if cleanup_error:
+                cleanup_warnings.append(cleanup_error)
+            try:
+                shutil.rmtree(site_directory, ignore_errors=True)
+            except OSError as error:
+                cleanup_warnings.append(str(error))
+        return DeploymentResult(
+            source_sha=source_sha,
+            command_output=command_output,
+            post_deploy_details=post_deploy_details,
+            cleanup_warnings=tuple(cleanup_warnings),
+        )
 
     def _prepare_report(
         self,
@@ -1279,6 +1468,7 @@ class PublicationApp:
                 "Source Git synchronisée. Le déploiement GitHub Pages "
                 "est maintenant disponible."
             )
+            self.pushed_source_sha = commit_sha
             self.commit_push_button.configure(state="disabled")
             self.deploy_button.configure(state="normal")
             messagebox.showinfo(
@@ -1304,26 +1494,29 @@ class PublicationApp:
         if executable is None:
             return
 
-        preflight = check_deploy_preflight(publisher.PROJECT_ROOT)
-        self._append_output(
-            "PRÉ-VOL GIT AVANT DÉPLOIEMENT\n"
-            "==============================\n\n"
-            f"{preflight.user_message}\n\n"
-            f"{preflight.details}"
-        )
-        if not preflight.ok:
+        source_sha = self.pushed_source_sha
+        prepared = self.prepared_publication
+        if source_sha is None or prepared is None:
             messagebox.showerror(
                 "Déploiement bloqué",
-                preflight.user_message,
+                "Déploiement bloqué : aucune source préparée et poussée "
+                "n'est disponible dans cette session.",
                 parent=self.root,
             )
-            self.status.set("Déploiement bloqué par le pré-vol Git.")
+            self.status.set("Déploiement bloqué : source non synchronisée.")
             return
+        expected_resources = tuple(
+            path.removeprefix("docs/")
+            for path in prepared.staged_paths
+            if path.startswith("docs/")
+        )
 
         confirmed = messagebox.askyesno(
             "Déployer le site public",
-            "Cette opération va reconstruire le site avec le contenu actuel "
-            "de docs/ puis le publier sur GitHub Pages.\n\n"
+            "Cette opération va créer un nouveau worktree temporaire propre "
+            "depuis origin/main, vérifier le SHA source, construire avec "
+            "mkdocs build --strict, puis lancer gh-deploy depuis ce worktree.\n\n"
+            f"Source Git :\n{source_sha}\n\n"
             f"Adresse publique :\n{PUBLIC_SITE_URL}\n\n"
             "Continuer ?",
             parent=self.root,
@@ -1333,48 +1526,16 @@ class PublicationApp:
 
         self._set_busy(True)
         try:
-            with tempfile.TemporaryDirectory(
-                prefix=f"{publisher.PROJECT_ROOT.name}-gh-pages-"
-            ) as site_directory:
-                completed = subprocess.run(
-                    [
-                        executable,
-                        "gh-deploy",
-                        "--strict",
-                        "--force",
-                        "--site-dir",
-                        site_directory,
-                    ],
-                    cwd=publisher.PROJECT_ROOT,
-                    text=True,
-                    capture_output=True,
-                    check=False,
-                )
-        except OSError as error:
-            messagebox.showerror(
-                "Déploiement impossible",
-                str(error),
-                parent=self.root,
+            result = self._deploy_from_clean_worktree(
+                executable,
+                source_sha,
+                expected_resources,
             )
-            self.status.set("Échec du déploiement GitHub Pages.")
-            return
-        finally:
-            self._set_busy(False)
-
-        command_output = "\n".join(
-            part.strip()
-            for part in (completed.stdout, completed.stderr)
-            if part.strip()
-        )
-        if completed.returncode != 0:
-            details = command_output or (
-                f"mkdocs gh-deploy a renvoyé le code "
-                f"{completed.returncode}."
-            )
+        except (OSError, RuntimeError, ValueError) as error:
             self._append_output(
                 "ERREUR DE DÉPLOIEMENT GITHUB PAGES\n"
                 "===================================\n\n"
-                + details
+                + str(error)
             )
             messagebox.showerror(
                 "Déploiement GitHub Pages impossible",
@@ -1384,13 +1545,35 @@ class PublicationApp:
             )
             self.status.set("Le déploiement GitHub Pages a échoué.")
             return
+        finally:
+            self._set_busy(False)
 
+        cleanup_details = ""
+        if result.cleanup_warnings:
+            cleanup_details = (
+                "\n\nAVERTISSEMENT NETTOYAGE\n"
+                "-----------------------\n"
+                + "\n".join(result.cleanup_warnings)
+            )
         self._append_output(
             "DÉPLOIEMENT GITHUB PAGES\n"
             "========================\n\n"
+            "✓ Source enregistrée dans Git\n"
+            "✓ origin/main synchronisé\n"
+            "✓ Build strict réussi\n"
+            "✓ Déploiement GitHub Pages réussi\n"
+            f"✓ Site construit depuis {result.source_sha}\n\n"
+            "CONTRÔLES APRÈS DÉPLOIEMENT\n"
+            "---------------------------\n"
+            f"{result.post_deploy_details}\n\n"
+            "SORTIE GH-DEPLOY\n"
+            "----------------\n"
+            f"{result.command_output or '(aucune sortie)'}"
+            f"{cleanup_details}\n\n"
             f"Site public actualisé : {PUBLIC_SITE_URL}\n\n"
-            "Le dossier site/ du projet n'a pas été modifié."
+            "Le dossier site/ du projet principal n'a pas été modifié."
         )
+        self.deploy_button.configure(state="disabled")
         self.status.set(
             "Déploiement terminé. GitHub Pages peut demander quelques "
             "secondes pour actualiser le site public."
