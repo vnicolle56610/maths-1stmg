@@ -18,5 +18,4 @@
 <!-- AUTO-DOCS:START -->
 - [Cours N15 — Statistiques à deux variables : nuages et point moyen](../cours/COURS_N15_STATISTIQUES_DEUX_VARIABLES_NUAGES_POINT_MOYEN.pdf)
 - [TD N15 — Statistiques à deux variables : nuages et point moyen](../td/TD_N15_STATISTIQUES_DEUX_VARIABLES_NUAGES_POINT_MOYEN.pdf)
-- [Automatismes N15](../automatismes/AUTOMATISMES_N15_STATISTIQUES_DEUX_VARIABLES_NUAGE_POINT_MOYEN.pdf)
 <!-- AUTO-DOCS:END -->

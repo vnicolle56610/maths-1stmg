@@ -78,4 +78,8 @@ Travaux dirigés, classés par notion.
 ## N19 — Variables aléatoires, espérance et simulation
 
 - [TD N19](TD_N19_VARIABLES_ALEATOIRES_ESPERANCE_SIMULATION.pdf)
+
+## N20 — Synthèse annuelle et préparation à l'épreuve anticipée
+
+- [TD N20](TD_N20_SYNTHESE_ANNUELLE_EPREUVE_ANTICIPEE.pdf)
 <!-- AUTO-DOCS:END -->

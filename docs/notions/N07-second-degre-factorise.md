@@ -18,5 +18,4 @@
 <!-- AUTO-DOCS:START -->
 - [Cours N07 — Second degré factorisé : racines, signe et problèmes](../cours/COURS_N07_SECOND_DEGRE_FACTORISE.pdf)
 - [TD N07 — Second degré factorisé : racines, signe et problèmes](../td/TD_N07_SECOND_DEGRE_FACTORISE.pdf)
-- [Automatismes N07](../automatismes/AUTOMATISMES_N07_SECOND_DEGRE_FACTORISE_RACINES_SIGNE_PROBLEMES.pdf)
 <!-- AUTO-DOCS:END -->

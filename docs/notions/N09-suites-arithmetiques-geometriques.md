@@ -18,5 +18,4 @@
 <!-- AUTO-DOCS:START -->
 - [Cours N09 — Suites arithmétiques et géométriques](../cours/COURS_N09_SUITES_ARITHMETIQUES_GEOMETRIQUES.pdf)
 - [TD N09 — Suites arithmétiques et géométriques](../td/TD_N09_SUITES_ARITHMETIQUES_GEOMETRIQUES.pdf)
-- [Automatismes N09](../automatismes/AUTOMATISMES_N09_SUITES_ARITHMETIQUES_GEOMETRIQUES.pdf)
 <!-- AUTO-DOCS:END -->

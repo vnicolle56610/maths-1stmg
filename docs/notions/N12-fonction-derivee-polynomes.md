@@ -18,5 +18,4 @@
 <!-- AUTO-DOCS:START -->
 - [Cours N12 — Fonction dérivée et polynômes de degré au plus 3](../cours/COURS_N12_FONCTION_DERIVEE_POLYNOMES_DEGRE_3.pdf)
 - [TD N12 — Fonction dérivée et polynômes de degré au plus 3](../td/TD_N12_FONCTION_DERIVEE_POLYNOMES_DEGRE_3.pdf)
-- [Automatismes N12](../automatismes/AUTOMATISMES_N12_FONCTION_DERIVEE_POLYNOMES_DEGRE_3.pdf)
 <!-- AUTO-DOCS:END -->

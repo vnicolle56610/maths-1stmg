@@ -18,5 +18,4 @@
 <!-- AUTO-DOCS:START -->
 - [Cours N02 — Proportions, pourcentages et évolutions](../cours/COURS_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
 - [TD N02 — Proportions, pourcentages et évolutions](../td/TD_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
-- [Automatismes N02](../automatismes/AUTOMATISMES_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
 <!-- AUTO-DOCS:END -->

@@ -15,5 +15,6 @@
 ## Documents
 
 <!-- AUTO-DOCS:START -->
-- [Automatismes N20](../automatismes/AUTOMATISMES_N20_SYNTHESE_ANNUELLE_PREPARATION_EPREUVE_ANTICIPEE.pdf)
+- [Cours N20 — Synthèse annuelle et préparation à l'épreuve anticipée](../cours/COURS_N20_SYNTHESE_ANNUELLE_EPREUVE_ANTICIPEE.pdf)
+- [TD N20 — Synthèse annuelle et préparation à l'épreuve anticipée](../td/TD_N20_SYNTHESE_ANNUELLE_EPREUVE_ANTICIPEE.pdf)
 <!-- AUTO-DOCS:END -->

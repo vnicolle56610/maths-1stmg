@@ -7,7 +7,6 @@ hide:
 <div class="maths-home">
 
 <section class="maths-brand">
-  <img class="maths-brand-logo" src="assets/images/logo_lycee_franklin.png" alt="Logo du lycée Franklin">
   <div>
     <p class="maths-eyebrow">Mathématiques</p>
     <h1>Première STMG</h1>
