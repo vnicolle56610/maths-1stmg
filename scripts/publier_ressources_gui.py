@@ -146,6 +146,74 @@ def paths_to_stage(
     return sorted({*added, *modified, *untracked}, key=str.casefold)
 
 
+def publication_report_paths(
+    report: publisher.PublicationReport,
+    project_root: Path,
+) -> set[str]:
+    paths: set[str] = set()
+    for path in (*report.copied_files, *report.modified_pages):
+        paths.add(relative_path(path, project_root))
+    return paths
+
+
+def existing_status_paths(
+    worktree: Path,
+    added: list[str],
+    modified: list[str],
+    untracked: list[str],
+) -> set[str]:
+    existing: set[str] = set()
+    missing: list[str] = []
+    for path in paths_to_stage(added, modified, untracked):
+        if (worktree / path).exists():
+            existing.add(path)
+        else:
+            missing.append(path)
+    if missing:
+        raise RuntimeError(
+            "Préparation bloquée : Git signale des fichiers à stageer "
+            "qui n'existent pas dans le worktree.\n\n"
+            + "\n".join(f"- {path}" for path in missing)
+        )
+    return existing
+
+
+def validate_preview_paths_exist(
+    worktree: Path,
+    preview_paths: set[str],
+) -> None:
+    missing = sorted(
+        path for path in preview_paths if not (worktree / path).exists()
+    )
+    if missing:
+        raise RuntimeError(
+            "Préparation bloquée : le preview annonce des fichiers modifiés "
+            "ou ajoutés absents du worktree.\n\n"
+            + "\n".join(f"- {path}" for path in missing)
+        )
+
+
+def stageable_paths_from_status(
+    worktree: Path,
+    report: publisher.PublicationReport,
+    added: list[str],
+    modified: list[str],
+    untracked: list[str],
+) -> tuple[str, ...]:
+    preview_paths = publication_report_paths(report, worktree)
+    validate_preview_paths_exist(worktree, preview_paths)
+
+    real_paths = existing_status_paths(worktree, added, modified, untracked)
+    unexpected = sorted(real_paths - preview_paths, key=str.casefold)
+    if unexpected:
+        raise RuntimeError(
+            "Préparation bloquée : l'état Git contient des changements "
+            "qui ne figurent pas dans le preview.\n\n"
+            + "\n".join(f"- {path}" for path in unexpected)
+        )
+    return tuple(sorted(real_paths & preview_paths, key=str.casefold))
+
+
 def ensure_no_staged_deletion(worktree: Path) -> tuple[bool, str]:
     completed = run_git(worktree, "diff", "--cached", "--name-status")
     output = git_output(completed)
@@ -1265,7 +1333,13 @@ class PublicationApp:
                     "dans le worktree préparé.\n\n"
                     + "\n".join(f"- {path}" for path in deleted)
                 )
-            staged_paths = tuple(paths_to_stage(added, modified, untracked))
+            staged_paths = stageable_paths_from_status(
+                worktree,
+                publication_report,
+                added,
+                modified,
+                untracked,
+            )
 
             self.prepared_worktree = worktree
             self.prepared_publication = PreparedPublication(
