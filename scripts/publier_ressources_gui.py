@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import tkinter as tk
+import ast
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
@@ -112,6 +113,34 @@ def classify_git_status(porcelain: str) -> str:
     return "fichiers locaux non enregistrés dans Git"
 
 
+def decode_git_path(path: str) -> str:
+    if len(path) >= 2 and path.startswith('"') and path.endswith('"'):
+        try:
+            decoded = ast.literal_eval(path)
+        except (SyntaxError, ValueError):
+            return path
+        if isinstance(decoded, str):
+            return decoded
+    return path
+
+
+def parse_git_status_porcelain_line(line: str) -> tuple[str, str]:
+    if len(line) < 3:
+        raise ValueError(f"Sortie git status --porcelain invalide : {line!r}")
+    if len(line) >= 4 and line[2] == " ":
+        return line[:2], decode_git_path(line[3:])
+    if line[1] == " ":
+        return f"{line[0]} ", decode_git_path(line[2:])
+    raise ValueError(f"Sortie git status --porcelain invalide : {line!r}")
+
+
+def parse_git_name_status_line(line: str) -> tuple[str, str]:
+    status, separator, path = line.partition("\t")
+    if not separator or not status or not path:
+        raise ValueError(f"Sortie git diff --name-status invalide : {line!r}")
+    return status, decode_git_path(path)
+
+
 def classify_staging_status(
     porcelain: str,
 ) -> tuple[list[str], list[str], list[str], list[str]]:
@@ -123,8 +152,7 @@ def classify_staging_status(
     for line in porcelain.splitlines():
         if not line:
             continue
-        status = line[:2]
-        path = line[3:] if len(line) > 3 else line[2:].strip()
+        status, path = parse_git_status_porcelain_line(line)
         if status == "??":
             untracked.append(path)
             continue
@@ -219,11 +247,16 @@ def ensure_no_staged_deletion(worktree: Path) -> tuple[bool, str]:
     output = git_output(completed)
     if completed.returncode != 0:
         return False, output
-    deleted = [
-        line
-        for line in output.splitlines()
-        if line.startswith("D") or line.startswith("R")
-    ]
+    deleted = []
+    try:
+        for line in output.splitlines():
+            if not line:
+                continue
+            status, path = parse_git_name_status_line(line)
+            if status.startswith(("D", "R")):
+                deleted.append(f"{status}\t{path}")
+    except ValueError as error:
+        return False, str(error)
     if deleted:
         return False, "\n".join(deleted)
     return True, output
