@@ -29,4 +29,5 @@ Une variable aléatoire associe une valeur numérique aux issues d’une expéri
 <!-- AUTO-DOCS:START -->
 - [Cours N19 — Variables aléatoires, espérance et simulation](../cours/COURS_N19_VARIABLES_ALEATOIRES_ESPERANCE_SIMULATION.pdf)
 - [TD N19 — Variables aléatoires, espérance et simulation](../td/TD_N19_VARIABLES_ALEATOIRES_ESPERANCE_SIMULATION.pdf)
+- [Automatismes N19](../automatismes/AUTOMATISMES_N19_VARIABLES_ALEATOIRES_ESPERANCE_SIMULATION.pdf)
 <!-- AUTO-DOCS:END -->

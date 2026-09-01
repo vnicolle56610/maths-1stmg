@@ -7,7 +7,7 @@ Travaux dirigés, classés par notion.
 
 - [TD N01](TD_N01_RENTREE_DONNEES_LOGIQUE_AUTOMATISMES.pdf)
 
-## N02 — Proportions, pourcentages et évolutions
+## N02 — Proportions, pourcentages et taux d’évolution
 
 - [TD N02](TD_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
 
@@ -39,7 +39,7 @@ Travaux dirigés, classés par notion.
 
 - [TD N09](TD_N09_SUITES_ARITHMETIQUES_GEOMETRIQUES.pdf)
 
-## N10 — Modèles d'évolution, seuils, tableur et Python
+## N10 — Modèles d’évolution, seuils, tableur et Python
 
 - [TD N10](TD_N10_MODELES_EVOLUTION_SEUILS_TABLEUR_PYTHON.pdf)
 
@@ -55,7 +55,7 @@ Travaux dirigés, classés par notion.
 
 - [TD N13](TD_N13_VARIATIONS_EXTREMUMS_DERIVATION.pdf)
 
-## N14 — Synthèse d'analyse et problèmes de gestion
+## N14 — Synthèse d’analyse et problèmes de gestion
 
 - [TD N14](TD_N14_SYNTHESE_ANALYSE_PROBLEMES_GESTION.pdf)
 
@@ -79,7 +79,7 @@ Travaux dirigés, classés par notion.
 
 - [TD N19](TD_N19_VARIABLES_ALEATOIRES_ESPERANCE_SIMULATION.pdf)
 
-## N20 — Synthèse annuelle et préparation à l'épreuve anticipée
+## N20 — Synthèse annuelle et préparation à l’épreuve anticipée
 
 - [TD N20](TD_N20_SYNTHESE_ANNUELLE_EPREUVE_ANTICIPEE.pdf)
 <!-- AUTO-DOCS:END -->

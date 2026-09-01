@@ -29,4 +29,5 @@ Une fonction décrit la dépendance entre deux grandeurs. Les ressources font pa
 <!-- AUTO-DOCS:START -->
 - [Cours N04 — Fonctions : registres et lectures graphiques](../cours/COURS_N04_FONCTIONS_REGISTRES_LECTURES_GRAPHIQUES.pdf)
 - [TD N04 — Fonctions : registres et lectures graphiques](../td/TD_N04_FONCTIONS_REGISTRES_LECTURES_GRAPHIQUES.pdf)
+- [Automatismes N04](../automatismes/AUTOMATISMES_N04_FONCTIONS_REGISTRES_LECTURES_GRAPHIQUES.pdf)
 <!-- AUTO-DOCS:END -->

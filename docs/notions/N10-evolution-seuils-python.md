@@ -28,6 +28,7 @@ Les modèles d’évolution servent à prévoir quand une quantité franchit un 
 ## Documents
 
 <!-- AUTO-DOCS:START -->
-- [Cours N10 — Modèles d'évolution, seuils, tableur et Python](../cours/COURS_N10_MODELES_EVOLUTION_SEUILS_TABLEUR_PYTHON.pdf)
-- [TD N10 — Modèles d'évolution, seuils, tableur et Python](../td/TD_N10_MODELES_EVOLUTION_SEUILS_TABLEUR_PYTHON.pdf)
+- [Cours N10 — Modèles d’évolution, seuils, tableur et Python](../cours/COURS_N10_MODELES_EVOLUTION_SEUILS_TABLEUR_PYTHON.pdf)
+- [TD N10 — Modèles d’évolution, seuils, tableur et Python](../td/TD_N10_MODELES_EVOLUTION_SEUILS_TABLEUR_PYTHON.pdf)
+- [Automatismes N10](../automatismes/AUTOMATISMES_N10_MODELES_EVOLUTION_SEUILS_TABLEUR_PYTHON.pdf)
 <!-- AUTO-DOCS:END -->

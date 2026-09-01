@@ -28,6 +28,7 @@ Cette synthèse rassemble les outils d’analyse utiles dans des situations de g
 ## Documents
 
 <!-- AUTO-DOCS:START -->
-- [Cours N14 — Synthèse d'analyse et problèmes de gestion](../cours/COURS_N14_SYNTHESE_ANALYSE_PROBLEMES_GESTION.pdf)
-- [TD N14 — Synthèse d'analyse et problèmes de gestion](../td/TD_N14_SYNTHESE_ANALYSE_PROBLEMES_GESTION.pdf)
+- [Cours N14 — Synthèse d’analyse et problèmes de gestion](../cours/COURS_N14_SYNTHESE_ANALYSE_PROBLEMES_GESTION.pdf)
+- [TD N14 — Synthèse d’analyse et problèmes de gestion](../td/TD_N14_SYNTHESE_ANALYSE_PROBLEMES_GESTION.pdf)
+- [Automatismes N14](../automatismes/AUTOMATISMES_N14_SYNTHESE_ANALYSE_PROBLEMES_GESTION.pdf)
 <!-- AUTO-DOCS:END -->
