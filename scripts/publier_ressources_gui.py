@@ -60,6 +60,55 @@ def path_description(path: Path) -> str:
     return relative_path(path, publisher.PROJECT_ROOT)
 
 
+def deployed_site_path(staged_path: str) -> str | None:
+    """Convertir un chemin ``docs/...`` en chemin de sortie MkDocs réelle.
+
+    I15 : le contrôle post-déploiement doit vérifier les sorties MkDocs
+    (``.html``), jamais les ``.md`` source recherchés tels quels dans
+    ``gh-pages`` (qui n'en contient jamais). Portée telle quelle depuis
+    ``CLAUDE/scripts/publication/verification.deployed_site_path`` (moteur
+    commun, validée par tests), pour corriger uniquement ce contrôle sans
+    brancher l'outil actif sur le nouveau moteur.
+
+    - ``docs/notions/X.md``     -> ``notions/X/index.html``
+    - ``docs/index.md``         -> ``index.html``
+    - ``docs/td/index.md``      -> ``td/index.html``
+    - ``docs/td/TD_N01....pdf`` -> ``td/TD_N01....pdf`` (inchangé)
+    """
+    if not staged_path.startswith("docs/"):
+        return None
+    docs_path = Path(staged_path.removeprefix("docs/"))
+    if docs_path.suffix.casefold() != ".md":
+        return docs_path.as_posix()
+    if docs_path.name == "index.md":
+        return docs_path.with_suffix(".html").as_posix()
+    return (docs_path.parent / docs_path.stem / "index.html").as_posix()
+
+
+def deployed_site_paths(staged_paths: tuple[str, ...]) -> tuple[str, ...]:
+    paths = {
+        output_path
+        for staged_path in staged_paths
+        if (output_path := deployed_site_path(staged_path)) is not None
+    }
+    return tuple(sorted(paths, key=str.casefold))
+
+
+def missing_expected_outputs(
+    cwd: Path, gh_pages_ref: str, expected_outputs: tuple[str, ...]
+) -> tuple[str, ...]:
+    """I15 : constate l'absence de sorties MkDocs réelles dans
+    ``gh_pages_ref`` (jamais de ``.md`` source). Extrait de
+    ``_validate_gh_pages_artifact`` pour être testable indépendamment de
+    l'interface Tkinter, comportement inchangé."""
+    required_paths = [".nojekyll", "sitemap.xml", *expected_outputs]
+    return tuple(
+        path
+        for path in required_paths
+        if run_git(cwd, "cat-file", "-e", f"{gh_pages_ref}:{path}").returncode != 0
+    )
+
+
 @dataclass(frozen=True)
 class DeployPreflightResult:
     ok: bool
@@ -770,12 +819,7 @@ class PublicationApp:
             )
 
         gh_pages_sha = self._rev_parse(cwd, "origin/gh-pages")
-        required_paths = [".nojekyll", "sitemap.xml", *expected_resources]
-        missing_paths: list[str] = []
-        for path in required_paths:
-            check = run_git(cwd, "cat-file", "-e", f"origin/gh-pages:{path}")
-            if check.returncode != 0:
-                missing_paths.append(path)
+        missing_paths = missing_expected_outputs(cwd, "origin/gh-pages", expected_resources)
         if missing_paths:
             raise RuntimeError(
                 "Contrôle post-déploiement échoué : fichier(s) absent(s) "
@@ -789,7 +833,7 @@ class PublicationApp:
             f"Fetch après déploiement : {fetch_output or '(aucune sortie)'}",
             "Contrôles gh-pages :",
         ]
-        lines.extend(f"- {path}" for path in required_paths)
+        lines.extend(f"- {path}" for path in (".nojekyll", "sitemap.xml", *expected_resources))
         return "\n".join(lines)
 
     def _deploy_from_clean_worktree(
@@ -1612,11 +1656,7 @@ class PublicationApp:
             )
             self.status.set("Déploiement bloqué : source non synchronisée.")
             return
-        expected_resources = tuple(
-            path.removeprefix("docs/")
-            for path in prepared.staged_paths
-            if path.startswith("docs/")
-        )
+        expected_resources = deployed_site_paths(prepared.staged_paths)
 
         confirmed = messagebox.askyesno(
             "Déployer le site public",
