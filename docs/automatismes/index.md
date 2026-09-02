@@ -3,10 +3,6 @@
 Exercices d'automatismes et mini-tests, classés par notion.
 
 <!-- AUTO-DOCS:START -->
-## N01 — Rentrée, données, logique et automatismes
-
-- [Automatismes N01](AUTOMATISMES_N01_RENTREE_DONNEES_LOGIQUE.pdf)
-
 ## N02 — Proportions, pourcentages et taux d’évolution
 
 - [Automatismes N02](AUTOMATISMES_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
