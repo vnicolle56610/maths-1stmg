@@ -29,5 +29,5 @@ L’ajustement affine propose une droite pour résumer une tendance statistique.
 <!-- AUTO-DOCS:START -->
 - [Cours N16 — Ajustement affine, interpolation et extrapolation](../cours/COURS_N16_AJUSTEMENT_AFFINE_INTERPOLATION_EXTRAPOLATION.pdf)
 - [TD N16 — Ajustement affine, interpolation et extrapolation](../td/TD_N16_AJUSTEMENT_AFFINE_INTERPOLATION_EXTRAPOLATION.pdf)
-- [Automatismes N16](../automatismes/AUTOMATISMES_N16_AJUSTEMENT_AFFINE_INTERPOLATION_EXTRAPOLATION.pdf)
+- [Automatismes N16 — Ajustement affine, interpolation et extrapolation](../automatismes/AUTOMATISMES_N16_AJUSTEMENT_AFFINE_INTERPOLATION_EXTRAPOLATION.pdf)
 <!-- AUTO-DOCS:END -->

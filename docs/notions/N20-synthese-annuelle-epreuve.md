@@ -24,5 +24,5 @@ La synthèse annuelle organise les révisions autour des automatismes et du form
 <!-- AUTO-DOCS:START -->
 - [Cours N20 — Synthèse annuelle et préparation à l’épreuve anticipée](../cours/COURS_N20_SYNTHESE_ANNUELLE_EPREUVE_ANTICIPEE.pdf)
 - [TD N20 — Synthèse annuelle et préparation à l’épreuve anticipée](../td/TD_N20_SYNTHESE_ANNUELLE_EPREUVE_ANTICIPEE.pdf)
-- [Automatismes N20](../automatismes/AUTOMATISMES_N20_SYNTHESE_ANNUELLE_PREPARATION_EPREUVE_ANTICIPEE.pdf)
+- [Automatismes N20 — Synthèse annuelle et préparation à l’épreuve anticipée](../automatismes/AUTOMATISMES_N20_SYNTHESE_ANNUELLE_PREPARATION_EPREUVE_ANTICIPEE.pdf)
 <!-- AUTO-DOCS:END -->

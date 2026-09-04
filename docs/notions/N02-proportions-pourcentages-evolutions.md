@@ -30,5 +30,5 @@ Un pourcentage permet de comparer des parts, mesurer une évolution et interpré
 <!-- AUTO-DOCS:START -->
 - [Cours N02 — Proportions, pourcentages et taux d’évolution](../cours/COURS_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
 - [TD N02 — Proportions, pourcentages et taux d’évolution](../td/TD_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
-- [Automatismes N02](../automatismes/AUTOMATISMES_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
+- [Automatismes N02 — Proportions, pourcentages et taux d’évolution](../automatismes/AUTOMATISMES_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
 <!-- AUTO-DOCS:END -->

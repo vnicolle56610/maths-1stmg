@@ -30,5 +30,5 @@ Le nombre dérivé apparaît comme une pente limite : on part des sécantes pour
 <!-- AUTO-DOCS:START -->
 - [Cours N11 — Nombre dérivé : sécantes, tangentes, interprétation](../cours/COURS_N11_NOMBRE_DERIVE_SECANTES_TANGENTES.pdf)
 - [TD N11 — Nombre dérivé : sécantes, tangentes, interprétation](../td/TD_N11_NOMBRE_DERIVE_SECANTES_TANGENTES.pdf)
-- [Automatismes N11](../automatismes/AUTOMATISMES_N11_NOMBRE_DERIVE_SECANTES_TANGENTES_INTERPRETATION.pdf)
+- [Automatismes N11 — Nombre dérivé : sécantes, tangentes, interprétation](../automatismes/AUTOMATISMES_N11_NOMBRE_DERIVE_SECANTES_TANGENTES_INTERPRETATION.pdf)
 <!-- AUTO-DOCS:END -->

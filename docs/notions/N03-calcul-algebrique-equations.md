@@ -29,5 +29,5 @@ Le calcul algébrique permet de transformer des expressions et de résoudre des 
 <!-- AUTO-DOCS:START -->
 - [Cours N03 — Calcul algébrique, équations et signes](../cours/COURS_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.pdf)
 - [TD N03 — Calcul algébrique, équations et signes](../td/TD_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.pdf)
-- [Automatismes N03](../automatismes/AUTOMATISMES_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.pdf)
+- [Automatismes N03 — Calcul algébrique, équations et signes](../automatismes/AUTOMATISMES_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.pdf)
 <!-- AUTO-DOCS:END -->
