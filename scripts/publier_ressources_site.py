@@ -85,6 +85,12 @@ KIND_ORDER = {
 
 SAFE_DEFAULT_KINDS = frozenset({"COURS", "TD"})
 
+# Dossiers non publiables à ignorer partout sous source_root, quel que soit
+# le niveau d'imbrication (archives et sauvegardes locales de travail).
+IGNORED_DIR_NAME_PATTERN = re.compile(
+    r"^_(ANCIEN|ARCHIVE|SAUVEGARDE)", re.IGNORECASE
+)
+
 # CORRIGE_TD doit être testé avant CORRIGE afin de conserver deux choix
 # distincts dans l'interface, tout en envoyant les deux vers docs/corriges.
 RESOURCE_PATTERNS = (
@@ -187,6 +193,10 @@ def discover_resources(
 
     for path in sorted(source_root.rglob("*"), key=lambda item: str(item).casefold()):
         if not path.is_file() or path.suffix.casefold() != ".pdf":
+            continue
+
+        relative_dirs = path.relative_to(source_root).parent.parts
+        if any(IGNORED_DIR_NAME_PATTERN.match(part) for part in relative_dirs):
             continue
 
         pdf_count += 1

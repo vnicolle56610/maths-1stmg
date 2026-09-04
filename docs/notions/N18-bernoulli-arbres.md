@@ -30,4 +30,5 @@ Une épreuve de Bernoulli n’a que deux issues : succès ou échec. Les ressour
 <!-- AUTO-DOCS:START -->
 - [Cours N18 — Épreuves indépendantes de Bernoulli et arbres](../cours/COURS_N18_EPREUVES_BERNOULLI_REPETITIONS_INDEPENDANTES.pdf)
 - [TD N18 — Épreuves indépendantes de Bernoulli et arbres](../td/TD_N18_EPREUVES_BERNOULLI_REPETITIONS_INDEPENDANTES.pdf)
+- [Automatismes N18](../automatismes/AUTOMATISMES_N18_EPREUVES_INDEPENDANTES_BERNOULLI_ARBRES.pdf)
 <!-- AUTO-DOCS:END -->

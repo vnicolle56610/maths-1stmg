@@ -29,4 +29,5 @@ Une fonction du second degré se reconnaît souvent à sa parabole. Les ressourc
 <!-- AUTO-DOCS:START -->
 - [Cours N06 — Fonctions du second degré : paraboles et formes simples](../cours/COURS_N06_FONCTIONS_SECOND_DEGRE_PARABOLES_FORMES_SIMPLES.pdf)
 - [TD N06 — Fonctions du second degré : paraboles et formes simples](../td/TD_N06_FONCTIONS_SECOND_DEGRE_PARABOLES_FORMES_SIMPLES.pdf)
+- [Automatismes N06](../automatismes/AUTOMATISMES_N06_FONCTIONS_SECOND_DEGRE_PARABOLES_FORMES_SIMPLES.pdf)
 <!-- AUTO-DOCS:END -->

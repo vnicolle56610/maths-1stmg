@@ -39,8 +39,6 @@ nav:
 theme:
   name: material
   language: fr
-  logo: assets/images/logo_lycee_franklin.png
-  favicon: assets/images/logo_lycee_franklin.png
   palette:
     - scheme: default
       primary: white
