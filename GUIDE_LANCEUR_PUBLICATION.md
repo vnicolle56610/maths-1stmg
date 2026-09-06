@@ -15,14 +15,14 @@ cocher/décocher l'état final souhaité.
 ## D'où le lancer
 
 ```bash
-cd ~/ENSEIGNEMENT/maths-1stmg
+cd ~/ENSEIGNEMENT/SITES_INTERNET/maths-1stmg
 ./scripts/lancer_publication.sh
 ```
 
 Fonctionne aussi avec le chemin complet depuis n'importe où :
 
 ```bash
-~/ENSEIGNEMENT/maths-1stmg/scripts/lancer_publication.sh
+~/ENSEIGNEMENT/SITES_INTERNET/maths-1stmg/scripts/lancer_publication.sh
 ```
 
 ## Les commandes disponibles
@@ -70,7 +70,7 @@ toujours passer par `--gui`.
 - Un environnement virtuel Python dans `.venv/` (le script l'active tout
   seul s'il existe) contenant `mkdocs`, `mkdocs-material` et `pyyaml` :
   ```bash
-  cd ~/ENSEIGNEMENT/maths-1stmg
+  cd ~/ENSEIGNEMENT/SITES_INTERNET/maths-1stmg
   python3 -m venv .venv
   source .venv/bin/activate
   pip install mkdocs mkdocs-material pyyaml
@@ -88,7 +88,7 @@ mkdir -p ~/bin
 
 cat > ~/bin/lancer_publication_1stmg <<'EOF'
 #!/usr/bin/env bash
-exec "$HOME/ENSEIGNEMENT/maths-1stmg/scripts/lancer_publication.sh" --gui "$@"
+exec "$HOME/ENSEIGNEMENT/SITES_INTERNET/maths-1stmg/scripts/lancer_publication.sh" --gui "$@"
 EOF
 
 chmod +x ~/bin/lancer_publication_1stmg
