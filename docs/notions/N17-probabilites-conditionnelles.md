@@ -31,3 +31,17 @@ Les probabilités conditionnelles servent à tenir compte d’une information d�
 - [TD N17 — Probabilités conditionnelles et indépendance](../td/TD_N17_PROBABILITES_CONDITIONNELLES_INDEPENDANCE.pdf)
 - [Automatismes N17 — Probabilités conditionnelles et indépendance](../automatismes/AUTOMATISMES_N17_PROBABILITES_CONDITIONNELLES_INDEPENDANCE.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Si `P(A) > 0`, la probabilité de `B` sachant `A` est `P_A(B) = P(A∩B)/P(A)`, d'où la formule du produit `P(A∩B) = P(A) × P_A(B)`. Il faut bien distinguer `P(A∩B)`, `P_A(B)` et `P_B(A)` : ces trois nombres portent sur des dénominateurs différents et répondent à des questions différentes.
+
+Dans un arbre pondéré, la somme des probabilités des branches issues d'un même nœud vaut 1, et la probabilité d'un chemin est le produit des probabilités rencontrées ; on additionne les probabilités des chemins incompatibles qui réalisent le même événement final. Comme `A` et `Ā` forment une partition de l'univers, la formule des probabilités totales donne, pour tout événement `B` : `P(B) = P(A)×P_A(B) + P(Ā)×P_Ā(B)`.
+
+Deux événements `A` et `B` sont indépendants lorsque `P_A(B) = P(B)`, ce qui équivaut à `P(A∩B) = P(A)×P(B)`. Indépendance et incompatibilité sont deux notions différentes : deux événements incompatibles de probabilités non nulles ne sont jamais indépendants.
+
+## Exemple
+
+Un site étudie 1000 commandes : 300 sont express, 80 sont en retard, et 45 sont à la fois express et en retard.
+
+`P(E∩R) = 45/1000 = 0,045` ; parmi les commandes express, `P_E(R) = 45/300 = 0,15` ; parmi les commandes en retard, `P_R(E) = 45/80 = 0,5625`. Ces trois calculs portent sur les mêmes 45 commandes, mais sur des univers de référence différents : toutes les commandes, puis les commandes express, puis les commandes en retard.
