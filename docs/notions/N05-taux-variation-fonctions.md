@@ -32,3 +32,17 @@ Le taux de variation mesure une évolution moyenne entre deux valeurs. Les docum
 - [TD N05 — Taux de variation et fonctions monotones](../td/TD_N05_TAUX_VARIATION_FONCTIONS_MONOTONES.pdf)
 - [Automatismes N05 — Taux de variation et fonctions monotones](../automatismes/AUTOMATISMES_N05_TAUX_VARIATION_FONCTIONS_MONOTONES.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Pour une fonction `f` et deux nombres distincts `a` et `b`, le taux de variation entre `a` et `b` est `τ(a;b) = (f(b)-f(a))/(b-a)` : il mesure la variation moyenne de `f(x)` par unité de variation de `x`, avec son unité propre (ce n'est pas un pourcentage). Graphiquement, ce taux est la pente de la sécante passant par `A(a ; f(a))` et `B(b ; f(b))`.
+
+Le signe du taux indique le sens : `τ(a;b) > 0` si la sécante monte, `< 0` si elle descend, `= 0` si elle est horizontale. Une fonction est croissante sur un intervalle `I` lorsque, pour tous `a < b` dans `I`, `f(a) ⩽ f(b)` ; elle est décroissante lorsque `f(a) ⩾ f(b)`. Une fonction est croissante sur `I` si et seulement si tous ses taux de variation sur `I` sont positifs ou nuls (décroissante : négatifs ou nuls) — un seul taux calculé sur un intervalle ne renseigne que sur cet intervalle.
+
+Pour une fonction affine `f(x) = mx+p`, le taux de variation entre deux nombres distincts vaut toujours `m` : le rythme de variation est constant, contrairement à une fonction non affine.
+
+## Exemple
+
+Le coût logistique `C(x)` d'une entreprise passe de 700 € à 1000 € entre 100 et 200 commandes, puis à 1600 € pour 350 commandes, puis à 2350 € pour 500 commandes.
+
+Les taux de variation successifs sont `(1000-700)/(200-100) = 3`, `(1600-1000)/(350-200) = 4`, puis `(2350-1600)/(500-350) = 5` euros par commande. Tous positifs : le coût est croissant, mais pas à rythme constant.

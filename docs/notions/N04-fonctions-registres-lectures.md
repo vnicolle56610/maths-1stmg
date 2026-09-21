@@ -31,3 +31,13 @@ Une fonction décrit la dépendance entre deux grandeurs. Les ressources font pa
 - [TD N04 — Fonctions : registres et lectures graphiques](../td/TD_N04_FONCTIONS_REGISTRES_LECTURES_GRAPHIQUES.pdf)
 - [Automatismes N04 — Fonctions : registres et lectures graphiques](../automatismes/AUTOMATISMES_N04_FONCTIONS_REGISTRES_LECTURES_GRAPHIQUES.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Une fonction `f` associe à chaque nombre `x` un unique nombre `f(x)`, noté `x ↦ f(x)` ou `y = f(x)`. Si `f(a) = b`, alors `b` est l'image de `a` et `a` est un antécédent de `b` — une valeur n'a qu'une seule image, mais peut avoir plusieurs antécédents. Une même dépendance peut se décrire par une phrase, un tableau, une formule ou un graphique : ces quatre registres se complètent.
+
+Résoudre `f(x) = k` graphiquement revient à chercher les abscisses des points d'intersection entre la courbe et la droite `y = k` ; pour `f(x) ⩾ k`, on inclut ces points d'intersection. Le signe d'une fonction se lit par rapport à l'axe des abscisses (au-dessus : positive ; au-dessous : négative) ; les variations se lisent en parcourant la courbe de gauche à droite. « Positive » et « croissante » ne signifient pas la même chose : une fonction peut être positive et décroissante.
+
+## Exemple
+
+Sur une courbe donnée, résoudre `f(x) = 3` donne les solutions 2 et 4 ; résoudre `f(x) ⩾ 3` donne l'intervalle `[2 ; 4]`, en incluant les points d'intersection.
