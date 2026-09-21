@@ -705,6 +705,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1335,6 +1357,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1380,6 +1424,14 @@
 <li><a href="../../automatismes/AUTOMATISMES_N05_TAUX_VARIATION_FONCTIONS_MONOTONES.pdf">Automatismes N05 — Taux de variation et fonctions monotones</a></li>
 </ul>
 <!-- AUTO-DOCS:END -->
+
+<h2 id="notions-essentielles">Notions essentielles</h2>
+<p>Pour une fonction <code>f</code> et deux nombres distincts <code>a</code> et <code>b</code>, le taux de variation entre <code>a</code> et <code>b</code> est <code>τ(a;b) = (f(b)-f(a))/(b-a)</code> : il mesure la variation moyenne de <code>f(x)</code> par unité de variation de <code>x</code>, avec son unité propre (ce n'est pas un pourcentage). Graphiquement, ce taux est la pente de la sécante passant par <code>A(a ; f(a))</code> et <code>B(b ; f(b))</code>.</p>
+<p>Le signe du taux indique le sens : <code>τ(a;b) &gt; 0</code> si la sécante monte, <code>&lt; 0</code> si elle descend, <code>= 0</code> si elle est horizontale. Une fonction est croissante sur un intervalle <code>I</code> lorsque, pour tous <code>a &lt; b</code> dans <code>I</code>, <code>f(a) ⩽ f(b)</code> ; elle est décroissante lorsque <code>f(a) ⩾ f(b)</code>. Une fonction est croissante sur <code>I</code> si et seulement si tous ses taux de variation sur <code>I</code> sont positifs ou nuls (décroissante : négatifs ou nuls) — un seul taux calculé sur un intervalle ne renseigne que sur cet intervalle.</p>
+<p>Pour une fonction affine <code>f(x) = mx+p</code>, le taux de variation entre deux nombres distincts vaut toujours <code>m</code> : le rythme de variation est constant, contrairement à une fonction non affine.</p>
+<h2 id="exemple">Exemple</h2>
+<p>Le coût logistique <code>C(x)</code> d'une entreprise passe de 700 € à 1000 € entre 100 et 200 commandes, puis à 1600 € pour 350 commandes, puis à 2350 € pour 500 commandes.</p>
+<p>Les taux de variation successifs sont <code>(1000-700)/(200-100) = 3</code>, <code>(1600-1000)/(350-200) = 4</code>, puis <code>(2350-1600)/(500-350) = 5</code> euros par commande. Tous positifs : le coût est croissant, mais pas à rythme constant.</p>
 
 
 
