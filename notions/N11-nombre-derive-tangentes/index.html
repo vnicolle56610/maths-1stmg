@@ -873,6 +873,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1335,6 +1357,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1380,6 +1424,13 @@
 <li><a href="../../automatismes/AUTOMATISMES_N11_NOMBRE_DERIVE_SECANTES_TANGENTES_INTERPRETATION.pdf">Automatismes N11 — Nombre dérivé : sécantes, tangentes, interprétation</a></li>
 </ul>
 <!-- AUTO-DOCS:END -->
+
+<h2 id="notions-essentielles">Notions essentielles</h2>
+<p>Le taux de variation de <code>f</code> entre <code>a</code> et <code>b</code>, <code>(f(b)-f(a))/(b-a)</code>, est le coefficient directeur de la sécante passant par les points d'abscisses <code>a</code> et <code>b</code>. Lorsqu'on rapproche progressivement le second point du premier, les sécantes se rapprochent d'une droite unique : la tangente à la courbe. Lorsque les coefficients directeurs des sécantes se rapprochent ainsi d'un nombre unique, ce nombre est le nombre dérivé de <code>f</code> en <code>a</code>, noté <code>f'(a)</code> — c'est le coefficient directeur de la tangente.</p>
+<p>Le signe de <code>f'(a)</code> se lit sur la tangente : montante (<code>f'(a) &gt; 0</code>), horizontale (<code>f'(a) = 0</code>), descendante (<code>f'(a) &lt; 0</code>). Le nombre dérivé s'interprète comme une variation instantanée (ou marginale) : pour une petite augmentation de <code>x</code> autour de <code>a</code>, la variation de <code>f(x)</code> est approximativement donnée par cette pente.</p>
+<h2 id="exemple">Exemple</h2>
+<p>Le coût total de <code>x</code> articles est <code>C(x) = 0,05x² + 20x + 500</code>. Le taux <code>τ_h = (C(100+h)-C(100))/h</code> vaut successivement 31, puis 30,5, puis 30,25, puis 30,05 lorsque <code>h</code> vaut 20, 10, 5, 1.</p>
+<p>Ces valeurs se rapprochent de 30 : on obtient <code>C'(100) = 30</code>. Autour de 100 articles, produire un article de plus augmente le coût d'environ 30 euros.</p>
 
 
 
