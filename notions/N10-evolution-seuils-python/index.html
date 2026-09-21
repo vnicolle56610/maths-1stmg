@@ -845,6 +845,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1335,6 +1357,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1380,6 +1424,14 @@
 <li><a href="../../automatismes/AUTOMATISMES_N10_MODELES_EVOLUTION_SEUILS_TABLEUR_PYTHON.pdf">Automatismes N10 — Modèles d’évolution, seuils, tableur et Python</a></li>
 </ul>
 <!-- AUTO-DOCS:END -->
+
+<h2 id="notions-essentielles">Notions essentielles</h2>
+<p>Le choix de l'outil dépend de la question posée : un terme isolé se calcule avec une formule explicite, une liste de termes s'obtient avec un tableur ou une boucle <code>for</code>, la recherche d'un rang seuil utilise une boucle <code>while</code>, et une somme se calcule avec un accumulateur.</p>
+<p>Chercher un rang seuil, c'est déterminer le plus petit entier <code>n</code> pour lequel une condition devient vraie (par exemple <code>u(n) &gt; 3000</code>). Pour justifier qu'un rang est bien le premier à vérifier la condition, on contrôle les deux inégalités : le rang précédent ne la vérifie pas encore, le rang trouvé la vérifie. Dans une boucle <code>while</code>, la condition de répétition est l'opposée de la condition recherchée : pour chercher <code>u(n) &gt; S</code>, on répète tant que <code>u ⩽ S</code>.</p>
+<p>La somme des termes de rangs 0 à <code>N</code>, notée <code>S = u(0) + u(1) + ⋯ + u(N)</code>, comporte <code>N+1</code> termes. Elle se calcule avec un tableur (fonction <code>SOMME</code>) ou avec un accumulateur Python qui mémorise le total au fur et à mesure — jamais avec une formule fermée toute faite.</p>
+<h2 id="exemple">Exemple</h2>
+<p>Une entreprise a 2400 abonnés et prévoit une hausse de 4 % par an : <code>u(n) = 2400 × 1,04ⁿ</code>.</p>
+<p>On calcule <code>u(5) ≈ 2920 ⩽ 3000</code> et <code>u(6) ≈ 3037 &gt; 3000</code> : le rang 6 est donc bien le premier rang où le nombre d'abonnés dépasse 3000.</p>
 
 
 

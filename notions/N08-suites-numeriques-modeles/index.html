@@ -789,6 +789,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1335,6 +1357,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1379,6 +1423,13 @@
 <li><a href="../../automatismes/AUTOMATISMES_N08_SUITES_NUMERIQUES_MODELES_DISCRETS.pdf">Automatismes N08 — Suites numériques : modèles discrets</a></li>
 </ul>
 <!-- AUTO-DOCS:END -->
+
+<h2 id="notions-essentielles">Notions essentielles</h2>
+<p>Une suite numérique est une liste ordonnée de nombres repérés par des entiers appelés rangs ; le nombre associé au rang <code>n</code> est noté <code>u(n)</code> — c'est le terme de rang <code>n</code>. Une évolution est discrète lorsqu'elle est observée à des étapes séparées (chaque mois, chaque année…), ce qui explique que les rangs soient des entiers.</p>
+<p>Une suite peut être définie par une formule explicite, où <code>u(n)</code> s'exprime directement en fonction de <code>n</code> (utile pour calculer un terme éloigné), ou par une relation de récurrence, où l'on connaît un terme initial et une règle donnant chaque terme à partir du précédent (le calcul se fait alors pas à pas). La représentation graphique d'une suite est un nuage de points <code>(n ; u(n))</code> : les points ne sont jamais reliés, car aucun terme n'est défini entre deux rangs entiers. Une suite est croissante lorsque <code>u(n+1) ⩾ u(n)</code>, décroissante lorsque <code>u(n+1) ⩽ u(n)</code> ; elle peut aussi n'être ni l'une ni l'autre.</p>
+<h2 id="exemple">Exemple</h2>
+<p>Deux modèles décrivent le nombre de comptes actifs d'une plateforme : <code>u(n) = 400 + 35n</code> (formule explicite) et <code>v(0) = 400</code>, <code>v(n+1) = 0,9 × v(n) + 80</code> (récurrence).</p>
+<p>Avec <code>u</code>, on calcule directement <code>u(10)</code>. Avec <code>v</code>, il faut calculer successivement <code>v(1) = 440</code>, puis <code>v(2) = 476</code>, etc. : la récurrence impose un calcul pas à pas.</p>
 
 
 
