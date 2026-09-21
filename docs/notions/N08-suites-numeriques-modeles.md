@@ -31,3 +31,15 @@ Une suite numérique décrit une grandeur observée par étapes, souvent année 
 - [TD N08 — Suites numériques : modèles discrets](../td/TD_N08_SUITES_NUMERIQUES_MODELES_DISCRETS.pdf)
 - [Automatismes N08 — Suites numériques : modèles discrets](../automatismes/AUTOMATISMES_N08_SUITES_NUMERIQUES_MODELES_DISCRETS.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Une suite numérique est une liste ordonnée de nombres repérés par des entiers appelés rangs ; le nombre associé au rang `n` est noté `u(n)` — c'est le terme de rang `n`. Une évolution est discrète lorsqu'elle est observée à des étapes séparées (chaque mois, chaque année…), ce qui explique que les rangs soient des entiers.
+
+Une suite peut être définie par une formule explicite, où `u(n)` s'exprime directement en fonction de `n` (utile pour calculer un terme éloigné), ou par une relation de récurrence, où l'on connaît un terme initial et une règle donnant chaque terme à partir du précédent (le calcul se fait alors pas à pas). La représentation graphique d'une suite est un nuage de points `(n ; u(n))` : les points ne sont jamais reliés, car aucun terme n'est défini entre deux rangs entiers. Une suite est croissante lorsque `u(n+1) ⩾ u(n)`, décroissante lorsque `u(n+1) ⩽ u(n)` ; elle peut aussi n'être ni l'une ni l'autre.
+
+## Exemple
+
+Deux modèles décrivent le nombre de comptes actifs d'une plateforme : `u(n) = 400 + 35n` (formule explicite) et `v(0) = 400`, `v(n+1) = 0,9 × v(n) + 80` (récurrence).
+
+Avec `u`, on calcule directement `u(10)`. Avec `v`, il faut calculer successivement `v(1) = 440`, puis `v(2) = 476`, etc. : la récurrence impose un calcul pas à pas.

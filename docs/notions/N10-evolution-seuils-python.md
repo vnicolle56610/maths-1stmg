@@ -32,3 +32,17 @@ Les modèles d’évolution servent à prévoir quand une quantité franchit un 
 - [TD N10 — Modèles d’évolution, seuils, tableur et Python](../td/TD_N10_MODELES_EVOLUTION_SEUILS_TABLEUR_PYTHON.pdf)
 - [Automatismes N10 — Modèles d’évolution, seuils, tableur et Python](../automatismes/AUTOMATISMES_N10_MODELES_EVOLUTION_SEUILS_TABLEUR_PYTHON.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Le choix de l'outil dépend de la question posée : un terme isolé se calcule avec une formule explicite, une liste de termes s'obtient avec un tableur ou une boucle `for`, la recherche d'un rang seuil utilise une boucle `while`, et une somme se calcule avec un accumulateur.
+
+Chercher un rang seuil, c'est déterminer le plus petit entier `n` pour lequel une condition devient vraie (par exemple `u(n) > 3000`). Pour justifier qu'un rang est bien le premier à vérifier la condition, on contrôle les deux inégalités : le rang précédent ne la vérifie pas encore, le rang trouvé la vérifie. Dans une boucle `while`, la condition de répétition est l'opposée de la condition recherchée : pour chercher `u(n) > S`, on répète tant que `u ⩽ S`.
+
+La somme des termes de rangs 0 à `N`, notée `S = u(0) + u(1) + ⋯ + u(N)`, comporte `N+1` termes. Elle se calcule avec un tableur (fonction `SOMME`) ou avec un accumulateur Python qui mémorise le total au fur et à mesure — jamais avec une formule fermée toute faite.
+
+## Exemple
+
+Une entreprise a 2400 abonnés et prévoit une hausse de 4 % par an : `u(n) = 2400 × 1,04ⁿ`.
+
+On calcule `u(5) ≈ 2920 ⩽ 3000` et `u(6) ≈ 3037 > 3000` : le rang 6 est donc bien le premier rang où le nombre d'abonnés dépasse 3000.
