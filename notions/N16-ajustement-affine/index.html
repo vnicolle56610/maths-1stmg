@@ -1013,6 +1013,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1335,6 +1357,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1379,6 +1423,13 @@
 <li><a href="../../automatismes/AUTOMATISMES_N16_AJUSTEMENT_AFFINE_INTERPOLATION_EXTRAPOLATION.pdf">Automatismes N16 — Ajustement affine, interpolation et extrapolation</a></li>
 </ul>
 <!-- AUTO-DOCS:END -->
+
+<h2 id="notions-essentielles">Notions essentielles</h2>
+<p>Un ajustement affine approche un nuage de points presque rectiligne par une droite <code>y = ax+b</code>, qui résume une tendance globale. Il peut être obtenu au jugé (tracé visuel entre deux points lisibles), par la méthode de Mayer (on partage la série en deux groupes de même effectif, on calcule leurs points moyens <code>G1</code> et <code>G2</code>, et la droite <code>(G1G2)</code> est la droite d'ajustement — elle passe par le point moyen global), ou par une droite dite « des moindres carrés », fournie par une calculatrice, un tableur ou un logiciel : aucune théorie de calcul n'est exigée, cette droite est seulement lue sur l'outil.</p>
+<p>Interpoler, c'est estimer <code>y</code> pour une valeur de <code>x</code> intérieure à l'intervalle des abscisses observées ; extrapoler, c'est l'estimer pour une valeur extérieure à cet intervalle. Une interpolation est généralement moins risquée qu'une extrapolation proche, et une extrapolation lointaine peut être très peu fiable même si le calcul est correct : le modèle affine ne doit jamais être prolongé indéfiniment, car des contraintes réelles peuvent limiter la grandeur étudiée.</p>
+<h2 id="exemple">Exemple</h2>
+<p>Pour une série budget publicitaire / ventes, un outil donne la droite d'ajustement <code>y ≈ 2,67x + 9,13</code>, avec des abscisses observées entre 2 et 12.</p>
+<p>Pour <code>x = 9</code>, on obtient <code>y ≈ 33,2</code> : comme <code>9 ∈ [2 ; 12]</code>, c'est une interpolation. Pour <code>x = 15</code>, on obtient <code>y ≈ 49,2</code> : comme <code>15 &gt; 12</code>, c'est une extrapolation, à interpréter avec davantage de prudence.</p>
 
 
 
