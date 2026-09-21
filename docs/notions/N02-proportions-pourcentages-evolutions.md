@@ -32,3 +32,17 @@ Un pourcentage permet de comparer des parts, mesurer une évolution et interpré
 - [TD N02 — Proportions, pourcentages et taux d’évolution](../td/TD_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
 - [Automatismes N02 — Proportions, pourcentages et taux d’évolution](../automatismes/AUTOMATISMES_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Dans une population de référence d'effectif `N`, une sous-population d'effectif `n` représente la proportion `p = n/N`. Passer de `40 %` à `42 %` correspond à une hausse de 2 points de pourcentage, ce qui n'est pas la même chose qu'une hausse relative de `(42-40)/40 = 5 %` : il faut distinguer les deux.
+
+Pour une valeur passant de `Vi` à `Vf`, le taux d'évolution est `t = (Vf-Vi)/Vi`, et le coefficient multiplicateur associé est `CM = 1 + t`, avec `Vf = Vi × CM`. Pour des évolutions successives, les coefficients multiplicateurs se multiplient : `CM_global = CM1 × CM2 × …` (les taux, eux, ne s'additionnent généralement pas). L'évolution réciproque, qui ramène de la valeur finale à la valeur initiale, a pour coefficient `1/CM`.
+
+Un indice base 100 attribue la valeur 100 à une période de référence `V0` ; pour une valeur `V`, l'indice est `I = 100 × V/V0`. Entre deux indices `Ii` et `If`, le taux d'évolution se calcule comme pour deux valeurs : `t = (If-Ii)/Ii`.
+
+## Exemple
+
+Deux remises successives de 15 % puis 10 % ont pour coefficients `0,85` et `0,90`. Le coefficient global est `0,85 × 0,90 = 0,765`.
+
+Le taux global vaut `0,765 - 1 = -0,235`, soit une remise totale de 23,5 % — et non 25 %, car les taux ne s'additionnent pas.

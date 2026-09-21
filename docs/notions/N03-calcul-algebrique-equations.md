@@ -31,3 +31,15 @@ Le calcul algébrique permet de transformer des expressions et de résoudre des 
 - [TD N03 — Calcul algébrique, équations et signes](../td/TD_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.pdf)
 - [Automatismes N03 — Calcul algébrique, équations et signes](../automatismes/AUTOMATISMES_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Développer transforme un produit en somme (`a(b+c) = ab+ac`) ; factoriser transforme une somme en produit (`ab+ac = a(b+c)`). Un produit de réels est nul si et seulement si l'un au moins de ses facteurs est nul : `A × B = 0 ⟺ A = 0 ou B = 0` — cette propriété ne s'applique qu'à un second membre égal à 0.
+
+L'expression `ax+b` (avec `a ≠ 0`) s'annule en `x0 = -b/a` ; elle a le signe de `a` à droite de `x0`, et le signe opposé à gauche. Pour étudier le signe d'un produit `(ax+b)(cx+d)`, on calcule les zéros de chaque facteur, on les range dans l'ordre croissant, puis on multiplie les signes colonne par colonne dans un tableau de signes. Un zéro appartient à l'ensemble des solutions pour `⩾` ou `⩽`, mais pas pour `>` ou `<`.
+
+## Exemple
+
+Le bénéfice d'une opération commerciale est modélisé par `B(x) = (x-20)(60-x)`, où `x` est le nombre de lots vendus, avec `0 ⩽ x ⩽ 80`.
+
+Les zéros 20 et 60 sont les seuils d'équilibre. Le tableau de signes donne `B(x) > 0` pour `20 < x < 60` : l'entreprise réalise un bénéfice sur cet intervalle, et subit une perte en dehors.
