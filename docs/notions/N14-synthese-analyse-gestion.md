@@ -32,3 +32,15 @@ Cette synthèse rassemble les outils d’analyse utiles dans des situations de g
 - [TD N14 — Synthèse d’analyse et problèmes de gestion](../td/TD_N14_SYNTHESE_ANALYSE_PROBLEMES_GESTION.pdf)
 - [Automatismes N14 — Synthèse d’analyse et problèmes de gestion](../automatismes/AUTOMATISMES_N14_SYNTHESE_ANALYSE_PROBLEMES_GESTION.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Points essentiels à maîtriser
+
+Un modèle est discret lorsque la grandeur est observée à des étapes séparées (mois, trimestres, années…) : on utilise alors une suite `u(n)`. Il est continu lorsque la variable peut prendre toutes les valeurs d'un intervalle : on utilise alors une fonction `f(x)`. Une même situation peut se décrire par quatre registres complémentaires — phrase, tableau, formule, représentation graphique — qui s'articulent entre eux.
+
+Pour organiser un problème long, une démarche en six étapes est utile : comprendre (grandeurs, unités, question), définir (variable ou suite, domaine), modéliser (formule, récurrence ou fonction), traiter (calculer, dériver, résoudre), contrôler (ordre de grandeur, bornes, cohérence), interpréter (phrase liée à la décision de gestion). Une suite répond typiquement à une question d'échéance (rang seuil), une fonction à une question d'optimisation (extremum) — une décision complète peut mobiliser les deux modèles, sans mélanger leurs variables, et doit toujours être confrontée aux contraintes réelles (capacité, budget, valeurs entières).
+
+## Exemple de synthèse
+
+Une entreprise suit son nombre d'abonnés par trimestre, `u(n) = 1200 × 1,06ⁿ`, et son bénéfice quotidien selon la quantité produite, `B(x) = -0,5x² + 30x - 150` sur `[0 ; 50]`.
+
+Pour les abonnés (modèle discret), on cherche un rang seuil : `u(3) ≈ 1429 < 1500` et `u(4) ≈ 1515 > 1500`, donc le seuil de 1500 abonnés est franchi au 4ᵉ trimestre. Pour le bénéfice (modèle continu), on optimise : `B'(x) = -x+30` s'annule en 30, où `B` passe de croissante à décroissante : le bénéfice maximal est `B(30) = 300` milliers d'euros pour 3000 unités. Ces deux résultats répondent à des questions différentes et ne se mélangent pas.
