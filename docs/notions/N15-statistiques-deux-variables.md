@@ -31,3 +31,15 @@ Une série statistique à deux variables met en relation deux grandeurs observé
 - [TD N15 — Statistiques à deux variables : nuages et point moyen](../td/TD_N15_STATISTIQUES_DEUX_VARIABLES_NUAGES_POINT_MOYEN.pdf)
 - [Automatismes N15 — Statistiques à deux variables : nuages et point moyen](../automatismes/AUTOMATISMES_N15_STATISTIQUES_DEUX_VARIABLES_NUAGE_POINT_MOYEN.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Lorsqu'on observe sur les mêmes individus deux caractères quantitatifs `x` et `y`, l'ensemble des couples `(xᵢ ; yᵢ)` forme une série statistique à deux variables. Dans un repère, l'ensemble des points `Mᵢ(xᵢ ; yᵢ)` est le nuage de points : on ne relie jamais ces points entre eux. Le point moyen `G(x̄ ; ȳ)`, où `x̄` et `ȳ` sont les moyennes des deux séries, résume la position centrale du nuage — sans décrire ni sa dispersion ni sa forme, et sans être nécessairement l'un des points observés.
+
+Un nuage peut suggérer une tendance croissante, décroissante, ou l'absence de tendance nette, ainsi que des points atypiques (qu'il ne faut pas supprimer automatiquement : ils peuvent être réels et informatifs). Une tendance observée ne prouve jamais une causalité entre les deux variables.
+
+## Exemple
+
+Une entreprise relève, pour six campagnes, la dépense publicitaire `x` (en milliers d'euros) et le chiffre d'affaires `y` (en milliers d'euros) : `(4;52), (6;58), (7;61), (9;70), (10;73), (12;80)`.
+
+Le point moyen est `x̄ = (4+6+7+9+10+12)/6 = 8` et `ȳ = (52+58+61+70+73+80)/6 ≈ 65,7`, soit `G(8 ; 65,7)`. Le nuage monte globalement de la gauche vers la droite : on observe une tendance croissante entre dépense et chiffre d'affaires.

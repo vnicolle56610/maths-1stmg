@@ -31,3 +31,15 @@ L’ajustement affine propose une droite pour résumer une tendance statistique.
 - [TD N16 — Ajustement affine, interpolation et extrapolation](../td/TD_N16_AJUSTEMENT_AFFINE_INTERPOLATION_EXTRAPOLATION.pdf)
 - [Automatismes N16 — Ajustement affine, interpolation et extrapolation](../automatismes/AUTOMATISMES_N16_AJUSTEMENT_AFFINE_INTERPOLATION_EXTRAPOLATION.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Un ajustement affine approche un nuage de points presque rectiligne par une droite `y = ax+b`, qui résume une tendance globale. Il peut être obtenu au jugé (tracé visuel entre deux points lisibles), par la méthode de Mayer (on partage la série en deux groupes de même effectif, on calcule leurs points moyens `G1` et `G2`, et la droite `(G1G2)` est la droite d'ajustement — elle passe par le point moyen global), ou par une droite dite « des moindres carrés », fournie par une calculatrice, un tableur ou un logiciel : aucune théorie de calcul n'est exigée, cette droite est seulement lue sur l'outil.
+
+Interpoler, c'est estimer `y` pour une valeur de `x` intérieure à l'intervalle des abscisses observées ; extrapoler, c'est l'estimer pour une valeur extérieure à cet intervalle. Une interpolation est généralement moins risquée qu'une extrapolation proche, et une extrapolation lointaine peut être très peu fiable même si le calcul est correct : le modèle affine ne doit jamais être prolongé indéfiniment, car des contraintes réelles peuvent limiter la grandeur étudiée.
+
+## Exemple
+
+Pour une série budget publicitaire / ventes, un outil donne la droite d'ajustement `y ≈ 2,67x + 9,13`, avec des abscisses observées entre 2 et 12.
+
+Pour `x = 9`, on obtient `y ≈ 33,2` : comme `9 ∈ [2 ; 12]`, c'est une interpolation. Pour `x = 15`, on obtient `y ≈ 49,2` : comme `15 > 12`, c'est une extrapolation, à interpréter avec davantage de prudence.
