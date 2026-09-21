@@ -1069,6 +1069,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1335,6 +1357,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1380,6 +1424,13 @@
 <li><a href="../../automatismes/AUTOMATISMES_N18_EPREUVES_INDEPENDANTES_BERNOULLI_ARBRES.pdf">Automatismes N18 — Épreuves indépendantes de Bernoulli et arbres</a></li>
 </ul>
 <!-- AUTO-DOCS:END -->
+
+<h2 id="notions-essentielles">Notions essentielles</h2>
+<p>Une épreuve de Bernoulli est une expérience aléatoire à exactement deux issues : le succès <code>S</code>, de probabilité <code>p</code>, et l'échec <code>S̄</code>, de probabilité <code>1-p</code>. Le mot « succès » est une simple convention : il ne signifie pas forcément un résultat favorable dans le contexte.</p>
+<p>Répéter une même épreuve de Bernoulli de façon identique et indépendante signifie que la probabilité de succès reste <code>p</code> à chaque étape, et que le résultat d'une étape ne modifie pas les probabilités des étapes suivantes : les mêmes probabilités réapparaissent alors à chaque niveau de l'arbre, et la probabilité d'un chemin est le produit des probabilités de ses branches. On se limite à au plus 4 répétitions : pour calculer la probabilité d'un événement, on traduit l'événement en termes de <code>S</code> et <code>S̄</code>, on repère tous les chemins qui le réalisent, on calcule chaque chemin, puis on additionne. Pour « au moins un succès », il est souvent plus court de passer par l'événement contraire : <code>P(au moins un S) = 1 - P(aucun S)</code>.</p>
+<h2 id="exemple">Exemple</h2>
+<p>Une entreprise envoie une offre à trois clients indépendants, chacun l'acceptant avec une probabilité de 0,30.</p>
+<p>« Exactement deux succès » correspond aux trois chemins <code>SSS̄</code>, <code>SS̄S</code>, <code>S̄SS</code>, chacun de probabilité <code>0,30² × 0,70 = 0,063</code>. La probabilité cherchée est donc <code>3 × 0,063 = 0,189</code>.</p>
 
 
 

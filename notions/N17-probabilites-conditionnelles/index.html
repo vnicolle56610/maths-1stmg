@@ -1041,6 +1041,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1335,6 +1357,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notions-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notions essentielles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1379,6 +1423,14 @@
 <li><a href="../../automatismes/AUTOMATISMES_N17_PROBABILITES_CONDITIONNELLES_INDEPENDANCE.pdf">Automatismes N17 — Probabilités conditionnelles et indépendance</a></li>
 </ul>
 <!-- AUTO-DOCS:END -->
+
+<h2 id="notions-essentielles">Notions essentielles</h2>
+<p>Si <code>P(A) &gt; 0</code>, la probabilité de <code>B</code> sachant <code>A</code> est <code>P_A(B) = P(A∩B)/P(A)</code>, d'où la formule du produit <code>P(A∩B) = P(A) × P_A(B)</code>. Il faut bien distinguer <code>P(A∩B)</code>, <code>P_A(B)</code> et <code>P_B(A)</code> : ces trois nombres portent sur des dénominateurs différents et répondent à des questions différentes.</p>
+<p>Dans un arbre pondéré, la somme des probabilités des branches issues d'un même nœud vaut 1, et la probabilité d'un chemin est le produit des probabilités rencontrées ; on additionne les probabilités des chemins incompatibles qui réalisent le même événement final. Comme <code>A</code> et <code>Ā</code> forment une partition de l'univers, la formule des probabilités totales donne, pour tout événement <code>B</code> : <code>P(B) = P(A)×P_A(B) + P(Ā)×P_Ā(B)</code>.</p>
+<p>Deux événements <code>A</code> et <code>B</code> sont indépendants lorsque <code>P_A(B) = P(B)</code>, ce qui équivaut à <code>P(A∩B) = P(A)×P(B)</code>. Indépendance et incompatibilité sont deux notions différentes : deux événements incompatibles de probabilités non nulles ne sont jamais indépendants.</p>
+<h2 id="exemple">Exemple</h2>
+<p>Un site étudie 1000 commandes : 300 sont express, 80 sont en retard, et 45 sont à la fois express et en retard.</p>
+<p><code>P(E∩R) = 45/1000 = 0,045</code> ; parmi les commandes express, <code>P_E(R) = 45/300 = 0,15</code> ; parmi les commandes en retard, <code>P_R(E) = 45/80 = 0,5625</code>. Ces trois calculs portent sur les mêmes 45 commandes, mais sur des univers de référence différents : toutes les commandes, puis les commandes express, puis les commandes en retard.</p>
 
 
 
