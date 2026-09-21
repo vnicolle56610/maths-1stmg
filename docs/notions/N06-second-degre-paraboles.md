@@ -31,3 +31,15 @@ Une fonction du second degré se reconnaît souvent à sa parabole. Les ressourc
 - [TD N06 — Fonctions du second degré : paraboles et formes simples](../td/TD_N06_FONCTIONS_SECOND_DEGRE_PARABOLES_FORMES_SIMPLES.pdf)
 - [Automatismes N06 — Fonctions du second degré : paraboles et formes simples](../automatismes/AUTOMATISMES_N06_FONCTIONS_SECOND_DEGRE_PARABOLES_FORMES_SIMPLES.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Une fonction polynôme du second degré s'écrit `f(x) = ax² + bx + c`, avec `a ≠ 0`. Sa courbe est une parabole : elle possède un axe de symétrie vertical et un sommet situé sur cet axe — un minimum si `a > 0`, un maximum si `a < 0`. Deux abscisses symétriques par rapport à l'axe ont la même image.
+
+Pour une forme `a(x-h)² + k`, l'axe est directement `x = h` et le sommet est `S(h ; k)` : cette lecture directe ne demande aucune formule générale du sommet. Pour une forme factorisée `a(x-x1)(x-x2)`, l'axe de symétrie est à mi-distance des racines, `x = (x1+x2)/2`, et le sommet s'obtient en calculant l'image de cette abscisse.
+
+## Exemple
+
+Le bénéfice mensuel d'une entreprise, en milliers d'euros, est modélisé par `B(x) = -2(x-5)² + 18`, où `x` est le prix de vente en dizaines d'euros.
+
+L'axe est `x = 5` et le sommet est `S(5 ; 18)`. Comme le coefficient est négatif, il s'agit d'un maximum : le bénéfice est maximal, égal à 18 milliers d'euros, pour un prix de 50 euros.

@@ -31,3 +31,15 @@ La forme factorisée rend visibles les racines d’une expression du second degr
 - [TD N07 — Second degré factorisé : racines, signe et problèmes](../td/TD_N07_SECOND_DEGRE_FACTORISE.pdf)
 - [Automatismes N07 — Second degré factorisé : racines, signe et problèmes](../automatismes/AUTOMATISMES_N07_SECOND_DEGRE_FACTORISE_RACINES_SIGNE_PROBLEMES.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Un nombre réel `α` est une racine d'un polynôme `P` lorsque `P(α) = 0` ; pour vérifier qu'un nombre conjecturé est une racine, on remplace `x` par ce nombre. Dans une forme factorisée `P(x) = a(x-x1)(x-x2)`, les racines sont directement `x1` et `x2`, car un produit est nul si et seulement si l'un de ses facteurs est nul. Lorsqu'une racine est déjà connue, on peut factoriser dans les cas simples en cherchant `P(x) = (x-α)(ax+d)`, puis en identifiant `d` par développement.
+
+Pour `x1 < x2`, la forme `a(x-x1)(x-x2)` est du signe de `a` à l'extérieur des racines, et du signe opposé entre elles ; les racines elles-mêmes annulent l'expression. Dans un problème, « équilibre » se traduit souvent par `P(x) = 0`, « gain » par `P(x) > 0`, « perte » par `P(x) < 0` — on résout puis on croise avec l'intervalle admissible du contexte avant de conclure. Lorsqu'aucune factorisation simple n'apparaît, un balayage numérique donne un encadrement approché, jamais une valeur exacte.
+
+## Exemple
+
+Le bénéfice d'une entreprise, en milliers d'euros, est modélisé sur `[0 ; 10]` par `B(x) = -0,5(x-2)(x-8)`, où `x` est le nombre de centaines d'articles vendus.
+
+Les racines sont 2 et 8 : ce sont les seuils d'équilibre. Comme le coefficient est négatif, `B(x) > 0` pour `x ∈ ]2 ; 8[` : l'entreprise réalise un bénéfice lorsqu'elle vend strictement entre 200 et 800 articles.
