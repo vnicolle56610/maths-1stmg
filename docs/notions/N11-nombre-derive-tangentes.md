@@ -32,3 +32,15 @@ Le nombre dérivé apparaît comme une pente limite : on part des sécantes pour
 - [TD N11 — Nombre dérivé : sécantes, tangentes, interprétation](../td/TD_N11_NOMBRE_DERIVE_SECANTES_TANGENTES.pdf)
 - [Automatismes N11 — Nombre dérivé : sécantes, tangentes, interprétation](../automatismes/AUTOMATISMES_N11_NOMBRE_DERIVE_SECANTES_TANGENTES_INTERPRETATION.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Le taux de variation de `f` entre `a` et `b`, `(f(b)-f(a))/(b-a)`, est le coefficient directeur de la sécante passant par les points d'abscisses `a` et `b`. Lorsqu'on rapproche progressivement le second point du premier, les sécantes se rapprochent d'une droite unique : la tangente à la courbe. Lorsque les coefficients directeurs des sécantes se rapprochent ainsi d'un nombre unique, ce nombre est le nombre dérivé de `f` en `a`, noté `f'(a)` — c'est le coefficient directeur de la tangente.
+
+Le signe de `f'(a)` se lit sur la tangente : montante (`f'(a) > 0`), horizontale (`f'(a) = 0`), descendante (`f'(a) < 0`). Le nombre dérivé s'interprète comme une variation instantanée (ou marginale) : pour une petite augmentation de `x` autour de `a`, la variation de `f(x)` est approximativement donnée par cette pente.
+
+## Exemple
+
+Le coût total de `x` articles est `C(x) = 0,05x² + 20x + 500`. Le taux `τ_h = (C(100+h)-C(100))/h` vaut successivement 31, puis 30,5, puis 30,25, puis 30,05 lorsque `h` vaut 20, 10, 5, 1.
+
+Ces valeurs se rapprochent de 30 : on obtient `C'(100) = 30`. Autour de 100 articles, produire un article de plus augmente le coût d'environ 30 euros.

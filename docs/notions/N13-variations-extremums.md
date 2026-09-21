@@ -31,3 +31,15 @@ Le signe de la dérivée permet d’organiser l’étude des variations d’une 
 - [TD N13 — Variations et extremums par dérivation](../td/TD_N13_VARIATIONS_EXTREMUMS_DERIVATION.pdf)
 - [Automatismes N13 — Variations et extremums par dérivation](../automatismes/AUTOMATISMES_N13_VARIATIONS_EXTREMUMS_DERIVATION.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+Sur un intervalle `I`, si `f'(x) ⩾ 0`, alors `f` est croissante sur `I` ; si `f'(x) ⩽ 0`, alors `f` est décroissante. Pour étudier les variations : calculer `f'(x)`, résoudre `f'(x) = 0`, étudier le signe de `f'`, puis en déduire les variations et les valeurs utiles de `f`. Si `f'` change de signe de négatif à positif en `a`, `f` admet un minimum local en `a` ; de positif à négatif, un maximum local.
+
+Sur un intervalle fermé, un extremum local n'est pas nécessairement l'extremum sur tout l'intervalle : il faut comparer les valeurs de `f` aux points critiques et aux deux bornes avant de conclure. Une optimisation en contexte se conclut toujours par une interprétation avec les unités.
+
+## Exemple
+
+Le bénéfice d'une entreprise, en milliers d'euros, est `P(x) = -x² + 48x - 320` pour `x ∈ [0 ; 40]`, où `x` est un nombre de centaines d'articles.
+
+`P'(x) = -2x + 48` est positif sur `[0 ; 24[`, nul en 24, négatif sur `]24 ; 40]` : `P` croît puis décroît, avec un maximum en `x = 24`. Comme `P(24) = 256`, le bénéfice maximal est de 256 000 euros pour une production de 2400 articles.

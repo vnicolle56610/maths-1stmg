@@ -32,3 +32,15 @@ La fonction dérivée donne une méthode de calcul pour étudier les variations.
 - [TD N12 — Fonction dérivée et polynômes de degré au plus 3](../td/TD_N12_FONCTION_DERIVEE_POLYNOMES_DEGRE_3.pdf)
 - [Automatismes N12 — Fonction dérivée et polynômes de degré au plus 3](../automatismes/AUTOMATISMES_N12_FONCTION_DERIVEE_POLYNOMES_DEGRE_3.pdf)
 <!-- AUTO-DOCS:END -->
+
+## Notions essentielles
+
+La fonction qui, à chaque réel `x` d'un intervalle, associe le nombre dérivé `f'(x)`, s'appelle la fonction dérivée de `f`. Sur `ℝ`, les dérivées de référence sont : `(c)' = 0` pour une constante, `(x)' = 1`, `(x²)' = 2x`, `(x³)' = 3x²`. La dérivée d'une somme est la somme des dérivées, et `(kf)' = k×f'` : pour dériver un polynôme de degré au plus 3, on dérive chaque terme puis on réduit — les règles du produit et du quotient ne sont pas nécessaires ici.
+
+La tangente à la courbe de `f` au point d'abscisse `a` a pour équation `y = f(a) + f'(a)(x-a)` : il faut calculer `f(a)`, déterminer `f'(x)`, calculer `f'(a)`, puis remplacer et développer.
+
+## Exemple
+
+Pour `P(x) = 4x³ - 3x² + 7x - 5`, on dérive terme à terme : `P'(x) = 4×3x² - 3×2x + 7 = 12x² - 6x + 7`.
+
+Pour la tangente, avec `f(x) = x³ - 2x + 1` en `a = 1` : `f(1) = 0` et `f'(x) = 3x² - 2` donne `f'(1) = 1`. L'équation réduite de la tangente est donc `y = x - 1`.
