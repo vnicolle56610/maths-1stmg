@@ -81,5 +81,5 @@ Exercices d'automatismes et mini-tests, classés par notion.
 
 ## N20 — Synthèse annuelle et préparation à l’épreuve anticipée
 
-- [Automatismes N20](AUTOMATISMES_N20_SYNTHESE_ANNUELLE_PREPARATION_EPREUVE_ANTICIPEE.pdf)
+
 <!-- AUTO-DOCS:END -->
