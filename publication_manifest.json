@@ -10,6 +10,9 @@
       ],
       "automatismes": [
         "AUTOMATISMES_N01_RENTREE_DONNEES_LOGIQUE.pdf"
+      ],
+      "corrige_td": [
+        "CORRIGE_TD_N01_RENTREE_DONNEES_LOGIQUE_AUTOMATISMES.pdf"
       ]
     },
     "N02": {
@@ -21,6 +24,9 @@
       ],
       "automatismes": [
         "AUTOMATISMES_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf"
+      ],
+      "corrige_td": [
+        "CORRIGE_TD_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf"
       ]
     },
     "N03": {
