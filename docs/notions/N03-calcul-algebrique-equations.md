@@ -32,6 +32,11 @@ Le calcul algébrique permet de transformer des expressions et de résoudre des 
 - [Automatismes N03 — Calcul algébrique, équations et signes](../automatismes/AUTOMATISMES_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTO-EVAL:START -->
+- 🎯 Évaluée au mini-test 2 du jeudi 12 novembre : [devoir blanc en ligne le jeudi 5 novembre](../preparer-evaluation/index.md#mt2-2026-2027)
+- 🎯 Évaluée au DS1 du mardi 24 novembre : [devoir blanc en ligne le mardi 17 novembre](../preparer-evaluation/index.md#ds1-2026-2027)
+<!-- AUTO-EVAL:END -->
+
 ## Notions essentielles
 
 Développer transforme un produit en somme (`a(b+c) = ab+ac`) ; factoriser transforme une somme en produit (`ab+ac = a(b+c)`). Un produit de réels est nul si et seulement si l'un au moins de ses facteurs est nul : `A × B = 0 ⟺ A = 0 ou B = 0` — cette propriété ne s'applique qu'à un second membre égal à 0.

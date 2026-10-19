@@ -34,6 +34,10 @@ Un pourcentage permet de comparer des parts, mesurer une évolution et interpré
 - [Corrigé TD N02](../corriges/CORRIGE_TD_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTO-EVAL:START -->
+- 🎯 Évaluée au DS1 du mardi 24 novembre : [devoir blanc en ligne le mardi 17 novembre](../preparer-evaluation/index.md#ds1-2026-2027)
+<!-- AUTO-EVAL:END -->
+
 ## Notions essentielles
 
 Dans une population de référence d'effectif `N`, une sous-population d'effectif `n` représente la proportion `p = n/N`. Passer de `40 %` à `42 %` correspond à une hausse de 2 points de pourcentage, ce qui n'est pas la même chose qu'une hausse relative de `(42-40)/40 = 5 %` : il faut distinguer les deux.
