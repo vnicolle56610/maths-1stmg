@@ -33,7 +33,7 @@ Le calcul algébrique permet de transformer des expressions et de résoudre des 
 <!-- AUTO-DOCS:END -->
 
 <!-- AUTO-EVAL:START -->
-- 🎯 Évaluée au mini-test 2 du jeudi 12 novembre : [devoir blanc en ligne le jeudi 5 novembre](../preparer-evaluation/index.md#mt2-2026-2027)
+- 🎯 Évaluée au mini-test 2 du jeudi 12 novembre : [voir le devoir blanc](../preparer-evaluation/index.md#mt2-2026-2027)
 - 🎯 Évaluée au DS1 du mardi 24 novembre : [devoir blanc en ligne le mardi 17 novembre](../preparer-evaluation/index.md#ds1-2026-2027)
 <!-- AUTO-EVAL:END -->
 
