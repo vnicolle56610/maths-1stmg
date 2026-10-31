@@ -48,3 +48,11 @@ L'expression `ax+b` (avec `a ≠ 0`) s'annule en `x0 = -b/a` ; elle a le signe d
 Le bénéfice d'une opération commerciale est modélisé par `B(x) = (x-20)(60-x)`, où `x` est le nombre de lots vendus, avec `0 ⩽ x ⩽ 80`.
 
 Les zéros 20 et 60 sont les seuils d'équilibre. Le tableau de signes donne `B(x) > 0` pour `20 < x < 60` : l'entreprise réalise un bénéfice sur cet intervalle, et subit une perte en dehors.
+
+## Repère historique — Harriot, des facteurs aux solutions
+
+Au début du XVIIe siècle, Thomas Harriot étudie les équations et développe une écriture algébrique plus concise. Il relie les solutions d’une équation à son écriture comme produit de facteurs. Ses travaux d’algèbre paraissent en partie après sa mort dans l’Artis analyticae praxis, en 1631 ; cette édition ne restitue pas toute la richesse de ses manuscrits, notamment sur les solutions négatives. Il faut donc distinguer son travail personnel de sa diffusion imprimée.
+
+Avec nos notations actuelles, l’équation `(x-20)(60-x) = 0` donne immédiatement `x = 20` ou `x = 60` grâce à la propriété du produit nul. Ce calcul reprend le modèle commercial fictif de l’exemple : les deux valeurs sont des seuils d’équilibre. L’écriture factorisée rend ces seuils visibles, alors qu’une expression développée les masque davantage. Mais trouver les zéros ne suffit pas à connaître le signe entre eux : il reste à étudier les signes des facteurs. Le tableau de signes enseigné ici est notre outil actuel ; il n’est pas présenté comme une méthode de Harriot.
+
+Source : [MacTutor, université de St Andrews, Thomas Harriot et la théorie des équations](https://mathshistory.st-andrews.ac.uk/Biographies/Harriot/).

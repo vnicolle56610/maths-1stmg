@@ -51,3 +51,11 @@ Un indice base 100 attribue la valeur 100 à une période de référence `V0` ; 
 Deux remises successives de 15 % puis 10 % ont pour coefficients `0,85` et `0,90`. Le coefficient global est `0,85 × 0,90 = 0,765`.
 
 Le taux global vaut `0,765 - 1 = -0,235`, soit une remise totale de 23,5 % — et non 25 %, car les taux ne s'additionnent pas.
+
+## Repère historique — Stevin et le calcul des intérêts successifs
+
+En 1582, Simon Stevin publie des tables d’intérêts, précédées de règles et d’exemples sur les intérêts simples et composés. Ces calculs répondent à un besoin financier : déterminer comment une somme évolue avec le temps. La distinction essentielle porte sur la base du calcul. Avec des intérêts simples, l’intérêt est calculé sur le capital initial ; avec des intérêts composés, les intérêts conservés s’ajoutent au capital et produisent à leur tour des intérêts.
+
+Voici une illustration moderne fictive, avec nos notations actuelles : un capital de 100 € augmente de 10 % par an pendant deux ans, les intérêts étant capitalisés, sans frais ni versement supplémentaire. Il devient `100 × 1,10 = 110` €, puis `110 × 1,10 = 121` €. La hausse totale est donc de 21 %, et non de 20 %. Comme pour les remises successives du chapitre, les coefficients se multiplient parce que la valeur de référence change. Le même outil permet de traiter une hausse ou une baisse ; le contexte précise le coefficient à employer.
+
+Source : [MacTutor, université de St Andrews, Simon Stevin, tables d’intérêts de 1582](https://mathshistory.st-andrews.ac.uk/Biographies/Stevin/).

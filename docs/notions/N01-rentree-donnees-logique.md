@@ -41,3 +41,11 @@ Une identité est une égalité vraie pour toutes les valeurs autorisées des le
 Dans une entreprise de 10 personnes réparties en trois services, un tableau croisé service/formation donne, pour le service Gestion, 2 personnes formées et 1 non formée, soit un total de 3.
 
 La case « 2 » à la ligne Gestion et à la colonne Formés signifie que deux personnes du service Gestion ont suivi la formation — ce n'est plus une information sur une personne précise, mais un effectif.
+
+## Repère historique — Des cartes de Hollerith aux effectifs croisés
+
+Comment compter une population nombreuse selon plusieurs critères sans recompter toutes les fiches à la main ? Pour le recensement américain de 1890, le système de Herman Hollerith utilise des cartes perforées : les renseignements recueillis sur les personnes sont codés par des trous. Une machine électrique permet ensuite de compter et de croiser des caractéristiques. Ce dispositif distingue deux niveaux que l’on retrouve dans le chapitre : les informations individuelles et les effectifs obtenus en regroupant les individus.
+
+Dans un exemple actuel fictif, une entreprise classe ses salariés par service et selon qu’ils ont suivi ou non une formation. La case « Gestion et formés » compte les personnes qui satisfont simultanément les deux critères : c’est le sens du « et » et de l’intersection. Elle ne représente pas une fiche individuelle. Vérifier les totaux de lignes et de colonnes permet de contrôler que la répartition couvre bien l’ensemble du personnel sans double comptage. L’automatisation du calcul ne dispense donc pas de comprendre ce que chaque case compte.
+
+Source : [U.S. Census Bureau, le recensement de 1890 et son système de dépouillement](https://www.census.gov/programs-surveys/decennial-census/decade/1890/about-1890.html).

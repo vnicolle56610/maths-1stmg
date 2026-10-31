@@ -41,3 +41,11 @@ Résoudre `f(x) = k` graphiquement revient à chercher les abscisses des points 
 ## Exemple
 
 Sur une courbe donnée, résoudre `f(x) = 3` donne les solutions 2 et 4 ; résoudre `f(x) ⩾ 3` donne l'intervalle `[2 ; 4]`, en incluant les points d'intersection.
+
+## Repère historique — Playfair rend les échanges commerciaux visibles
+
+En 1786, William Playfair publie son Commercial and Political Atlas. Des tableaux et des graphiques y présentent notamment les échanges commerciaux de l’Angleterre avec d’autres pays. Le graphique donne une autre lecture de données économiques : la position et la forme des tracés aident à comparer des niveaux et à repérer des évolutions. Cette démarche éclaire l’intérêt des différents registres du chapitre, sans confondre une série de données observées avec une loi mathématique exacte.
+
+Dans une illustration actuelle fictive, deux courbes représentent les exportations et les importations d’un pays au fil des années, dans la même unité monétaire. Lire la hauteur d’un point donne une valeur pour une année ; repérer une intersection indique que les deux montants sont égaux à cette date. Le tableau permet de retrouver les valeurs chiffrées, tandis que les courbes facilitent la comparaison. Relier les observations par des segments aide la lecture, mais ne prouve pas que l’évolution entre deux dates a été régulière. Choisir l’échelle et préciser les unités restent indispensables pour interpréter le dessin.
+
+Source : [Cambridge University Press, introduction à l’édition du Commercial and Political Atlas and Statistical Breviary](https://assets.cambridge.org/97805218/55549/excerpt/9780521855549_excerpt.pdf).
