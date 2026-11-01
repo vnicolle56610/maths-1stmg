@@ -16,9 +16,11 @@ Le taux de variation mesure une évolution moyenne entre deux valeurs. Les docum
 
 ## Objectifs
 
-- Définir et interpréter un taux de variation.
-- Relier taux de variation et pente d’une sécante.
-- Caractériser une fonction monotone sur un intervalle.
+!!! objectifs ""
+
+    - Définir et interpréter un taux de variation.
+    - Relier taux de variation et pente d’une sécante.
+    - Caractériser une fonction monotone sur un intervalle.
 
 ## Voir aussi
 
@@ -35,22 +37,31 @@ Le taux de variation mesure une évolution moyenne entre deux valeurs. Les docum
 
 ## Notions essentielles
 
-Pour une fonction `f` et deux nombres distincts `a` et `b`, le taux de variation entre `a` et `b` est `τ(a;b) = (f(b)-f(a))/(b-a)` : il mesure la variation moyenne de `f(x)` par unité de variation de `x`, avec son unité propre (ce n'est pas un pourcentage). Graphiquement, ce taux est la pente de la sécante passant par `A(a ; f(a))` et `B(b ; f(b))`.
+!!! essentiel ""
 
-Le signe du taux indique le sens : `τ(a;b) > 0` si la sécante monte, `< 0` si elle descend, `= 0` si elle est horizontale. Une fonction est croissante sur un intervalle `I` lorsque, pour tous `a < b` dans `I`, `f(a) ⩽ f(b)` ; elle est décroissante lorsque `f(a) ⩾ f(b)`. Une fonction est croissante sur `I` si et seulement si tous ses taux de variation sur `I` sont positifs ou nuls (décroissante : négatifs ou nuls) — un seul taux calculé sur un intervalle ne renseigne que sur cet intervalle.
+    Pour une fonction `f` et deux nombres distincts `a` et `b`, le taux de variation entre `a` et `b` est `τ(a;b) = (f(b)-f(a))/(b-a)` : il mesure la variation moyenne de `f(x)` par unité de variation de `x`, avec son unité propre (ce n'est pas un pourcentage). Graphiquement, ce taux est la pente de la sécante passant par `A(a ; f(a))` et `B(b ; f(b))`.
 
-Pour une fonction affine `f(x) = mx+p`, le taux de variation entre deux nombres distincts vaut toujours `m` : le rythme de variation est constant, contrairement à une fonction non affine.
+    Le signe du taux indique le sens : `τ(a;b) > 0` si la sécante monte, `< 0` si elle descend, `= 0` si elle est horizontale. Une fonction est croissante sur un intervalle `I` lorsque, pour tous `a < b` dans `I`, `f(a) ⩽ f(b)` ; elle est décroissante lorsque `f(a) ⩾ f(b)`. Une fonction est croissante sur `I` si et seulement si tous ses taux de variation sur `I` sont positifs ou nuls (décroissante : négatifs ou nuls) — un seul taux calculé sur un intervalle ne renseigne que sur cet intervalle.
+
+    Pour une fonction affine `f(x) = mx+p`, le taux de variation entre deux nombres distincts vaut toujours `m` : le rythme de variation est constant, contrairement à une fonction non affine.
 
 ## Exemple
 
-Le coût logistique `C(x)` d'une entreprise passe de 700 € à 1000 € entre 100 et 200 commandes, puis à 1600 € pour 350 commandes, puis à 2350 € pour 500 commandes.
+!!! exemple ""
 
-Les taux de variation successifs sont `(1000-700)/(200-100) = 3`, `(1600-1000)/(350-200) = 4`, puis `(2350-1600)/(500-350) = 5` euros par commande. Tous positifs : le coût est croissant, mais pas à rythme constant.
+    Le coût logistique `C(x)` d'une entreprise passe de 700 € à 1000 € entre 100 et 200 commandes, puis à 1600 € pour 350 commandes, puis à 2350 € pour 500 commandes.
+
+    Les taux de variation successifs sont `(1000-700)/(200-100) = 3`, `(1600-1000)/(350-200) = 4`, puis `(2350-1600)/(500-350) = 5` euros par commande. Tous positifs : le coût est croissant, mais pas à rythme constant.
 
 ## Repère historique — Oresme donne une forme aux grandeurs qui varient
 
-Au XIVe siècle, Nicole Oresme propose de représenter géométriquement une grandeur dont l’intensité varie, notamment dans l’étude du mouvement. Une longueur portée sur une ligne sert de référence ; des hauteurs représentent les intensités correspondantes. Ce travail montre l’intérêt d’un dessin pour comparer des variations. Il précède les conventions actuelles des graphiques et ne doit pas être confondu avec la définition moderne d’une fonction ou du taux de variation.
+!!! historique ""
 
-Dans un exemple moderne fictif, un coût passe de 700 € pour 100 commandes à 1 000 € pour 200 commandes. Avec les outils du chapitre, la pente de la sécante vaut `(1000-700)/(200-100) = 3` euros par commande : le coût augmente en moyenne de 3 € par commande supplémentaire entre ces deux niveaux d’activité. Cela ne signifie ni une hausse de 3 %, ni un supplément constant de 3 € à chaque commande. Deux points donnent une variation moyenne ; pour affirmer que le coût est croissant sur tout l’intervalle, il faut connaître son comportement pour toutes les valeurs intermédiaires. Le dessin aide à poser cette question, sans remplacer sa vérification.
+    Nicole Oresme, XIVe siècle
+    {: .frise data-annee="1350" data-etiquette="XIVe s." }
 
-Source : [MacTutor, université de St Andrews, Nicole Oresme et la représentation des grandeurs variables](https://mathshistory.st-andrews.ac.uk/Biographies/Oresme/).
+    Au XIVe siècle, Nicole Oresme propose de représenter géométriquement une grandeur dont l’intensité varie, notamment dans l’étude du mouvement. Une longueur portée sur une ligne sert de référence ; des hauteurs représentent les intensités correspondantes. Ce travail montre l’intérêt d’un dessin pour comparer des variations. Il précède les conventions actuelles des graphiques et ne doit pas être confondu avec la définition moderne d’une fonction ou du taux de variation.
+
+    Dans un exemple moderne fictif, un coût passe de 700 € pour 100 commandes à 1 000 € pour 200 commandes. Avec les outils du chapitre, la pente de la sécante vaut `(1000-700)/(200-100) = 3` euros par commande : le coût augmente en moyenne de 3 € par commande supplémentaire entre ces deux niveaux d’activité. Cela ne signifie ni une hausse de 3 %, ni un supplément constant de 3 € à chaque commande. Deux points donnent une variation moyenne ; pour affirmer que le coût est croissant sur tout l’intervalle, il faut connaître son comportement pour toutes les valeurs intermédiaires. Le dessin aide à poser cette question, sans remplacer sa vérification.
+
+    Source : [MacTutor, université de St Andrews, Nicole Oresme et la représentation des grandeurs variables](https://mathshistory.st-andrews.ac.uk/Biographies/Oresme/).

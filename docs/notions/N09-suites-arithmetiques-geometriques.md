@@ -16,9 +16,11 @@ Les suites arithmétiques et géométriques modélisent deux types d’évolutio
 
 ## Objectifs
 
-- Reconnaître un modèle discret linéaire ou exponentiel.
-- Travailler récurrence et formule explicite.
-- Comparer croissances arithmétique et géométrique.
+!!! objectifs ""
+
+    - Reconnaître un modèle discret linéaire ou exponentiel.
+    - Travailler récurrence et formule explicite.
+    - Comparer croissances arithmétique et géométrique.
 
 ## Voir aussi
 
@@ -35,22 +37,31 @@ Les suites arithmétiques et géométriques modélisent deux types d’évolutio
 
 ## Notions essentielles
 
-Une suite `u` est arithmétique lorsqu'on passe d'un terme au suivant en ajoutant toujours le même nombre `r`, la raison : `u(n+1) = u(n) + r` ; elle modélise une évolution absolue constante, et son terme général est `u(n) = u(0) + nr`. On la reconnaît en vérifiant que les différences `u(n+1)-u(n)` sont toutes égales.
+!!! essentiel ""
 
-Une suite `v` à termes strictement positifs est géométrique lorsqu'on passe d'un terme au suivant en multipliant toujours par le même nombre `q > 0`, la raison : `v(n+1) = q × v(n)` ; elle modélise une évolution relative constante, et son terme général est `v(n) = v(0) × qⁿ`. On la reconnaît en vérifiant que les quotients `v(n+1)/v(n)` sont tous égaux. Un taux d'évolution `t` se traduit en raison géométrique par `q = 1+t`.
+    Une suite `u` est arithmétique lorsqu'on passe d'un terme au suivant en ajoutant toujours le même nombre `r`, la raison : `u(n+1) = u(n) + r` ; elle modélise une évolution absolue constante, et son terme général est `u(n) = u(0) + nr`. On la reconnaît en vérifiant que les différences `u(n+1)-u(n)` sont toutes égales.
 
-Une suite arithmétique de raison `r` est strictement croissante si `r > 0`, décroissante si `r < 0`. Une suite géométrique positive de raison `q` est strictement croissante si `q > 1`, décroissante si `0 < q < 1`. Une suite n'est pas nécessairement de l'un de ces deux types : il faut vérifier que la règle est valable pour tous les rangs étudiés.
+    Une suite `v` à termes strictement positifs est géométrique lorsqu'on passe d'un terme au suivant en multipliant toujours par le même nombre `q > 0`, la raison : `v(n+1) = q × v(n)` ; elle modélise une évolution relative constante, et son terme général est `v(n) = v(0) × qⁿ`. On la reconnaît en vérifiant que les quotients `v(n+1)/v(n)` sont tous égaux. Un taux d'évolution `t` se traduit en raison géométrique par `q = 1+t`.
+
+    Une suite arithmétique de raison `r` est strictement croissante si `r > 0`, décroissante si `r < 0`. Une suite géométrique positive de raison `q` est strictement croissante si `q > 1`, décroissante si `0 < q < 1`. Une suite n'est pas nécessairement de l'un de ces deux types : il faut vérifier que la règle est valable pour tous les rangs étudiés.
 
 ## Exemple
 
-Deux magasins partent de 500 clients. Le magasin A gagne 40 clients par mois : `u(n) = 500 + 40n`, arithmétique de raison 40. Le magasin B gagne 8 % de clients par mois : `v(n) = 500 × 1,08ⁿ`, géométrique de raison 1,08.
+!!! exemple ""
 
-Au rang 12 : `u(12) = 980`, tandis que `v(12) ≈ 1259`. Le modèle géométrique donne ici l'effectif le plus élevé, mais cette comparaison ne vaut que pour les rangs étudiés.
+    Deux magasins partent de 500 clients. Le magasin A gagne 40 clients par mois : `u(n) = 500 + 40n`, arithmétique de raison 40. Le magasin B gagne 8 % de clients par mois : `v(n) = 500 × 1,08ⁿ`, géométrique de raison 1,08.
+
+    Au rang 12 : `u(12) = 980`, tandis que `v(12) ≈ 1259`. Le modèle géométrique donne ici l'effectif le plus élevé, mais cette comparaison ne vaut que pour les rangs étudiés.
 
 ## Repère historique — Malthus compare deux rythmes de croissance
 
-Dans son Essai sur le principe de population, publié en 1798, Thomas Robert Malthus oppose une population qui, sans frein, pourrait croître selon une progression géométrique à des ressources alimentaires qu’il envisage selon une progression arithmétique. Ce raisonnement met en débat des hypothèses économiques et démographiques ; il ne constitue pas une loi universelle décrivant toutes les sociétés. Son intérêt mathématique est de distinguer une multiplication répétée d’un ajout répété.
+!!! historique ""
 
-Voici une illustration moderne fictive, distincte des données et des exemples de Malthus : deux indices valent initialement 100. Le premier gagne 20 points par période, le second est multiplié par 1,20. Après une période, ils valent tous deux 120 ; après deux périodes, ils valent respectivement 140 et 144. Une même première hausse peut donc cacher deux règles différentes. Avec les notations du chapitre, les modèles sont `u(n) = 100+20n` et `v(n) = 100 × 1,20ⁿ`. Pour appliquer l’un d’eux à une situation réelle, il faut justifier la règle et la durée pendant laquelle on la suppose valable : quelques valeurs ne garantissent pas une prévision indéfinie.
+    Thomas Robert Malthus, *Essai sur le principe de population*, 1798
+    {: .frise data-annee="1798" }
 
-Source : [Université Fordham, texte du premier Essai de Malthus sur la population (1798)](https://sourcebooks.web.fordham.edu/mod/1798malthus.asp).
+    Dans son Essai sur le principe de population, publié en 1798, Thomas Robert Malthus oppose une population qui, sans frein, pourrait croître selon une progression géométrique à des ressources alimentaires qu’il envisage selon une progression arithmétique. Ce raisonnement met en débat des hypothèses économiques et démographiques ; il ne constitue pas une loi universelle décrivant toutes les sociétés. Son intérêt mathématique est de distinguer une multiplication répétée d’un ajout répété.
+
+    Voici une illustration moderne fictive, distincte des données et des exemples de Malthus : deux indices valent initialement 100. Le premier gagne 20 points par période, le second est multiplié par 1,20. Après une période, ils valent tous deux 120 ; après deux périodes, ils valent respectivement 140 et 144. Une même première hausse peut donc cacher deux règles différentes. Avec les notations du chapitre, les modèles sont `u(n) = 100+20n` et `v(n) = 100 × 1,20ⁿ`. Pour appliquer l’un d’eux à une situation réelle, il faut justifier la règle et la durée pendant laquelle on la suppose valable : quelques valeurs ne garantissent pas une prévision indéfinie.
+
+    Source : [Université Fordham, texte du premier Essai de Malthus sur la population (1798)](https://sourcebooks.web.fordham.edu/mod/1798malthus.asp).

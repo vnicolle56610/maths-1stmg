@@ -15,9 +15,11 @@ La synthèse annuelle organise les révisions autour des automatismes et du form
 
 ## Objectifs
 
-- Consolider l’ensemble des automatismes.
-- S’entraîner au QCM sans calculatrice.
-- Travailler des exercices indépendants au format de l’épreuve.
+!!! objectifs ""
+
+    - Consolider l’ensemble des automatismes.
+    - S’entraîner au QCM sans calculatrice.
+    - Travailler des exercices indépendants au format de l’épreuve.
 
 ## Documents
 
@@ -29,20 +31,29 @@ La synthèse annuelle organise les révisions autour des automatismes et du form
 
 ## Points essentiels à maîtriser
 
-Pour un automatisme sans calculatrice : lire précisément la question et les unités, identifier la notion avant de calculer, effectuer un calcul court et contrôlable, puis comparer avec les réponses proposées — en éliminant d'abord celles incompatibles avec le signe ou l'ordre de grandeur. Selon le type de question, l'outil principal change : évolution réciproque pour retrouver une valeur initiale, dérivée et signe pour un extremum, tableau ou boucle pour un premier seuil, ajustement affine pour un nuage presque rectiligne, probabilité conditionnelle pour une question « parmi », espérance pour un gain moyen à long terme.
+!!! essentiel ""
 
-Pour un exercice long, la démarche reste la même toute l'année : comprendre (données, variable, unités, question), modéliser (fonction, suite, tableau, arbre ou loi), calculer (étapes utiles), contrôler (domaine, signe, ordre de grandeur, terme précédent), interpréter (réponse dans le contexte), critiquer (signaler une approximation, une simulation ou une extrapolation). Les erreurs les plus fréquentes de l'année restent : confondre taux et coefficient, oublier le rang initial d'une suite, confondre `f` et `f'`, donner un extremum sans l'avoir comparé aux bornes, inverser un conditionnement, extrapoler sans réserve, et interpréter une espérance comme une certitude plutôt qu'une moyenne à long terme.
+    Pour un automatisme sans calculatrice : lire précisément la question et les unités, identifier la notion avant de calculer, effectuer un calcul court et contrôlable, puis comparer avec les réponses proposées — en éliminant d'abord celles incompatibles avec le signe ou l'ordre de grandeur. Selon le type de question, l'outil principal change : évolution réciproque pour retrouver une valeur initiale, dérivée et signe pour un extremum, tableau ou boucle pour un premier seuil, ajustement affine pour un nuage presque rectiligne, probabilité conditionnelle pour une question « parmi », espérance pour un gain moyen à long terme.
+
+    Pour un exercice long, la démarche reste la même toute l'année : comprendre (données, variable, unités, question), modéliser (fonction, suite, tableau, arbre ou loi), calculer (étapes utiles), contrôler (domaine, signe, ordre de grandeur, terme précédent), interpréter (réponse dans le contexte), critiquer (signaler une approximation, une simulation ou une extrapolation). Les erreurs les plus fréquentes de l'année restent : confondre taux et coefficient, oublier le rang initial d'une suite, confondre `f` et `f'`, donner un extremum sans l'avoir comparé aux bornes, inverser un conditionnement, extrapoler sans réserve, et interpréter une espérance comme une certitude plutôt qu'une moyenne à long terme.
 
 ## Exemple de synthèse
 
-Un bénéfice est modélisé par `B(x) = -0,2x² + 8x - 30` sur `[0 ; 35]`. On calcule `B'(x) = -0,4x + 8`, qui s'annule en `x = 20`, est positive avant et négative après.
+!!! exemple ""
 
-`B` croît puis décroît : le bénéfice est maximal pour `x = 20`, après vérification que ce point critique appartient bien à l'intervalle `[0 ; 35]` et comparaison avec les valeurs aux bornes.
+    Un bénéfice est modélisé par `B(x) = -0,2x² + 8x - 30` sur `[0 ; 35]`. On calcule `B'(x) = -0,4x + 8`, qui s'annule en `x = 20`, est positive avant et négative après.
+
+    `B` croît puis décroît : le bénéfice est maximal pour `x = 20`, après vérification que ce point critique appartient bien à l'intervalle `[0 ; 35]` et comparaison avec les valeurs aux bornes.
 
 ## Repère historique — Pólya fait de la vérification une étape du problème
 
-En 1945, George Pólya publie How to Solve It, consacré à la recherche de solutions mathématiques. Il organise la démarche autour de quatre phases : comprendre le problème, préparer un plan, l’exécuter, puis examiner la solution obtenue. Ces conseils ne forment pas une recette garantissant la réussite ; ils invitent à poser des questions sur les données, les contraintes et la cohérence du résultat. Cette dernière relecture relie les différents outils de l’année.
+!!! historique ""
 
-Dans une illustration moderne fictive, retrouver un prix avant une hausse de 20 % exige de diviser le prix final par `1,20`. Si le prix final est 120 €, on obtient 100 € ; refaire la hausse contrôle la réponse. Retirer simplement 20 % donnerait 96 €, puis `96 × 1,20 = 115,20` €, ce qui révèle l’erreur. Dans une optimisation, le même réflexe conduit à vérifier le domaine et les valeurs aux bornes ; en probabilités, à vérifier le groupe de référence et que le résultat appartient à `[0 ; 1]`. Il ne s’agit pas d’ajouter une méthode de calcul, mais de rendre les outils déjà appris plus fiables.
+    George Pólya, *How to Solve It*, 1945
+    {: .frise data-annee="1945" }
 
-Source : [Harvey Mudd College, présentation des étapes de How to Solve It de Pólya](https://www.cs.hmc.edu/~keller/how_to_solve_it.html).
+    En 1945, George Pólya publie How to Solve It, consacré à la recherche de solutions mathématiques. Il organise la démarche autour de quatre phases : comprendre le problème, préparer un plan, l’exécuter, puis examiner la solution obtenue. Ces conseils ne forment pas une recette garantissant la réussite ; ils invitent à poser des questions sur les données, les contraintes et la cohérence du résultat. Cette dernière relecture relie les différents outils de l’année.
+
+    Dans une illustration moderne fictive, retrouver un prix avant une hausse de 20 % exige de diviser le prix final par `1,20`. Si le prix final est 120 €, on obtient 100 € ; refaire la hausse contrôle la réponse. Retirer simplement 20 % donnerait 96 €, puis `96 × 1,20 = 115,20` €, ce qui révèle l’erreur. Dans une optimisation, le même réflexe conduit à vérifier le domaine et les valeurs aux bornes ; en probabilités, à vérifier le groupe de référence et que le résultat appartient à `[0 ; 1]`. Il ne s’agit pas d’ajouter une méthode de calcul, mais de rendre les outils déjà appris plus fiables.
+
+    Source : [Harvey Mudd College, présentation des étapes de How to Solve It de Pólya](https://www.cs.hmc.edu/~keller/how_to_solve_it.html).

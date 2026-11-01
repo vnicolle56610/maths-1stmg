@@ -16,9 +16,11 @@ Le calcul algébrique permet de transformer des expressions et de résoudre des 
 
 ## Objectifs
 
-- Consolider le calcul littéral simple.
-- Résoudre des équations produit nul.
-- Déterminer le signe d’une expression du premier degré.
+!!! objectifs ""
+
+    - Consolider le calcul littéral simple.
+    - Résoudre des équations produit nul.
+    - Déterminer le signe d’une expression du premier degré.
 
 ## Voir aussi
 
@@ -39,20 +41,29 @@ Le calcul algébrique permet de transformer des expressions et de résoudre des 
 
 ## Notions essentielles
 
-Développer transforme un produit en somme (`a(b+c) = ab+ac`) ; factoriser transforme une somme en produit (`ab+ac = a(b+c)`). Un produit de réels est nul si et seulement si l'un au moins de ses facteurs est nul : `A × B = 0 ⟺ A = 0 ou B = 0` — cette propriété ne s'applique qu'à un second membre égal à 0.
+!!! essentiel ""
 
-L'expression `ax+b` (avec `a ≠ 0`) s'annule en `x0 = -b/a` ; elle a le signe de `a` à droite de `x0`, et le signe opposé à gauche. Pour étudier le signe d'un produit `(ax+b)(cx+d)`, on calcule les zéros de chaque facteur, on les range dans l'ordre croissant, puis on multiplie les signes colonne par colonne dans un tableau de signes. Un zéro appartient à l'ensemble des solutions pour `⩾` ou `⩽`, mais pas pour `>` ou `<`.
+    Développer transforme un produit en somme (`a(b+c) = ab+ac`) ; factoriser transforme une somme en produit (`ab+ac = a(b+c)`). Un produit de réels est nul si et seulement si l'un au moins de ses facteurs est nul : `A × B = 0 ⟺ A = 0 ou B = 0` — cette propriété ne s'applique qu'à un second membre égal à 0.
+
+    L'expression `ax+b` (avec `a ≠ 0`) s'annule en `x0 = -b/a` ; elle a le signe de `a` à droite de `x0`, et le signe opposé à gauche. Pour étudier le signe d'un produit `(ax+b)(cx+d)`, on calcule les zéros de chaque facteur, on les range dans l'ordre croissant, puis on multiplie les signes colonne par colonne dans un tableau de signes. Un zéro appartient à l'ensemble des solutions pour `⩾` ou `⩽`, mais pas pour `>` ou `<`.
 
 ## Exemple
 
-Le bénéfice d'une opération commerciale est modélisé par `B(x) = (x-20)(60-x)`, où `x` est le nombre de lots vendus, avec `0 ⩽ x ⩽ 80`.
+!!! exemple ""
 
-Les zéros 20 et 60 sont les seuils d'équilibre. Le tableau de signes donne `B(x) > 0` pour `20 < x < 60` : l'entreprise réalise un bénéfice sur cet intervalle, et subit une perte en dehors.
+    Le bénéfice d'une opération commerciale est modélisé par `B(x) = (x-20)(60-x)`, où `x` est le nombre de lots vendus, avec `0 ⩽ x ⩽ 80`.
+
+    Les zéros 20 et 60 sont les seuils d'équilibre. Le tableau de signes donne `B(x) > 0` pour `20 < x < 60` : l'entreprise réalise un bénéfice sur cet intervalle, et subit une perte en dehors.
 
 ## Repère historique — Harriot, des facteurs aux solutions
 
-Au début du XVIIe siècle, Thomas Harriot étudie les équations et développe une écriture algébrique plus concise. Il relie les solutions d’une équation à son écriture comme produit de facteurs. Ses travaux d’algèbre paraissent en partie après sa mort dans l’Artis analyticae praxis, en 1631 ; cette édition ne restitue pas toute la richesse de ses manuscrits, notamment sur les solutions négatives. Il faut donc distinguer son travail personnel de sa diffusion imprimée.
+!!! historique ""
 
-Avec nos notations actuelles, l’équation `(x-20)(60-x) = 0` donne immédiatement `x = 20` ou `x = 60` grâce à la propriété du produit nul. Ce calcul reprend le modèle commercial fictif de l’exemple : les deux valeurs sont des seuils d’équilibre. L’écriture factorisée rend ces seuils visibles, alors qu’une expression développée les masque davantage. Mais trouver les zéros ne suffit pas à connaître le signe entre eux : il reste à étudier les signes des facteurs. Le tableau de signes enseigné ici est notre outil actuel ; il n’est pas présenté comme une méthode de Harriot.
+    Thomas Harriot, *Artis analyticae praxis* (publication posthume), 1631
+    {: .frise data-annee="1631" }
 
-Source : [MacTutor, université de St Andrews, Thomas Harriot et la théorie des équations](https://mathshistory.st-andrews.ac.uk/Biographies/Harriot/).
+    Au début du XVIIe siècle, Thomas Harriot étudie les équations et développe une écriture algébrique plus concise. Il relie les solutions d’une équation à son écriture comme produit de facteurs. Ses travaux d’algèbre paraissent en partie après sa mort dans l’Artis analyticae praxis, en 1631 ; cette édition ne restitue pas toute la richesse de ses manuscrits, notamment sur les solutions négatives. Il faut donc distinguer son travail personnel de sa diffusion imprimée.
+
+    Avec nos notations actuelles, l’équation `(x-20)(60-x) = 0` donne immédiatement `x = 20` ou `x = 60` grâce à la propriété du produit nul. Ce calcul reprend le modèle commercial fictif de l’exemple : les deux valeurs sont des seuils d’équilibre. L’écriture factorisée rend ces seuils visibles, alors qu’une expression développée les masque davantage. Mais trouver les zéros ne suffit pas à connaître le signe entre eux : il reste à étudier les signes des facteurs. Le tableau de signes enseigné ici est notre outil actuel ; il n’est pas présenté comme une méthode de Harriot.
+
+    Source : [MacTutor, université de St Andrews, Thomas Harriot et la théorie des équations](https://mathshistory.st-andrews.ac.uk/Biographies/Harriot/).

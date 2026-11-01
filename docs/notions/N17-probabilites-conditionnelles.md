@@ -16,9 +16,11 @@ Les probabilités conditionnelles servent à tenir compte d’une information d�
 
 ## Objectifs
 
-- Consolider les arbres et tableaux croisés.
-- Calculer une probabilité conditionnelle.
-- Introduire indépendance et probabilités totales.
+!!! objectifs ""
+
+    - Consolider les arbres et tableaux croisés.
+    - Calculer une probabilité conditionnelle.
+    - Introduire indépendance et probabilités totales.
 
 ## Voir aussi
 
@@ -34,22 +36,31 @@ Les probabilités conditionnelles servent à tenir compte d’une information d�
 
 ## Notions essentielles
 
-Si `P(A) > 0`, la probabilité de `B` sachant `A` est `P_A(B) = P(A∩B)/P(A)`, d'où la formule du produit `P(A∩B) = P(A) × P_A(B)`. Il faut bien distinguer `P(A∩B)`, `P_A(B)` et `P_B(A)` : ces trois nombres portent sur des dénominateurs différents et répondent à des questions différentes.
+!!! essentiel ""
 
-Dans un arbre pondéré, la somme des probabilités des branches issues d'un même nœud vaut 1, et la probabilité d'un chemin est le produit des probabilités rencontrées ; on additionne les probabilités des chemins incompatibles qui réalisent le même événement final. Comme `A` et `Ā` forment une partition de l'univers, la formule des probabilités totales donne, pour tout événement `B` : `P(B) = P(A)×P_A(B) + P(Ā)×P_Ā(B)`.
+    Si `P(A) > 0`, la probabilité de `B` sachant `A` est `P_A(B) = P(A∩B)/P(A)`, d'où la formule du produit `P(A∩B) = P(A) × P_A(B)`. Il faut bien distinguer `P(A∩B)`, `P_A(B)` et `P_B(A)` : ces trois nombres portent sur des dénominateurs différents et répondent à des questions différentes.
 
-Deux événements `A` et `B` sont indépendants lorsque `P_A(B) = P(B)`, ce qui équivaut à `P(A∩B) = P(A)×P(B)`. Indépendance et incompatibilité sont deux notions différentes : deux événements incompatibles de probabilités non nulles ne sont jamais indépendants.
+    Dans un arbre pondéré, la somme des probabilités des branches issues d'un même nœud vaut 1, et la probabilité d'un chemin est le produit des probabilités rencontrées ; on additionne les probabilités des chemins incompatibles qui réalisent le même événement final. Comme `A` et `Ā` forment une partition de l'univers, la formule des probabilités totales donne, pour tout événement `B` : `P(B) = P(A)×P_A(B) + P(Ā)×P_Ā(B)`.
+
+    Deux événements `A` et `B` sont indépendants lorsque `P_A(B) = P(B)`, ce qui équivaut à `P(A∩B) = P(A)×P(B)`. Indépendance et incompatibilité sont deux notions différentes : deux événements incompatibles de probabilités non nulles ne sont jamais indépendants.
 
 ## Exemple
 
-Un site étudie 1000 commandes : 300 sont express, 80 sont en retard, et 45 sont à la fois express et en retard.
+!!! exemple ""
 
-`P(E∩R) = 45/1000 = 0,045` ; parmi les commandes express, `P_E(R) = 45/300 = 0,15` ; parmi les commandes en retard, `P_R(E) = 45/80 = 0,5625`. Ces trois calculs portent sur les mêmes 45 commandes, mais sur des univers de référence différents : toutes les commandes, puis les commandes express, puis les commandes en retard.
+    Un site étudie 1000 commandes : 300 sont express, 80 sont en retard, et 45 sont à la fois express et en retard.
+
+    `P(E∩R) = 45/1000 = 0,045` ; parmi les commandes express, `P_E(R) = 45/300 = 0,15` ; parmi les commandes en retard, `P_R(E) = 45/80 = 0,5625`. Ces trois calculs portent sur les mêmes 45 commandes, mais sur des univers de référence différents : toutes les commandes, puis les commandes express, puis les commandes en retard.
 
 ## Repère historique — Bayes et le rôle de l’information connue
 
-En 1763, Richard Price communique à la Royal Society un mémoire retrouvé parmi les papiers de Thomas Bayes, mort deux ans auparavant. Le travail porte sur la manière de raisonner sur une probabilité à partir d’observations. Ce problème historique contribue au développement du raisonnement probabiliste tenant compte de l’information disponible. Il ne se réduit pas à notre formule scolaire du conditionnement, et les notations du chapitre sont actuelles.
+!!! historique ""
 
-Considérons une situation moderne fictive : sur 1 000 commandes, 100 viennent d’un fournisseur A ; 20 de ces commandes sont défectueuses. Les 900 autres commandes comptent 30 défauts. Parmi les commandes de A, la proportion défectueuse est `20/100 = 20 %`. Parmi les 50 commandes défectueuses, la proportion provenant de A est `20/50 = 40 %`. Les deux calculs utilisent les mêmes 20 commandes, mais l’information connue change le groupe de référence. Une forte proportion de défauts chez un fournisseur ne donne donc pas directement sa part parmi tous les défauts. Un tableau croisé permet de vérifier les effectifs et de choisir le bon dénominateur, sans nouvelle formule à apprendre.
+    Thomas Bayes, mémoire communiqué par Richard Price, 1763
+    {: .frise data-annee="1763" }
 
-Source : [Mémoire de Bayes communiqué par Price, lu le 23 décembre 1763, transcription hébergée par Royal Holloway, université de Londres](https://www.gtfp.cs.rhul.ac.uk/pulskamp/Bayes/bayesessay-rjp.pdf).
+    En 1763, Richard Price communique à la Royal Society un mémoire retrouvé parmi les papiers de Thomas Bayes, mort deux ans auparavant. Le travail porte sur la manière de raisonner sur une probabilité à partir d’observations. Ce problème historique contribue au développement du raisonnement probabiliste tenant compte de l’information disponible. Il ne se réduit pas à notre formule scolaire du conditionnement, et les notations du chapitre sont actuelles.
+
+    Considérons une situation moderne fictive : sur 1 000 commandes, 100 viennent d’un fournisseur A ; 20 de ces commandes sont défectueuses. Les 900 autres commandes comptent 30 défauts. Parmi les commandes de A, la proportion défectueuse est `20/100 = 20 %`. Parmi les 50 commandes défectueuses, la proportion provenant de A est `20/50 = 40 %`. Les deux calculs utilisent les mêmes 20 commandes, mais l’information connue change le groupe de référence. Une forte proportion de défauts chez un fournisseur ne donne donc pas directement sa part parmi tous les défauts. Un tableau croisé permet de vérifier les effectifs et de choisir le bon dénominateur, sans nouvelle formule à apprendre.
+
+    Source : [Mémoire de Bayes communiqué par Price, lu le 23 décembre 1763, transcription hébergée par Royal Holloway, université de Londres](https://www.gtfp.cs.rhul.ac.uk/pulskamp/Bayes/bayesessay-rjp.pdf).

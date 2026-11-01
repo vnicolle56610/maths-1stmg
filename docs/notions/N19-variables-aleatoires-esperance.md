@@ -16,9 +16,11 @@ Une variable aléatoire associe une valeur numérique aux issues d’une expéri
 
 ## Objectifs
 
-- Définir une variable aléatoire discrète en contexte.
-- Calculer une loi de probabilité et une espérance.
-- Reconnaître et simuler une loi de Bernoulli.
+!!! objectifs ""
+
+    - Définir une variable aléatoire discrète en contexte.
+    - Calculer une loi de probabilité et une espérance.
+    - Reconnaître et simuler une loi de Bernoulli.
 
 ## Voir aussi
 
@@ -34,22 +36,31 @@ Une variable aléatoire associe une valeur numérique aux issues d’une expéri
 
 ## Notions essentielles
 
-Une variable aléatoire discrète `X` associe un nombre réel à chaque issue d'une expérience aléatoire. Sa loi de probabilité associe à chaque valeur possible `xᵢ` la probabilité `P(X=xᵢ)`, avec la somme de toutes ces probabilités égale à 1 ; les valeurs `xᵢ` elles-mêmes ne sont pas des probabilités, elles peuvent être négatives (un gain algébrique, par exemple).
+!!! essentiel ""
 
-L'espérance de `X` est `E(X) = x1×p1 + ⋯ + xn×pn` : une moyenne pondérée des valeurs possibles. Ce n'est pas nécessairement une valeur que `X` peut prendre, et elle ne prédit pas le résultat d'une expérience unique — elle s'interprète comme la moyenne observée sur un grand nombre de répétitions comparables. La loi de Bernoulli de paramètre `p` correspond à `X=1` en cas de succès et `X=0` en cas d'échec, avec `P(X=1)=p` ; son espérance est `E(X) = p`.
+    Une variable aléatoire discrète `X` associe un nombre réel à chaque issue d'une expérience aléatoire. Sa loi de probabilité associe à chaque valeur possible `xᵢ` la probabilité `P(X=xᵢ)`, avec la somme de toutes ces probabilités égale à 1 ; les valeurs `xᵢ` elles-mêmes ne sont pas des probabilités, elles peuvent être négatives (un gain algébrique, par exemple).
 
-Une simulation permet d'observer la fluctuation d'échantillonnage : deux échantillons de même taille, obtenus avec le même paramètre `p`, ne donnent généralement pas exactement la même fréquence de succès. Lorsque la taille de l'échantillon augmente, les fréquences observées ont tendance à se concentrer davantage autour de `p`.
+    L'espérance de `X` est `E(X) = x1×p1 + ⋯ + xn×pn` : une moyenne pondérée des valeurs possibles. Ce n'est pas nécessairement une valeur que `X` peut prendre, et elle ne prédit pas le résultat d'une expérience unique — elle s'interprète comme la moyenne observée sur un grand nombre de répétitions comparables. La loi de Bernoulli de paramètre `p` correspond à `X=1` en cas de succès et `X=0` en cas d'échec, avec `P(X=1)=p` ; son espérance est `E(X) = p`.
+
+    Une simulation permet d'observer la fluctuation d'échantillonnage : deux échantillons de même taille, obtenus avec le même paramètre `p`, ne donnent généralement pas exactement la même fréquence de succès. Lorsque la taille de l'échantillon augmente, les fréquences observées ont tendance à se concentrer davantage autour de `p`.
 
 ## Exemple
 
-Un jeu promotionnel fait gagner 0 € (60 % des clients), 2 € (30 %) ou 8 € (10 %). En notant `X` le montant du bon gagné :
+!!! exemple ""
 
-`E(X) = 0×0,60 + 2×0,30 + 8×0,10 = 1,40`. L'enseigne doit prévoir un coût moyen de 1,40 € par client, sur un grand nombre de clients — ce n'est le montant gagné par aucun client en particulier.
+    Un jeu promotionnel fait gagner 0 € (60 % des clients), 2 € (30 %) ou 8 € (10 %). En notant `X` le montant du bon gagné :
+
+    `E(X) = 0×0,60 + 2×0,30 + 8×0,10 = 1,40`. L'enseigne doit prévoir un coût moyen de 1,40 € par client, sur un grand nombre de clients — ce n'est le montant gagné par aucun client en particulier.
 
 ## Repère historique — Huygens attribue une valeur à une chance
 
-En 1657, Christiaan Huygens publie De ratiociniis in ludo aleae, un traité sur le calcul dans les jeux de hasard. Une question centrale est d’évaluer ce que vaut une chance de recevoir différents montants. Le raisonnement conduit à pondérer les gains possibles selon leurs chances de survenir : c’est l’idée que l’on retrouve dans l’espérance. Nos variables aléatoires et nos notations actuelles ne sont pas celles du traité.
+!!! historique ""
 
-Dans le jeu promotionnel moderne fictif de l’exemple, un client reçoit un bon de 0 €, 2 € ou 8 €, avec les probabilités respectives 0,60, 0,30 et 0,10. Le montant moyen prévu est 1,40 € par client. Pour 1 000 participations ayant chacune cette loi, le total des montants des bons a une espérance de 1 400 €. Ce montant n’est pas un plafond garanti : une simulation peut donner un total supérieur ou inférieur. Si l’on simule des participations indépendantes, on peut observer cette fluctuation. Pour l’enseigne, le calcul porte ici sur la valeur faciale des bons attribués, pas automatiquement sur le coût réel de leur utilisation, qui dépend d’autres conditions commerciales.
+    Christiaan Huygens, *De ratiociniis in ludo aleae*, 1657
+    {: .frise data-annee="1657" }
 
-Source : [Bibliothèque de l’ETH Zurich, des jeux de hasard à la théorie des probabilités](https://library.ethz.ch/en/collections-and-archives/platforms/virtual-exhibitions/Its-all-math-and-games/game-types/from-games-of-chance-to-probability-theory.html).
+    En 1657, Christiaan Huygens publie De ratiociniis in ludo aleae, un traité sur le calcul dans les jeux de hasard. Une question centrale est d’évaluer ce que vaut une chance de recevoir différents montants. Le raisonnement conduit à pondérer les gains possibles selon leurs chances de survenir : c’est l’idée que l’on retrouve dans l’espérance. Nos variables aléatoires et nos notations actuelles ne sont pas celles du traité.
+
+    Dans le jeu promotionnel moderne fictif de l’exemple, un client reçoit un bon de 0 €, 2 € ou 8 €, avec les probabilités respectives 0,60, 0,30 et 0,10. Le montant moyen prévu est 1,40 € par client. Pour 1 000 participations ayant chacune cette loi, le total des montants des bons a une espérance de 1 400 €. Ce montant n’est pas un plafond garanti : une simulation peut donner un total supérieur ou inférieur. Si l’on simule des participations indépendantes, on peut observer cette fluctuation. Pour l’enseigne, le calcul porte ici sur la valeur faciale des bons attribués, pas automatiquement sur le coût réel de leur utilisation, qui dépend d’autres conditions commerciales.
+
+    Source : [Bibliothèque de l’ETH Zurich, des jeux de hasard à la théorie des probabilités](https://library.ethz.ch/en/collections-and-archives/platforms/virtual-exhibitions/Its-all-math-and-games/game-types/from-games-of-chance-to-probability-theory.html).

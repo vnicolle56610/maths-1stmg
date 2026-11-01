@@ -16,9 +16,11 @@ Une épreuve de Bernoulli n’a que deux issues : succès ou échec. Les ressour
 
 ## Objectifs
 
-- Reconnaître une épreuve de Bernoulli.
-- Représenter des répétitions indépendantes.
-- Construire et exploiter un arbre jusqu’à n ≤ 4.
+!!! objectifs ""
+
+    - Reconnaître une épreuve de Bernoulli.
+    - Représenter des répétitions indépendantes.
+    - Construire et exploiter un arbre jusqu’à n ≤ 4.
 
 ## Voir aussi
 
@@ -35,20 +37,29 @@ Une épreuve de Bernoulli n’a que deux issues : succès ou échec. Les ressour
 
 ## Notions essentielles
 
-Une épreuve de Bernoulli est une expérience aléatoire à exactement deux issues : le succès `S`, de probabilité `p`, et l'échec `S̄`, de probabilité `1-p`. Le mot « succès » est une simple convention : il ne signifie pas forcément un résultat favorable dans le contexte.
+!!! essentiel ""
 
-Répéter une même épreuve de Bernoulli de façon identique et indépendante signifie que la probabilité de succès reste `p` à chaque étape, et que le résultat d'une étape ne modifie pas les probabilités des étapes suivantes : les mêmes probabilités réapparaissent alors à chaque niveau de l'arbre, et la probabilité d'un chemin est le produit des probabilités de ses branches. On se limite à au plus 4 répétitions : pour calculer la probabilité d'un événement, on traduit l'événement en termes de `S` et `S̄`, on repère tous les chemins qui le réalisent, on calcule chaque chemin, puis on additionne. Pour « au moins un succès », il est souvent plus court de passer par l'événement contraire : `P(au moins un S) = 1 - P(aucun S)`.
+    Une épreuve de Bernoulli est une expérience aléatoire à exactement deux issues : le succès `S`, de probabilité `p`, et l'échec `S̄`, de probabilité `1-p`. Le mot « succès » est une simple convention : il ne signifie pas forcément un résultat favorable dans le contexte.
+
+    Répéter une même épreuve de Bernoulli de façon identique et indépendante signifie que la probabilité de succès reste `p` à chaque étape, et que le résultat d'une étape ne modifie pas les probabilités des étapes suivantes : les mêmes probabilités réapparaissent alors à chaque niveau de l'arbre, et la probabilité d'un chemin est le produit des probabilités de ses branches. On se limite à au plus 4 répétitions : pour calculer la probabilité d'un événement, on traduit l'événement en termes de `S` et `S̄`, on repère tous les chemins qui le réalisent, on calcule chaque chemin, puis on additionne. Pour « au moins un succès », il est souvent plus court de passer par l'événement contraire : `P(au moins un S) = 1 - P(aucun S)`.
 
 ## Exemple
 
-Une entreprise envoie une offre à trois clients indépendants, chacun l'acceptant avec une probabilité de 0,30.
+!!! exemple ""
 
-« Exactement deux succès » correspond aux trois chemins `SSS̄`, `SS̄S`, `S̄SS`, chacun de probabilité `0,30² × 0,70 = 0,063`. La probabilité cherchée est donc `3 × 0,063 = 0,189`.
+    Une entreprise envoie une offre à trois clients indépendants, chacun l'acceptant avec une probabilité de 0,30.
+
+    « Exactement deux succès » correspond aux trois chemins `SSS̄`, `SS̄S`, `S̄SS`, chacun de probabilité `0,30² × 0,70 = 0,063`. La probabilité cherchée est donc `3 × 0,063 = 0,189`.
 
 ## Repère historique — Bernoulli étudie les expériences répétées
 
-L’Ars conjectandi de Jacques Bernoulli paraît en 1713, huit ans après sa mort. Cet ouvrage rassemble des recherches sur les jeux de hasard, le dénombrement et les probabilités, notamment dans les expériences répétées. La répétition devient un objet d’étude : on ne s’intéresse plus seulement à une issue isolée, mais aux suites de résultats possibles. L’expression « épreuve de Bernoulli » et l’arbre du cours appartiennent à notre présentation actuelle.
+!!! historique ""
 
-Dans une illustration moderne fictive, trois clients acceptent ou refusent une offre. On suppose leurs décisions indépendantes, avec la même probabilité d’acceptation `0,30`. La probabilité de trois refus est alors `0,70 × 0,70 × 0,70 = 0,343`. L’événement contraire donne une probabilité d’au moins une acceptation égale à `1-0,343 = 0,657`. Trois refus successifs ne rendent pas une acceptation suivante plus probable si les hypothèses restent les mêmes. En pratique, ces hypothèses doivent être discutées : des clients influencés par une recommandation commune pourraient avoir des décisions liées. Le nom du modèle ne garantit donc pas son adéquation à la situation ; l’arbre traduit les hypothèses que l’on a choisies.
+    Jacques Bernoulli, *Ars conjectandi*, 1713
+    {: .frise data-annee="1713" }
 
-Source : [MacTutor, université de St Andrews, Jacques Bernoulli et l’Ars conjectandi](https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Jacob/).
+    L’Ars conjectandi de Jacques Bernoulli paraît en 1713, huit ans après sa mort. Cet ouvrage rassemble des recherches sur les jeux de hasard, le dénombrement et les probabilités, notamment dans les expériences répétées. La répétition devient un objet d’étude : on ne s’intéresse plus seulement à une issue isolée, mais aux suites de résultats possibles. L’expression « épreuve de Bernoulli » et l’arbre du cours appartiennent à notre présentation actuelle.
+
+    Dans une illustration moderne fictive, trois clients acceptent ou refusent une offre. On suppose leurs décisions indépendantes, avec la même probabilité d’acceptation `0,30`. La probabilité de trois refus est alors `0,70 × 0,70 × 0,70 = 0,343`. L’événement contraire donne une probabilité d’au moins une acceptation égale à `1-0,343 = 0,657`. Trois refus successifs ne rendent pas une acceptation suivante plus probable si les hypothèses restent les mêmes. En pratique, ces hypothèses doivent être discutées : des clients influencés par une recommandation commune pourraient avoir des décisions liées. Le nom du modèle ne garantit donc pas son adéquation à la situation ; l’arbre traduit les hypothèses que l’on a choisies.
+
+    Source : [MacTutor, université de St Andrews, Jacques Bernoulli et l’Ars conjectandi](https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Jacob/).

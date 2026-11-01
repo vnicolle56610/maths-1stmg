@@ -16,9 +16,11 @@ Cette synthèse rassemble les outils d’analyse utiles dans des situations de g
 
 ## Objectifs
 
-- Articuler fonctions, suites et dérivation.
-- Choisir un modèle discret ou continu.
-- Préparer les exercices longs de l’épreuve anticipée.
+!!! objectifs ""
+
+    - Articuler fonctions, suites et dérivation.
+    - Choisir un modèle discret ou continu.
+    - Préparer les exercices longs de l’épreuve anticipée.
 
 ## Voir aussi
 
@@ -35,20 +37,29 @@ Cette synthèse rassemble les outils d’analyse utiles dans des situations de g
 
 ## Points essentiels à maîtriser
 
-Un modèle est discret lorsque la grandeur est observée à des étapes séparées (mois, trimestres, années…) : on utilise alors une suite `u(n)`. Il est continu lorsque la variable peut prendre toutes les valeurs d'un intervalle : on utilise alors une fonction `f(x)`. Une même situation peut se décrire par quatre registres complémentaires — phrase, tableau, formule, représentation graphique — qui s'articulent entre eux.
+!!! essentiel ""
 
-Pour organiser un problème long, une démarche en six étapes est utile : comprendre (grandeurs, unités, question), définir (variable ou suite, domaine), modéliser (formule, récurrence ou fonction), traiter (calculer, dériver, résoudre), contrôler (ordre de grandeur, bornes, cohérence), interpréter (phrase liée à la décision de gestion). Une suite répond typiquement à une question d'échéance (rang seuil), une fonction à une question d'optimisation (extremum) — une décision complète peut mobiliser les deux modèles, sans mélanger leurs variables, et doit toujours être confrontée aux contraintes réelles (capacité, budget, valeurs entières).
+    Un modèle est discret lorsque la grandeur est observée à des étapes séparées (mois, trimestres, années…) : on utilise alors une suite `u(n)`. Il est continu lorsque la variable peut prendre toutes les valeurs d'un intervalle : on utilise alors une fonction `f(x)`. Une même situation peut se décrire par quatre registres complémentaires — phrase, tableau, formule, représentation graphique — qui s'articulent entre eux.
+
+    Pour organiser un problème long, une démarche en six étapes est utile : comprendre (grandeurs, unités, question), définir (variable ou suite, domaine), modéliser (formule, récurrence ou fonction), traiter (calculer, dériver, résoudre), contrôler (ordre de grandeur, bornes, cohérence), interpréter (phrase liée à la décision de gestion). Une suite répond typiquement à une question d'échéance (rang seuil), une fonction à une question d'optimisation (extremum) — une décision complète peut mobiliser les deux modèles, sans mélanger leurs variables, et doit toujours être confrontée aux contraintes réelles (capacité, budget, valeurs entières).
 
 ## Exemple de synthèse
 
-Une entreprise suit son nombre d'abonnés par trimestre, `u(n) = 1200 × 1,06ⁿ`, et son bénéfice quotidien selon la quantité produite, `B(x) = -0,5x² + 30x - 150` sur `[0 ; 50]`.
+!!! exemple ""
 
-Pour les abonnés (modèle discret), on cherche un rang seuil : `u(3) ≈ 1429 < 1500` et `u(4) ≈ 1515 > 1500`, donc le seuil de 1500 abonnés est franchi au 4ᵉ trimestre. Pour le bénéfice (modèle continu), on optimise : `B'(x) = -x+30` s'annule en 30, où `B` passe de croissante à décroissante : le bénéfice maximal est `B(30) = 300` milliers d'euros pour 3000 unités. Ces deux résultats répondent à des questions différentes et ne se mélangent pas.
+    Une entreprise suit son nombre d'abonnés par trimestre, `u(n) = 1200 × 1,06ⁿ`, et son bénéfice quotidien selon la quantité produite, `B(x) = -0,5x² + 30x - 150` sur `[0 ; 50]`.
+
+    Pour les abonnés (modèle discret), on cherche un rang seuil : `u(3) ≈ 1429 < 1500` et `u(4) ≈ 1515 > 1500`, donc le seuil de 1500 abonnés est franchi au 4ᵉ trimestre. Pour le bénéfice (modèle continu), on optimise : `B'(x) = -x+30` s'annule en 30, où `B` passe de croissante à décroissante : le bénéfice maximal est `B(30) = 300` milliers d'euros pour 3000 unités. Ces deux résultats répondent à des questions différentes et ne se mélangent pas.
 
 ## Repère historique — Cournot met les relations économiques en équations
 
-En 1838, Antoine Augustin Cournot publie ses Recherches sur les principes mathématiques de la théorie des richesses. Il y étudie des relations entre prix, production et demande à l’aide de fonctions. Cette démarche fait de lui un pionnier de l’économie mathématique : une hypothèse économique devient une relation que l’on peut représenter et analyser. Une conclusion calculée dépend alors des hypothèses retenues ; elle ne décrit pas automatiquement toutes les entreprises ni tous les marchés.
+!!! historique ""
 
-Dans une illustration moderne fictive, une entreprise vend `q` articles par jour à un prix unitaire supposé égal à `p(q) = 50-q` euros, pour `0 ⩽ q ⩽ 40`. La recette quotidienne est donc `R(q) = q(50-q)` euros. Le modèle continu donne `R'(q) = 50-2q`, puis une recette maximale de 625 € pour 25 articles. Ce résultat concerne la recette, pas le bénéfice : les coûts ne sont pas renseignés. Ce seul modèle ne prévoit pas non plus l’évolution des ventes d’un trimestre à l’autre. Choisir les grandeurs, les unités et la question permet ainsi d’articuler les outils de la synthèse sans confondre leurs rôles.
+    Antoine Augustin Cournot, *Recherches sur les principes mathématiques de la théorie des richesses*, 1838
+    {: .frise data-annee="1838" }
 
-Source : [MacTutor, université de St Andrews, Cournot et son ouvrage économique de 1838](https://mathshistory.st-andrews.ac.uk/Biographies/Cournot/).
+    En 1838, Antoine Augustin Cournot publie ses Recherches sur les principes mathématiques de la théorie des richesses. Il y étudie des relations entre prix, production et demande à l’aide de fonctions. Cette démarche fait de lui un pionnier de l’économie mathématique : une hypothèse économique devient une relation que l’on peut représenter et analyser. Une conclusion calculée dépend alors des hypothèses retenues ; elle ne décrit pas automatiquement toutes les entreprises ni tous les marchés.
+
+    Dans une illustration moderne fictive, une entreprise vend `q` articles par jour à un prix unitaire supposé égal à `p(q) = 50-q` euros, pour `0 ⩽ q ⩽ 40`. La recette quotidienne est donc `R(q) = q(50-q)` euros. Le modèle continu donne `R'(q) = 50-2q`, puis une recette maximale de 625 € pour 25 articles. Ce résultat concerne la recette, pas le bénéfice : les coûts ne sont pas renseignés. Ce seul modèle ne prévoit pas non plus l’évolution des ventes d’un trimestre à l’autre. Choisir les grandeurs, les unités et la question permet ainsi d’articuler les outils de la synthèse sans confondre leurs rôles.
+
+    Source : [MacTutor, université de St Andrews, Cournot et son ouvrage économique de 1838](https://mathshistory.st-andrews.ac.uk/Biographies/Cournot/).

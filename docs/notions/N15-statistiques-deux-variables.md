@@ -16,9 +16,11 @@ Une série statistique à deux variables met en relation deux grandeurs observé
 
 ## Objectifs
 
-- Représenter une série statistique à deux variables.
-- Calculer le point moyen.
-- Lire un nuage de points et discuter une tendance.
+!!! objectifs ""
+
+    - Représenter une série statistique à deux variables.
+    - Calculer le point moyen.
+    - Lire un nuage de points et discuter une tendance.
 
 ## Voir aussi
 
@@ -34,20 +36,29 @@ Une série statistique à deux variables met en relation deux grandeurs observé
 
 ## Notions essentielles
 
-Lorsqu'on observe sur les mêmes individus deux caractères quantitatifs `x` et `y`, l'ensemble des couples `(xᵢ ; yᵢ)` forme une série statistique à deux variables. Dans un repère, l'ensemble des points `Mᵢ(xᵢ ; yᵢ)` est le nuage de points : on ne relie jamais ces points entre eux. Le point moyen `G(x̄ ; ȳ)`, où `x̄` et `ȳ` sont les moyennes des deux séries, résume la position centrale du nuage — sans décrire ni sa dispersion ni sa forme, et sans être nécessairement l'un des points observés.
+!!! essentiel ""
 
-Un nuage peut suggérer une tendance croissante, décroissante, ou l'absence de tendance nette, ainsi que des points atypiques (qu'il ne faut pas supprimer automatiquement : ils peuvent être réels et informatifs). Une tendance observée ne prouve jamais une causalité entre les deux variables.
+    Lorsqu'on observe sur les mêmes individus deux caractères quantitatifs `x` et `y`, l'ensemble des couples `(xᵢ ; yᵢ)` forme une série statistique à deux variables. Dans un repère, l'ensemble des points `Mᵢ(xᵢ ; yᵢ)` est le nuage de points : on ne relie jamais ces points entre eux. Le point moyen `G(x̄ ; ȳ)`, où `x̄` et `ȳ` sont les moyennes des deux séries, résume la position centrale du nuage — sans décrire ni sa dispersion ni sa forme, et sans être nécessairement l'un des points observés.
+
+    Un nuage peut suggérer une tendance croissante, décroissante, ou l'absence de tendance nette, ainsi que des points atypiques (qu'il ne faut pas supprimer automatiquement : ils peuvent être réels et informatifs). Une tendance observée ne prouve jamais une causalité entre les deux variables.
 
 ## Exemple
 
-Une entreprise relève, pour six campagnes, la dépense publicitaire `x` (en milliers d'euros) et le chiffre d'affaires `y` (en milliers d'euros) : `(4;52), (6;58), (7;61), (9;70), (10;73), (12;80)`.
+!!! exemple ""
 
-Le point moyen est `x̄ = (4+6+7+9+10+12)/6 = 8` et `ȳ = (52+58+61+70+73+80)/6 ≈ 65,7`, soit `G(8 ; 65,7)`. Le nuage monte globalement de la gauche vers la droite : on observe une tendance croissante entre dépense et chiffre d'affaires.
+    Une entreprise relève, pour six campagnes, la dépense publicitaire `x` (en milliers d'euros) et le chiffre d'affaires `y` (en milliers d'euros) : `(4;52), (6;58), (7;61), (9;70), (10;73), (12;80)`.
+
+    Le point moyen est `x̄ = (4+6+7+9+10+12)/6 = 8` et `ȳ = (52+58+61+70+73+80)/6 ≈ 65,7`, soit `G(8 ; 65,7)`. Le nuage monte globalement de la gauche vers la droite : on observe une tendance croissante entre dépense et chiffre d'affaires.
 
 ## Repère historique — Galton compare des graines et leur descendance
 
-Dans les années 1870, Francis Galton étudie la taille de graines de pois de senteur et celle des graines produites par leur descendance. Il compare les résultats obtenus à partir de graines de tailles différentes. Cette recherche illustre une idée essentielle des statistiques à deux variables : conserver ensemble les deux mesures que l’on veut comparer. Une moyenne isolée ne montre ni l’association entre ces mesures ni la dispersion des résultats.
+!!! historique ""
 
-Pour illustrer cette lecture avec des données modernes entièrement fictives, trois lots donnent les couples `(4 ; 5)`, `(6 ; 5)` et `(8 ; 8)`, où les deux coordonnées sont des diamètres en millimètres : diamètre des graines semées et diamètre moyen des graines récoltées dans chaque lot. Le point moyen est `G(6 ; 6)`, qui ne correspond à aucun des trois points observés. Le nuage suggère une tendance globalement croissante, sans que tous les points soient alignés. Ces trois couples inventés ne reproduisent pas l’expérience historique et ne suffisent pas à établir une loi générale. Le point moyen résume une position ; il ne remplace pas l’examen du nuage.
+    Francis Galton, années 1870
+    {: .frise data-annee="1875" data-etiquette="années 1870" }
 
-Source : [MacTutor, université de St Andrews, Galton et ses expériences sur les graines](https://mathshistory.st-andrews.ac.uk/Biographies/Galton/).
+    Dans les années 1870, Francis Galton étudie la taille de graines de pois de senteur et celle des graines produites par leur descendance. Il compare les résultats obtenus à partir de graines de tailles différentes. Cette recherche illustre une idée essentielle des statistiques à deux variables : conserver ensemble les deux mesures que l’on veut comparer. Une moyenne isolée ne montre ni l’association entre ces mesures ni la dispersion des résultats.
+
+    Pour illustrer cette lecture avec des données modernes entièrement fictives, trois lots donnent les couples `(4 ; 5)`, `(6 ; 5)` et `(8 ; 8)`, où les deux coordonnées sont des diamètres en millimètres : diamètre des graines semées et diamètre moyen des graines récoltées dans chaque lot. Le point moyen est `G(6 ; 6)`, qui ne correspond à aucun des trois points observés. Le nuage suggère une tendance globalement croissante, sans que tous les points soient alignés. Ces trois couples inventés ne reproduisent pas l’expérience historique et ne suffisent pas à établir une loi générale. Le point moyen résume une position ; il ne remplace pas l’examen du nuage.
+
+    Source : [MacTutor, université de St Andrews, Galton et ses expériences sur les graines](https://mathshistory.st-andrews.ac.uk/Biographies/Galton/).

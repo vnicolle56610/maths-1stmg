@@ -16,9 +16,11 @@ Une fonction du second degré se reconnaît souvent à sa parabole. Les ressourc
 
 ## Objectifs
 
-- Reconnaître une parabole.
-- Associer une courbe à une expression simple.
-- Identifier allure, axe de symétrie, sommet et variations.
+!!! objectifs ""
+
+    - Reconnaître une parabole.
+    - Associer une courbe à une expression simple.
+    - Identifier allure, axe de symétrie, sommet et variations.
 
 ## Voir aussi
 
@@ -34,20 +36,29 @@ Une fonction du second degré se reconnaît souvent à sa parabole. Les ressourc
 
 ## Notions essentielles
 
-Une fonction polynôme du second degré s'écrit `f(x) = ax² + bx + c`, avec `a ≠ 0`. Sa courbe est une parabole : elle possède un axe de symétrie vertical et un sommet situé sur cet axe — un minimum si `a > 0`, un maximum si `a < 0`. Deux abscisses symétriques par rapport à l'axe ont la même image.
+!!! essentiel ""
 
-Pour une forme `a(x-h)² + k`, l'axe est directement `x = h` et le sommet est `S(h ; k)` : cette lecture directe ne demande aucune formule générale du sommet. Pour une forme factorisée `a(x-x1)(x-x2)`, l'axe de symétrie est à mi-distance des racines, `x = (x1+x2)/2`, et le sommet s'obtient en calculant l'image de cette abscisse.
+    Une fonction polynôme du second degré s'écrit `f(x) = ax² + bx + c`, avec `a ≠ 0`. Sa courbe est une parabole : elle possède un axe de symétrie vertical et un sommet situé sur cet axe — un minimum si `a > 0`, un maximum si `a < 0`. Deux abscisses symétriques par rapport à l'axe ont la même image.
+
+    Pour une forme `a(x-h)² + k`, l'axe est directement `x = h` et le sommet est `S(h ; k)` : cette lecture directe ne demande aucune formule générale du sommet. Pour une forme factorisée `a(x-x1)(x-x2)`, l'axe de symétrie est à mi-distance des racines, `x = (x1+x2)/2`, et le sommet s'obtient en calculant l'image de cette abscisse.
 
 ## Exemple
 
-Le bénéfice mensuel d'une entreprise, en milliers d'euros, est modélisé par `B(x) = -2(x-5)² + 18`, où `x` est le prix de vente en dizaines d'euros.
+!!! exemple ""
 
-L'axe est `x = 5` et le sommet est `S(5 ; 18)`. Comme le coefficient est négatif, il s'agit d'un maximum : le bénéfice est maximal, égal à 18 milliers d'euros, pour un prix de 50 euros.
+    Le bénéfice mensuel d'une entreprise, en milliers d'euros, est modélisé par `B(x) = -2(x-5)² + 18`, où `x` est le prix de vente en dizaines d'euros.
+
+    L'axe est `x = 5` et le sommet est `S(5 ; 18)`. Comme le coefficient est négatif, il s'agit d'un maximum : le bénéfice est maximal, égal à 18 milliers d'euros, pour un prix de 50 euros.
 
 ## Repère historique — La parabole avant les formules de bénéfice
 
-Vers 200 avant notre ère, Apollonius de Perge étudie dans ses Coniques des courbes obtenues en coupant un cône par un plan, dont la parabole. Il développe un travail géométrique sur ces courbes, sans utiliser nos formules de fonctions ni nos coordonnées actuelles. Une parabole est donc d’abord un objet géométrique ; son emploi pour représenter une expression du second degré appartient à une autre étape de l’histoire des mathématiques.
+!!! historique ""
 
-Dans le modèle économique moderne fictif de l’exemple, `B(x) = -2(x-5)² + 18`, le calcul permet de retrouver la symétrie du dessin : `B(4) = B(6) = 16`. Les prix de 40 € et 60 € donnent ainsi le même bénéfice de 16 milliers d’euros dans ce modèle. Comme un carré est positif ou nul, `B(x)` ne dépasse pas 18, valeur atteinte pour `x = 5`. Le sommet traduit ici un bénéfice maximal. Cette lecture économique est actuelle : elle ne décrit pas une application d’Apollonius. La forme de la courbe permet de relier symétrie, expression et interprétation, sans formule générale du sommet.
+    Apollonius de Perge, *Coniques*, vers 200 avant notre ère
+    {: .frise data-annee="-200" data-etiquette="v. −200" }
 
-Source : [MacTutor, université de St Andrews, Apollonius de Perge et les Coniques](https://mathshistory.st-andrews.ac.uk/Biographies/Apollonius/).
+    Vers 200 avant notre ère, Apollonius de Perge étudie dans ses Coniques des courbes obtenues en coupant un cône par un plan, dont la parabole. Il développe un travail géométrique sur ces courbes, sans utiliser nos formules de fonctions ni nos coordonnées actuelles. Une parabole est donc d’abord un objet géométrique ; son emploi pour représenter une expression du second degré appartient à une autre étape de l’histoire des mathématiques.
+
+    Dans le modèle économique moderne fictif de l’exemple, `B(x) = -2(x-5)² + 18`, le calcul permet de retrouver la symétrie du dessin : `B(4) = B(6) = 16`. Les prix de 40 € et 60 € donnent ainsi le même bénéfice de 16 milliers d’euros dans ce modèle. Comme un carré est positif ou nul, `B(x)` ne dépasse pas 18, valeur atteinte pour `x = 5`. Le sommet traduit ici un bénéfice maximal. Cette lecture économique est actuelle : elle ne décrit pas une application d’Apollonius. La forme de la courbe permet de relier symétrie, expression et interprétation, sans formule générale du sommet.
+
+    Source : [MacTutor, université de St Andrews, Apollonius de Perge et les Coniques](https://mathshistory.st-andrews.ac.uk/Biographies/Apollonius/).
