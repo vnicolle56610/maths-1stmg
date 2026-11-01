@@ -38,3 +38,11 @@ Pour un exercice long, la démarche reste la même toute l'année : comprendre (
 Un bénéfice est modélisé par `B(x) = -0,2x² + 8x - 30` sur `[0 ; 35]`. On calcule `B'(x) = -0,4x + 8`, qui s'annule en `x = 20`, est positive avant et négative après.
 
 `B` croît puis décroît : le bénéfice est maximal pour `x = 20`, après vérification que ce point critique appartient bien à l'intervalle `[0 ; 35]` et comparaison avec les valeurs aux bornes.
+
+## Repère historique — Pólya fait de la vérification une étape du problème
+
+En 1945, George Pólya publie How to Solve It, consacré à la recherche de solutions mathématiques. Il organise la démarche autour de quatre phases : comprendre le problème, préparer un plan, l’exécuter, puis examiner la solution obtenue. Ces conseils ne forment pas une recette garantissant la réussite ; ils invitent à poser des questions sur les données, les contraintes et la cohérence du résultat. Cette dernière relecture relie les différents outils de l’année.
+
+Dans une illustration moderne fictive, retrouver un prix avant une hausse de 20 % exige de diviser le prix final par `1,20`. Si le prix final est 120 €, on obtient 100 € ; refaire la hausse contrôle la réponse. Retirer simplement 20 % donnerait 96 €, puis `96 × 1,20 = 115,20` €, ce qui révèle l’erreur. Dans une optimisation, le même réflexe conduit à vérifier le domaine et les valeurs aux bornes ; en probabilités, à vérifier le groupe de référence et que le résultat appartient à `[0 ; 1]`. Il ne s’agit pas d’ajouter une méthode de calcul, mais de rendre les outils déjà appris plus fiables.
+
+Source : [Harvey Mudd College, présentation des étapes de How to Solve It de Pólya](https://www.cs.hmc.edu/~keller/how_to_solve_it.html).

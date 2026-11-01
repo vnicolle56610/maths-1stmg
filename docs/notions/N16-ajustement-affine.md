@@ -43,3 +43,11 @@ Interpoler, c'est estimer `y` pour une valeur de `x` intérieure à l'intervalle
 Pour une série budget publicitaire / ventes, un outil donne la droite d'ajustement `y ≈ 2,67x + 9,13`, avec des abscisses observées entre 2 et 12.
 
 Pour `x = 9`, on obtient `y ≈ 33,2` : comme `9 ∈ [2 ; 12]`, c'est une interpolation. Pour `x = 15`, on obtient `y ≈ 49,2` : comme `15 > 12`, c'est une extrapolation, à interpréter avec davantage de prudence.
+
+## Repère historique — Legendre ajuste des observations imparfaites
+
+En 1805, Adrien-Marie Legendre publie la méthode des moindres carrés dans un ouvrage consacré à la détermination des orbites des comètes. Le problème vient des observations : les mesures ne concordent pas exactement, alors qu’il faut en tirer une estimation cohérente. Cette méthode sera aussi développée par Gauss. Elle répond à un besoin d’ajustement, sans supposer que les mesures sont toutes parfaitement exactes. Sa théorie n’est pas nécessaire pour utiliser la droite fournie par un logiciel dans ce chapitre.
+
+Dans une illustration commerciale moderne fictive, un outil propose `y = 3x+10` à partir de budgets publicitaires `x` compris entre 2 et 12 milliers d’euros ; `y` représente des ventes en centaines d’articles. Pour `x = 8`, l’estimation est 34 centaines d’articles : c’est une interpolation. Pour `x = 20`, elle devient 70 centaines : c’est une extrapolation. L’ajustement ne garantit pas ces ventes, surtout hors de la zone observée. Le calcul peut être juste alors que la prévision devient peu crédible : capacité de vente, concurrence ou saturation peuvent rendre le prolongement de la droite inadapté.
+
+Source : [Biographical Encyclopedia of Astronomers, notice Legendre, hébergée par l’université de St Andrews](https://mathshistory.st-andrews.ac.uk/BEA/legendre_bea.pdf).

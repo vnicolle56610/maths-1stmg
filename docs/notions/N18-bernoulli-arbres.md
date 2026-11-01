@@ -44,3 +44,11 @@ Répéter une même épreuve de Bernoulli de façon identique et indépendante s
 Une entreprise envoie une offre à trois clients indépendants, chacun l'acceptant avec une probabilité de 0,30.
 
 « Exactement deux succès » correspond aux trois chemins `SSS̄`, `SS̄S`, `S̄SS`, chacun de probabilité `0,30² × 0,70 = 0,063`. La probabilité cherchée est donc `3 × 0,063 = 0,189`.
+
+## Repère historique — Bernoulli étudie les expériences répétées
+
+L’Ars conjectandi de Jacques Bernoulli paraît en 1713, huit ans après sa mort. Cet ouvrage rassemble des recherches sur les jeux de hasard, le dénombrement et les probabilités, notamment dans les expériences répétées. La répétition devient un objet d’étude : on ne s’intéresse plus seulement à une issue isolée, mais aux suites de résultats possibles. L’expression « épreuve de Bernoulli » et l’arbre du cours appartiennent à notre présentation actuelle.
+
+Dans une illustration moderne fictive, trois clients acceptent ou refusent une offre. On suppose leurs décisions indépendantes, avec la même probabilité d’acceptation `0,30`. La probabilité de trois refus est alors `0,70 × 0,70 × 0,70 = 0,343`. L’événement contraire donne une probabilité d’au moins une acceptation égale à `1-0,343 = 0,657`. Trois refus successifs ne rendent pas une acceptation suivante plus probable si les hypothèses restent les mêmes. En pratique, ces hypothèses doivent être discutées : des clients influencés par une recommandation commune pourraient avoir des décisions liées. Le nom du modèle ne garantit donc pas son adéquation à la situation ; l’arbre traduit les hypothèses que l’on a choisies.
+
+Source : [MacTutor, université de St Andrews, Jacques Bernoulli et l’Ars conjectandi](https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Jacob/).

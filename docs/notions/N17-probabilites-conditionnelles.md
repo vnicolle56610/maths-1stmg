@@ -45,3 +45,11 @@ Deux événements `A` et `B` sont indépendants lorsque `P_A(B) = P(B)`, ce qui 
 Un site étudie 1000 commandes : 300 sont express, 80 sont en retard, et 45 sont à la fois express et en retard.
 
 `P(E∩R) = 45/1000 = 0,045` ; parmi les commandes express, `P_E(R) = 45/300 = 0,15` ; parmi les commandes en retard, `P_R(E) = 45/80 = 0,5625`. Ces trois calculs portent sur les mêmes 45 commandes, mais sur des univers de référence différents : toutes les commandes, puis les commandes express, puis les commandes en retard.
+
+## Repère historique — Bayes et le rôle de l’information connue
+
+En 1763, Richard Price communique à la Royal Society un mémoire retrouvé parmi les papiers de Thomas Bayes, mort deux ans auparavant. Le travail porte sur la manière de raisonner sur une probabilité à partir d’observations. Ce problème historique contribue au développement du raisonnement probabiliste tenant compte de l’information disponible. Il ne se réduit pas à notre formule scolaire du conditionnement, et les notations du chapitre sont actuelles.
+
+Considérons une situation moderne fictive : sur 1 000 commandes, 100 viennent d’un fournisseur A ; 20 de ces commandes sont défectueuses. Les 900 autres commandes comptent 30 défauts. Parmi les commandes de A, la proportion défectueuse est `20/100 = 20 %`. Parmi les 50 commandes défectueuses, la proportion provenant de A est `20/50 = 40 %`. Les deux calculs utilisent les mêmes 20 commandes, mais l’information connue change le groupe de référence. Une forte proportion de défauts chez un fournisseur ne donne donc pas directement sa part parmi tous les défauts. Un tableau croisé permet de vérifier les effectifs et de choisir le bon dénominateur, sans nouvelle formule à apprendre.
+
+Source : [Mémoire de Bayes communiqué par Price, lu le 23 décembre 1763, transcription hébergée par Royal Holloway, université de Londres](https://www.gtfp.cs.rhul.ac.uk/pulskamp/Bayes/bayesessay-rjp.pdf).
