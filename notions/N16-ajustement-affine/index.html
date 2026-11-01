@@ -1054,6 +1054,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#repere-historique-legendre-ajuste-des-observations-imparfaites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repère historique — Legendre ajuste des observations imparfaites
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1425,6 +1436,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#repere-historique-legendre-ajuste-des-observations-imparfaites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repère historique — Legendre ajuste des observations imparfaites
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1476,6 +1498,10 @@
 <h2 id="exemple">Exemple</h2>
 <p>Pour une série budget publicitaire / ventes, un outil donne la droite d'ajustement <code>y ≈ 2,67x + 9,13</code>, avec des abscisses observées entre 2 et 12.</p>
 <p>Pour <code>x = 9</code>, on obtient <code>y ≈ 33,2</code> : comme <code>9 ∈ [2 ; 12]</code>, c'est une interpolation. Pour <code>x = 15</code>, on obtient <code>y ≈ 49,2</code> : comme <code>15 &gt; 12</code>, c'est une extrapolation, à interpréter avec davantage de prudence.</p>
+<h2 id="repere-historique-legendre-ajuste-des-observations-imparfaites">Repère historique — Legendre ajuste des observations imparfaites</h2>
+<p>En 1805, Adrien-Marie Legendre publie la méthode des moindres carrés dans un ouvrage consacré à la détermination des orbites des comètes. Le problème vient des observations : les mesures ne concordent pas exactement, alors qu’il faut en tirer une estimation cohérente. Cette méthode sera aussi développée par Gauss. Elle répond à un besoin d’ajustement, sans supposer que les mesures sont toutes parfaitement exactes. Sa théorie n’est pas nécessaire pour utiliser la droite fournie par un logiciel dans ce chapitre.</p>
+<p>Dans une illustration commerciale moderne fictive, un outil propose <code>y = 3x+10</code> à partir de budgets publicitaires <code>x</code> compris entre 2 et 12 milliers d’euros ; <code>y</code> représente des ventes en centaines d’articles. Pour <code>x = 8</code>, l’estimation est 34 centaines d’articles : c’est une interpolation. Pour <code>x = 20</code>, elle devient 70 centaines : c’est une extrapolation. L’ajustement ne garantit pas ces ventes, surtout hors de la zone observée. Le calcul peut être juste alors que la prévision devient peu crédible : capacité de vente, concurrence ou saturation peuvent rendre le prolongement de la droite inadapté.</p>
+<p>Source : <a href="https://mathshistory.st-andrews.ac.uk/BEA/legendre_bea.pdf">Biographical Encyclopedia of Astronomers, notice Legendre, hébergée par l’université de St Andrews</a>.</p>
 
 
 
