@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-02">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1474,11 +1474,13 @@
 <!-- NOTION-NAV:END -->
 
 <h2 id="objectifs">Objectifs</h2>
+<div class="admonition objectifs">
 <ul>
 <li>Définir une variable aléatoire discrète en contexte.</li>
 <li>Calculer une loi de probabilité et une espérance.</li>
 <li>Reconnaître et simuler une loi de Bernoulli.</li>
 </ul>
+</div>
 <h2 id="voir-aussi">Voir aussi</h2>
 <ul>
 <li><a href="../N18-bernoulli-arbres/">N18 — Épreuves indépendantes de Bernoulli et arbres</a></li>
@@ -1493,16 +1495,23 @@
 <!-- AUTO-DOCS:END -->
 
 <h2 id="notions-essentielles">Notions essentielles</h2>
+<div class="admonition essentiel">
 <p>Une variable aléatoire discrète <code>X</code> associe un nombre réel à chaque issue d'une expérience aléatoire. Sa loi de probabilité associe à chaque valeur possible <code>xᵢ</code> la probabilité <code>P(X=xᵢ)</code>, avec la somme de toutes ces probabilités égale à 1 ; les valeurs <code>xᵢ</code> elles-mêmes ne sont pas des probabilités, elles peuvent être négatives (un gain algébrique, par exemple).</p>
 <p>L'espérance de <code>X</code> est <code>E(X) = x1×p1 + ⋯ + xn×pn</code> : une moyenne pondérée des valeurs possibles. Ce n'est pas nécessairement une valeur que <code>X</code> peut prendre, et elle ne prédit pas le résultat d'une expérience unique — elle s'interprète comme la moyenne observée sur un grand nombre de répétitions comparables. La loi de Bernoulli de paramètre <code>p</code> correspond à <code>X=1</code> en cas de succès et <code>X=0</code> en cas d'échec, avec <code>P(X=1)=p</code> ; son espérance est <code>E(X) = p</code>.</p>
 <p>Une simulation permet d'observer la fluctuation d'échantillonnage : deux échantillons de même taille, obtenus avec le même paramètre <code>p</code>, ne donnent généralement pas exactement la même fréquence de succès. Lorsque la taille de l'échantillon augmente, les fréquences observées ont tendance à se concentrer davantage autour de <code>p</code>.</p>
+</div>
 <h2 id="exemple">Exemple</h2>
+<div class="admonition exemple">
 <p>Un jeu promotionnel fait gagner 0 € (60 % des clients), 2 € (30 %) ou 8 € (10 %). En notant <code>X</code> le montant du bon gagné :</p>
 <p><code>E(X) = 0×0,60 + 2×0,30 + 8×0,10 = 1,40</code>. L'enseigne doit prévoir un coût moyen de 1,40 € par client, sur un grand nombre de clients — ce n'est le montant gagné par aucun client en particulier.</p>
+</div>
 <h2 id="repere-historique-huygens-attribue-une-valeur-a-une-chance">Repère historique — Huygens attribue une valeur à une chance</h2>
+<div class="admonition historique">
+<p class="frise" data-annee="1657">Christiaan Huygens, <em>De ratiociniis in ludo aleae</em>, 1657</p>
 <p>En 1657, Christiaan Huygens publie De ratiociniis in ludo aleae, un traité sur le calcul dans les jeux de hasard. Une question centrale est d’évaluer ce que vaut une chance de recevoir différents montants. Le raisonnement conduit à pondérer les gains possibles selon leurs chances de survenir : c’est l’idée que l’on retrouve dans l’espérance. Nos variables aléatoires et nos notations actuelles ne sont pas celles du traité.</p>
 <p>Dans le jeu promotionnel moderne fictif de l’exemple, un client reçoit un bon de 0 €, 2 € ou 8 €, avec les probabilités respectives 0,60, 0,30 et 0,10. Le montant moyen prévu est 1,40 € par client. Pour 1 000 participations ayant chacune cette loi, le total des montants des bons a une espérance de 1 400 €. Ce montant n’est pas un plafond garanti : une simulation peut donner un total supérieur ou inférieur. Si l’on simule des participations indépendantes, on peut observer cette fluctuation. Pour l’enseigne, le calcul porte ici sur la valeur faciale des bons attribués, pas automatiquement sur le coût réel de leur utilisation, qui dépend d’autres conditions commerciales.</p>
 <p>Source : <a href="https://library.ethz.ch/en/collections-and-archives/platforms/virtual-exhibitions/Its-all-math-and-games/game-types/from-games-of-chance-to-probability-theory.html">Bibliothèque de l’ETH Zurich, des jeux de hasard à la théorie des probabilités</a>.</p>
+</div>
 
 
 
@@ -1574,6 +1583,8 @@
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
         <script src="../../javascripts/toutatice-header.js"></script>
+      
+        <script src="../../javascripts/frise.js?v=2026-11-02"></script>
       
         <script src="../../javascripts/goatcounter.js"></script>
       

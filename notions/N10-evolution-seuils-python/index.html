@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-02">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1474,11 +1474,13 @@
 <!-- NOTION-NAV:END -->
 
 <h2 id="objectifs">Objectifs</h2>
+<div class="admonition objectifs">
 <ul>
 <li>Utiliser suites et fonctions pour étudier des évolutions.</li>
 <li>Chercher un rang seuil.</li>
 <li>Structurer une démarche avec tableur ou Python.</li>
 </ul>
+</div>
 <h2 id="voir-aussi">Voir aussi</h2>
 <ul>
 <li><a href="../N02-proportions-pourcentages-evolutions/">N02 — Proportions, pourcentages et taux d’évolution</a></li>
@@ -1494,16 +1496,23 @@
 <!-- AUTO-DOCS:END -->
 
 <h2 id="notions-essentielles">Notions essentielles</h2>
+<div class="admonition essentiel">
 <p>Le choix de l'outil dépend de la question posée : un terme isolé se calcule avec une formule explicite, une liste de termes s'obtient avec un tableur ou une boucle <code>for</code>, la recherche d'un rang seuil utilise une boucle <code>while</code>, et une somme se calcule avec un accumulateur.</p>
 <p>Chercher un rang seuil, c'est déterminer le plus petit entier <code>n</code> pour lequel une condition devient vraie (par exemple <code>u(n) &gt; 3000</code>). Pour justifier qu'un rang est bien le premier à vérifier la condition, on contrôle les deux inégalités : le rang précédent ne la vérifie pas encore, le rang trouvé la vérifie. Dans une boucle <code>while</code>, la condition de répétition est l'opposée de la condition recherchée : pour chercher <code>u(n) &gt; S</code>, on répète tant que <code>u ⩽ S</code>.</p>
 <p>La somme des termes de rangs 0 à <code>N</code>, notée <code>S = u(0) + u(1) + ⋯ + u(N)</code>, comporte <code>N+1</code> termes. Elle se calcule avec un tableur (fonction <code>SOMME</code>) ou avec un accumulateur Python qui mémorise le total au fur et à mesure — jamais avec une formule fermée toute faite.</p>
+</div>
 <h2 id="exemple">Exemple</h2>
+<div class="admonition exemple">
 <p>Une entreprise a 2400 abonnés et prévoit une hausse de 4 % par an : <code>u(n) = 2400 × 1,04ⁿ</code>.</p>
 <p>On calcule <code>u(5) ≈ 2920 ⩽ 3000</code> et <code>u(6) ≈ 3037 &gt; 3000</code> : le rang 6 est donc bien le premier rang où le nombre d'abonnés dépasse 3000.</p>
+</div>
 <h2 id="repere-historique-visicalc-transforme-le-tableau-de-gestion">Repère historique — VisiCalc transforme le tableau de gestion</h2>
+<div class="admonition historique">
+<p class="frise" data-annee="1979">Dan Bricklin et Bob Frankston, VisiCalc, 1979</p>
 <p>En 1979, VisiCalc contribue à faire de l’ordinateur personnel un outil de gestion. Développé par Dan Bricklin et Bob Frankston, ce tableur pour l’Apple II permet d’organiser des calculs dans une grille. L’intérêt d’un tableau de calcul est de pouvoir modifier une hypothèse et recalculer les résultats qui en dépendent. Ce changement d’outil facilite l’exploration de scénarios, mais ne choisit pas à notre place le modèle économique pertinent.</p>
 <p>Reprenons le scénario moderne fictif de l’exemple : 2 400 abonnés et une hausse annuelle supposée constante de 4 %, sans autre changement. Une colonne contient les rangs <code>0, 1, 2, …</code>, une autre les valeurs obtenues en multipliant chaque terme par <code>1,04</code>. La recherche du premier dépassement de 3 000 exige de distinguer <code>&gt;</code> de <code>⩾</code> et de contrôler les rangs 5 et 6. Le même calcul pas à pas peut être réalisé aujourd’hui en Python, sans attribuer ce langage à VisiCalc. Pour décider du franchissement, on garde les valeurs non arrondies dans les calculs ; l’arrondi sert seulement à l’affichage. La rapidité du tableur ne remplace ni la vérification des formules ni l’interprétation du rang obtenu.</p>
 <p>Source : <a href="https://www.computerhistory.org/revolution/personal-computers/17/305">Computer History Museum, VisiCalc et les logiciels de gestion pour ordinateurs personnels</a>.</p>
+</div>
 
 
 
@@ -1575,6 +1584,8 @@
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
         <script src="../../javascripts/toutatice-header.js"></script>
+      
+        <script src="../../javascripts/frise.js?v=2026-11-02"></script>
       
         <script src="../../javascripts/goatcounter.js"></script>
       

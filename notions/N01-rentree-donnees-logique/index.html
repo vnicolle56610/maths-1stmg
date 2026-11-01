@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-02">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1451,11 +1451,13 @@
 <!-- NOTION-NAV:END -->
 
 <h2 id="objectifs">Objectifs</h2>
+<div class="admonition objectifs">
 <ul>
 <li>Installer les routines de travail.</li>
 <li>Diagnostiquer les acquis de Seconde utiles en STMG.</li>
 <li>Réactiver proportions, lectures graphiques, calculs simples et logique.</li>
 </ul>
+</div>
 <h2 id="documents">Documents</h2>
 <!-- AUTO-DOCS:START -->
 <ul>
@@ -1467,16 +1469,23 @@
 <!-- AUTO-DOCS:END -->
 
 <h2 id="notions-essentielles">Notions essentielles</h2>
+<div class="admonition essentiel">
 <p>Un ensemble rassemble des objets : si <code>x</code> appartient à <code>A</code>, on écrit <code>x ∈ A</code> ; dire que <code>A</code> est inclus dans <code>B</code> (<code>A ⊂ B</code>) signifie que tout élément de <code>A</code> appartient à <code>B</code>. L'intersection <code>A ∩ B</code> correspond au « et », la réunion <code>A ∪ B</code> au « ou » inclusif. Pour montrer qu'une affirmation générale est fausse, un seul contre-exemple suffit.</p>
 <p>Un tableau croisé répartit une population selon deux critères : chaque case intérieure donne un effectif, et les totaux de lignes et de colonnes servent à contrôler le tableau. Une case ne désigne plus un individu particulier, mais un nombre d'individus.</p>
 <p>Une identité est une égalité vraie pour toutes les valeurs autorisées des lettres ; une équation n'est vraie que pour certaines valeurs de l'inconnue, qu'il s'agit de déterminer.</p>
+</div>
 <h2 id="exemple">Exemple</h2>
+<div class="admonition exemple">
 <p>Dans une entreprise de 10 personnes réparties en trois services, un tableau croisé service/formation donne, pour le service Gestion, 2 personnes formées et 1 non formée, soit un total de 3.</p>
 <p>La case « 2 » à la ligne Gestion et à la colonne Formés signifie que deux personnes du service Gestion ont suivi la formation — ce n'est plus une information sur une personne précise, mais un effectif.</p>
+</div>
 <h2 id="repere-historique-des-cartes-de-hollerith-aux-effectifs-croises">Repère historique — Des cartes de Hollerith aux effectifs croisés</h2>
+<div class="admonition historique">
+<p class="frise" data-annee="1890">Herman Hollerith, recensement américain, 1890</p>
 <p>Comment compter une population nombreuse selon plusieurs critères sans recompter toutes les fiches à la main ? Pour le recensement américain de 1890, le système de Herman Hollerith utilise des cartes perforées : les renseignements recueillis sur les personnes sont codés par des trous. Une machine électrique permet ensuite de compter et de croiser des caractéristiques. Ce dispositif distingue deux niveaux que l’on retrouve dans le chapitre : les informations individuelles et les effectifs obtenus en regroupant les individus.</p>
 <p>Dans un exemple actuel fictif, une entreprise classe ses salariés par service et selon qu’ils ont suivi ou non une formation. La case « Gestion et formés » compte les personnes qui satisfont simultanément les deux critères : c’est le sens du « et » et de l’intersection. Elle ne représente pas une fiche individuelle. Vérifier les totaux de lignes et de colonnes permet de contrôler que la répartition couvre bien l’ensemble du personnel sans double comptage. L’automatisation du calcul ne dispense donc pas de comprendre ce que chaque case compte.</p>
 <p>Source : <a href="https://www.census.gov/programs-surveys/decennial-census/decade/1890/about-1890.html">U.S. Census Bureau, le recensement de 1890 et son système de dépouillement</a>.</p>
+</div>
 
 
 
@@ -1548,6 +1557,8 @@
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
         <script src="../../javascripts/toutatice-header.js"></script>
+      
+        <script src="../../javascripts/frise.js?v=2026-11-02"></script>
       
         <script src="../../javascripts/goatcounter.js"></script>
       

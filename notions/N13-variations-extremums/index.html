@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-02">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1474,11 +1474,13 @@
 <!-- NOTION-NAV:END -->
 
 <h2 id="objectifs">Objectifs</h2>
+<div class="admonition objectifs">
 <ul>
 <li>Relier le signe de la dérivée aux variations.</li>
 <li>Construire un tableau de variations.</li>
 <li>Résoudre un problème d’optimisation simple.</li>
 </ul>
+</div>
 <h2 id="voir-aussi">Voir aussi</h2>
 <ul>
 <li><a href="../N12-fonction-derivee-polynomes/">N12 — Fonction dérivée et polynômes de degré au plus 3</a></li>
@@ -1493,15 +1495,22 @@
 <!-- AUTO-DOCS:END -->
 
 <h2 id="notions-essentielles">Notions essentielles</h2>
+<div class="admonition essentiel">
 <p>Sur un intervalle <code>I</code>, si <code>f'(x) ⩾ 0</code>, alors <code>f</code> est croissante sur <code>I</code> ; si <code>f'(x) ⩽ 0</code>, alors <code>f</code> est décroissante. Pour étudier les variations : calculer <code>f'(x)</code>, résoudre <code>f'(x) = 0</code>, étudier le signe de <code>f'</code>, puis en déduire les variations et les valeurs utiles de <code>f</code>. Si <code>f'</code> change de signe de négatif à positif en <code>a</code>, <code>f</code> admet un minimum local en <code>a</code> ; de positif à négatif, un maximum local.</p>
 <p>Sur un intervalle fermé, un extremum local n'est pas nécessairement l'extremum sur tout l'intervalle : il faut comparer les valeurs de <code>f</code> aux points critiques et aux deux bornes avant de conclure. Une optimisation en contexte se conclut toujours par une interprétation avec les unités.</p>
+</div>
 <h2 id="exemple">Exemple</h2>
+<div class="admonition exemple">
 <p>Le bénéfice d'une entreprise, en milliers d'euros, est <code>P(x) = -x² + 48x - 320</code> pour <code>x ∈ [0 ; 40]</code>, où <code>x</code> est un nombre de centaines d'articles.</p>
 <p><code>P'(x) = -2x + 48</code> est positif sur <code>[0 ; 24[</code>, nul en 24, négatif sur <code>]24 ; 40]</code> : <code>P</code> croît puis décroît, avec un maximum en <code>x = 24</code>. Comme <code>P(24) = 256</code>, le bénéfice maximal est de 256 000 euros pour une production de 2400 articles.</p>
+</div>
 <h2 id="repere-historique-fermat-cherche-ou-une-grandeur-est-maximale">Repère historique — Fermat cherche où une grandeur est maximale</h2>
+<div class="admonition historique">
+<p class="frise" data-annee="1640" data-etiquette="XVIIe s.">Pierre de Fermat, XVIIe siècle</p>
 <p>Au XVIIe siècle, Pierre de Fermat élabore des méthodes pour déterminer des maxima et des minima. Ces recherches précèdent la présentation actuelle du calcul différentiel et circulent notamment par sa correspondance avec d’autres mathématiciens. Leur question centrale reste familière : parmi les valeurs possibles d’une grandeur, laquelle est la plus grande ou la plus petite ? Le tableau de variations utilisé au lycée est notre outil actuel, et non une présentation attribuée à Fermat.</p>
 <p>Dans un exemple moderne fictif, une entreprise dispose de 40 mètres de clôture pour un enclos rectangulaire. Si un côté mesure <code>x</code> mètres, l’autre mesure <code>20-x</code> mètres, avec <code>0 &lt; x &lt; 20</code>. L’aire est <code>A(x) = x(20-x)</code> et sa dérivée vaut <code>A'(x) = 20-2x</code>. Elle est positive avant 10 et négative après 10 : l’aire croît puis décroît, avec un maximum de 100 m² pour un carré de côté 10 mètres. L’annulation de la dérivée fournit une valeur à examiner ; c’est l’étude du signe sur tout le domaine qui justifie ici le maximum. La conclusion combine calcul, contrainte de clôture et unité d’aire.</p>
 <p>Source : <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Fermat/">MacTutor, université de St Andrews, Fermat et ses méthodes de maxima et minima</a>.</p>
+</div>
 
 
 
@@ -1573,6 +1582,8 @@
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
         <script src="../../javascripts/toutatice-header.js"></script>
+      
+        <script src="../../javascripts/frise.js?v=2026-11-02"></script>
       
         <script src="../../javascripts/goatcounter.js"></script>
       

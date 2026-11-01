@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-02">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1474,11 +1474,13 @@
 <!-- NOTION-NAV:END -->
 
 <h2 id="objectifs">Objectifs</h2>
+<div class="admonition objectifs">
 <ul>
 <li>Comprendre une suite comme modèle discret.</li>
 <li>Utiliser différents modes de génération.</li>
 <li>Calculer des termes et représenter une suite.</li>
 </ul>
+</div>
 <h2 id="voir-aussi">Voir aussi</h2>
 <ul>
 <li><a href="../N09-suites-arithmetiques-geometriques/">N09 — Suites arithmétiques et géométriques</a></li>
@@ -1493,15 +1495,22 @@
 <!-- AUTO-DOCS:END -->
 
 <h2 id="notions-essentielles">Notions essentielles</h2>
+<div class="admonition essentiel">
 <p>Une suite numérique est une liste ordonnée de nombres repérés par des entiers appelés rangs ; le nombre associé au rang <code>n</code> est noté <code>u(n)</code> — c'est le terme de rang <code>n</code>. Une évolution est discrète lorsqu'elle est observée à des étapes séparées (chaque mois, chaque année…), ce qui explique que les rangs soient des entiers.</p>
 <p>Une suite peut être définie par une formule explicite, où <code>u(n)</code> s'exprime directement en fonction de <code>n</code> (utile pour calculer un terme éloigné), ou par une relation de récurrence, où l'on connaît un terme initial et une règle donnant chaque terme à partir du précédent (le calcul se fait alors pas à pas). La représentation graphique d'une suite est un nuage de points <code>(n ; u(n))</code> : les points ne sont jamais reliés, car aucun terme n'est défini entre deux rangs entiers. Une suite est croissante lorsque <code>u(n+1) ⩾ u(n)</code>, décroissante lorsque <code>u(n+1) ⩽ u(n)</code> ; elle peut aussi n'être ni l'une ni l'autre.</p>
+</div>
 <h2 id="exemple">Exemple</h2>
+<div class="admonition exemple">
 <p>Deux modèles décrivent le nombre de comptes actifs d'une plateforme : <code>u(n) = 400 + 35n</code> (formule explicite) et <code>v(0) = 400</code>, <code>v(n+1) = 0,9 × v(n) + 80</code> (récurrence).</p>
 <p>Avec <code>u</code>, on calcule directement <code>u(10)</code>. Avec <code>v</code>, il faut calculer successivement <code>v(1) = 440</code>, puis <code>v(2) = 476</code>, etc. : la récurrence impose un calcul pas à pas.</p>
+</div>
 <h2 id="repere-historique-halley-ordonne-les-donnees-de-mortalite-par-age">Repère historique — Halley ordonne les données de mortalité par âge</h2>
+<div class="admonition historique">
+<p class="frise" data-annee="1693">Edmond Halley, table de mortalité de Breslau, 1693</p>
 <p>En 1693, Edmond Halley publie une table de mortalité à partir de données de la ville de Breslau, aujourd’hui Wrocław. Ce travail relie l’âge à la mortalité et contribue au développement des tables utilisées en assurance sur la vie. L’enjeu est d’organiser des nombres pour comparer les âges, plutôt que de conserver seulement un total global. Ce contexte illustre l’utilité de valeurs rangées selon un indice entier ; il ne suppose pas que leur évolution obéisse à une règle simple et constante.</p>
 <p>Dans une illustration moderne entièrement fictive, on suit un groupe initial de 1 000 personnes, sans nouvelle entrée. On note <code>u(n)</code> le nombre de personnes encore en vie au bout de <code>n</code> années : <code>u(0) = 1000</code>, <code>u(1) = 990</code>, <code>u(2) = 977</code>. Le rang mesure une durée et le terme un effectif. Ces trois observations définissent les premières valeurs, mais ne donnent pas automatiquement une formule pour <code>u(10)</code>. Une relation de récurrence serait une hypothèse supplémentaire à préciser. Les notations sont actuelles ; ces nombres ne proviennent pas de la table de Halley.</p>
 <p>Source : <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Halley/">MacTutor, université de St Andrews, Edmond Halley et sa table de 1693</a>.</p>
+</div>
 
 
 
@@ -1573,6 +1582,8 @@
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
         <script src="../../javascripts/toutatice-header.js"></script>
+      
+        <script src="../../javascripts/frise.js?v=2026-11-02"></script>
       
         <script src="../../javascripts/goatcounter.js"></script>
       

@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-02">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1474,11 +1474,13 @@
 <!-- NOTION-NAV:END -->
 
 <h2 id="objectifs">Objectifs</h2>
+<div class="admonition objectifs">
 <ul>
 <li>Consolider le calcul littéral simple.</li>
 <li>Résoudre des équations produit nul.</li>
 <li>Déterminer le signe d’une expression du premier degré.</li>
 </ul>
+</div>
 <h2 id="voir-aussi">Voir aussi</h2>
 <ul>
 <li><a href="../N06-second-degre-paraboles/">N06 — Fonctions du second degré : paraboles et formes simples</a></li>
@@ -1500,15 +1502,22 @@
 <!-- AUTO-EVAL:END -->
 
 <h2 id="notions-essentielles">Notions essentielles</h2>
+<div class="admonition essentiel">
 <p>Développer transforme un produit en somme (<code>a(b+c) = ab+ac</code>) ; factoriser transforme une somme en produit (<code>ab+ac = a(b+c)</code>). Un produit de réels est nul si et seulement si l'un au moins de ses facteurs est nul : <code>A × B = 0 ⟺ A = 0 ou B = 0</code> — cette propriété ne s'applique qu'à un second membre égal à 0.</p>
 <p>L'expression <code>ax+b</code> (avec <code>a ≠ 0</code>) s'annule en <code>x0 = -b/a</code> ; elle a le signe de <code>a</code> à droite de <code>x0</code>, et le signe opposé à gauche. Pour étudier le signe d'un produit <code>(ax+b)(cx+d)</code>, on calcule les zéros de chaque facteur, on les range dans l'ordre croissant, puis on multiplie les signes colonne par colonne dans un tableau de signes. Un zéro appartient à l'ensemble des solutions pour <code>⩾</code> ou <code>⩽</code>, mais pas pour <code>&gt;</code> ou <code>&lt;</code>.</p>
+</div>
 <h2 id="exemple">Exemple</h2>
+<div class="admonition exemple">
 <p>Le bénéfice d'une opération commerciale est modélisé par <code>B(x) = (x-20)(60-x)</code>, où <code>x</code> est le nombre de lots vendus, avec <code>0 ⩽ x ⩽ 80</code>.</p>
 <p>Les zéros 20 et 60 sont les seuils d'équilibre. Le tableau de signes donne <code>B(x) &gt; 0</code> pour <code>20 &lt; x &lt; 60</code> : l'entreprise réalise un bénéfice sur cet intervalle, et subit une perte en dehors.</p>
+</div>
 <h2 id="repere-historique-harriot-des-facteurs-aux-solutions">Repère historique — Harriot, des facteurs aux solutions</h2>
+<div class="admonition historique">
+<p class="frise" data-annee="1631">Thomas Harriot, <em>Artis analyticae praxis</em> (publication posthume), 1631</p>
 <p>Au début du XVIIe siècle, Thomas Harriot étudie les équations et développe une écriture algébrique plus concise. Il relie les solutions d’une équation à son écriture comme produit de facteurs. Ses travaux d’algèbre paraissent en partie après sa mort dans l’Artis analyticae praxis, en 1631 ; cette édition ne restitue pas toute la richesse de ses manuscrits, notamment sur les solutions négatives. Il faut donc distinguer son travail personnel de sa diffusion imprimée.</p>
 <p>Avec nos notations actuelles, l’équation <code>(x-20)(60-x) = 0</code> donne immédiatement <code>x = 20</code> ou <code>x = 60</code> grâce à la propriété du produit nul. Ce calcul reprend le modèle commercial fictif de l’exemple : les deux valeurs sont des seuils d’équilibre. L’écriture factorisée rend ces seuils visibles, alors qu’une expression développée les masque davantage. Mais trouver les zéros ne suffit pas à connaître le signe entre eux : il reste à étudier les signes des facteurs. Le tableau de signes enseigné ici est notre outil actuel ; il n’est pas présenté comme une méthode de Harriot.</p>
 <p>Source : <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Harriot/">MacTutor, université de St Andrews, Thomas Harriot et la théorie des équations</a>.</p>
+</div>
 
 
 
@@ -1580,6 +1589,8 @@
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
         <script src="../../javascripts/toutatice-header.js"></script>
+      
+        <script src="../../javascripts/frise.js?v=2026-11-02"></script>
       
         <script src="../../javascripts/goatcounter.js"></script>
       

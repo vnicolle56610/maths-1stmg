@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-02">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1474,11 +1474,13 @@
 <!-- NOTION-NAV:END -->
 
 <h2 id="objectifs">Objectifs</h2>
+<div class="admonition objectifs">
 <ul>
 <li>Reconnaître une épreuve de Bernoulli.</li>
 <li>Représenter des répétitions indépendantes.</li>
 <li>Construire et exploiter un arbre jusqu’à n ≤ 4.</li>
 </ul>
+</div>
 <h2 id="voir-aussi">Voir aussi</h2>
 <ul>
 <li><a href="../N17-probabilites-conditionnelles/">N17 — Probabilités conditionnelles et indépendance</a></li>
@@ -1494,15 +1496,22 @@
 <!-- AUTO-DOCS:END -->
 
 <h2 id="notions-essentielles">Notions essentielles</h2>
+<div class="admonition essentiel">
 <p>Une épreuve de Bernoulli est une expérience aléatoire à exactement deux issues : le succès <code>S</code>, de probabilité <code>p</code>, et l'échec <code>S̄</code>, de probabilité <code>1-p</code>. Le mot « succès » est une simple convention : il ne signifie pas forcément un résultat favorable dans le contexte.</p>
 <p>Répéter une même épreuve de Bernoulli de façon identique et indépendante signifie que la probabilité de succès reste <code>p</code> à chaque étape, et que le résultat d'une étape ne modifie pas les probabilités des étapes suivantes : les mêmes probabilités réapparaissent alors à chaque niveau de l'arbre, et la probabilité d'un chemin est le produit des probabilités de ses branches. On se limite à au plus 4 répétitions : pour calculer la probabilité d'un événement, on traduit l'événement en termes de <code>S</code> et <code>S̄</code>, on repère tous les chemins qui le réalisent, on calcule chaque chemin, puis on additionne. Pour « au moins un succès », il est souvent plus court de passer par l'événement contraire : <code>P(au moins un S) = 1 - P(aucun S)</code>.</p>
+</div>
 <h2 id="exemple">Exemple</h2>
+<div class="admonition exemple">
 <p>Une entreprise envoie une offre à trois clients indépendants, chacun l'acceptant avec une probabilité de 0,30.</p>
 <p>« Exactement deux succès » correspond aux trois chemins <code>SSS̄</code>, <code>SS̄S</code>, <code>S̄SS</code>, chacun de probabilité <code>0,30² × 0,70 = 0,063</code>. La probabilité cherchée est donc <code>3 × 0,063 = 0,189</code>.</p>
+</div>
 <h2 id="repere-historique-bernoulli-etudie-les-experiences-repetees">Repère historique — Bernoulli étudie les expériences répétées</h2>
+<div class="admonition historique">
+<p class="frise" data-annee="1713">Jacques Bernoulli, <em>Ars conjectandi</em>, 1713</p>
 <p>L’Ars conjectandi de Jacques Bernoulli paraît en 1713, huit ans après sa mort. Cet ouvrage rassemble des recherches sur les jeux de hasard, le dénombrement et les probabilités, notamment dans les expériences répétées. La répétition devient un objet d’étude : on ne s’intéresse plus seulement à une issue isolée, mais aux suites de résultats possibles. L’expression « épreuve de Bernoulli » et l’arbre du cours appartiennent à notre présentation actuelle.</p>
 <p>Dans une illustration moderne fictive, trois clients acceptent ou refusent une offre. On suppose leurs décisions indépendantes, avec la même probabilité d’acceptation <code>0,30</code>. La probabilité de trois refus est alors <code>0,70 × 0,70 × 0,70 = 0,343</code>. L’événement contraire donne une probabilité d’au moins une acceptation égale à <code>1-0,343 = 0,657</code>. Trois refus successifs ne rendent pas une acceptation suivante plus probable si les hypothèses restent les mêmes. En pratique, ces hypothèses doivent être discutées : des clients influencés par une recommandation commune pourraient avoir des décisions liées. Le nom du modèle ne garantit donc pas son adéquation à la situation ; l’arbre traduit les hypothèses que l’on a choisies.</p>
 <p>Source : <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Jacob/">MacTutor, université de St Andrews, Jacques Bernoulli et l’Ars conjectandi</a>.</p>
+</div>
 
 
 
@@ -1574,6 +1583,8 @@
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
         <script src="../../javascripts/toutatice-header.js"></script>
+      
+        <script src="../../javascripts/frise.js?v=2026-11-02"></script>
       
         <script src="../../javascripts/goatcounter.js"></script>
       

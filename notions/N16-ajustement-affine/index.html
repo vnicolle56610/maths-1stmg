@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-02">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1474,11 +1474,13 @@
 <!-- NOTION-NAV:END -->
 
 <h2 id="objectifs">Objectifs</h2>
+<div class="admonition objectifs">
 <ul>
 <li>Déterminer un ajustement affine.</li>
 <li>Utiliser une droite d’ajustement pour interpoler ou extrapoler.</li>
 <li>Critiquer la pertinence d’un modèle.</li>
 </ul>
+</div>
 <h2 id="voir-aussi">Voir aussi</h2>
 <ul>
 <li><a href="../N15-statistiques-deux-variables/">N15 — Statistiques à deux variables : nuages et point moyen</a></li>
@@ -1493,15 +1495,22 @@
 <!-- AUTO-DOCS:END -->
 
 <h2 id="notions-essentielles">Notions essentielles</h2>
+<div class="admonition essentiel">
 <p>Un ajustement affine approche un nuage de points presque rectiligne par une droite <code>y = ax+b</code>, qui résume une tendance globale. Il peut être obtenu au jugé (tracé visuel entre deux points lisibles), par la méthode de Mayer (on partage la série en deux groupes de même effectif, on calcule leurs points moyens <code>G1</code> et <code>G2</code>, et la droite <code>(G1G2)</code> est la droite d'ajustement — elle passe par le point moyen global), ou par une droite dite « des moindres carrés », fournie par une calculatrice, un tableur ou un logiciel : aucune théorie de calcul n'est exigée, cette droite est seulement lue sur l'outil.</p>
 <p>Interpoler, c'est estimer <code>y</code> pour une valeur de <code>x</code> intérieure à l'intervalle des abscisses observées ; extrapoler, c'est l'estimer pour une valeur extérieure à cet intervalle. Une interpolation est généralement moins risquée qu'une extrapolation proche, et une extrapolation lointaine peut être très peu fiable même si le calcul est correct : le modèle affine ne doit jamais être prolongé indéfiniment, car des contraintes réelles peuvent limiter la grandeur étudiée.</p>
+</div>
 <h2 id="exemple">Exemple</h2>
+<div class="admonition exemple">
 <p>Pour une série budget publicitaire / ventes, un outil donne la droite d'ajustement <code>y ≈ 2,67x + 9,13</code>, avec des abscisses observées entre 2 et 12.</p>
 <p>Pour <code>x = 9</code>, on obtient <code>y ≈ 33,2</code> : comme <code>9 ∈ [2 ; 12]</code>, c'est une interpolation. Pour <code>x = 15</code>, on obtient <code>y ≈ 49,2</code> : comme <code>15 &gt; 12</code>, c'est une extrapolation, à interpréter avec davantage de prudence.</p>
+</div>
 <h2 id="repere-historique-legendre-ajuste-des-observations-imparfaites">Repère historique — Legendre ajuste des observations imparfaites</h2>
+<div class="admonition historique">
+<p class="frise" data-annee="1805">Adrien-Marie Legendre, méthode des moindres carrés, 1805</p>
 <p>En 1805, Adrien-Marie Legendre publie la méthode des moindres carrés dans un ouvrage consacré à la détermination des orbites des comètes. Le problème vient des observations : les mesures ne concordent pas exactement, alors qu’il faut en tirer une estimation cohérente. Cette méthode sera aussi développée par Gauss. Elle répond à un besoin d’ajustement, sans supposer que les mesures sont toutes parfaitement exactes. Sa théorie n’est pas nécessaire pour utiliser la droite fournie par un logiciel dans ce chapitre.</p>
 <p>Dans une illustration commerciale moderne fictive, un outil propose <code>y = 3x+10</code> à partir de budgets publicitaires <code>x</code> compris entre 2 et 12 milliers d’euros ; <code>y</code> représente des ventes en centaines d’articles. Pour <code>x = 8</code>, l’estimation est 34 centaines d’articles : c’est une interpolation. Pour <code>x = 20</code>, elle devient 70 centaines : c’est une extrapolation. L’ajustement ne garantit pas ces ventes, surtout hors de la zone observée. Le calcul peut être juste alors que la prévision devient peu crédible : capacité de vente, concurrence ou saturation peuvent rendre le prolongement de la droite inadapté.</p>
 <p>Source : <a href="https://mathshistory.st-andrews.ac.uk/BEA/legendre_bea.pdf">Biographical Encyclopedia of Astronomers, notice Legendre, hébergée par l’université de St Andrews</a>.</p>
+</div>
 
 
 
@@ -1573,6 +1582,8 @@
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
         <script src="../../javascripts/toutatice-header.js"></script>
+      
+        <script src="../../javascripts/frise.js?v=2026-11-02"></script>
       
         <script src="../../javascripts/goatcounter.js"></script>
       

@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-02">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1474,11 +1474,13 @@
 <!-- NOTION-NAV:END -->
 
 <h2 id="objectifs">Objectifs</h2>
+<div class="admonition objectifs">
 <ul>
 <li>Représenter une série statistique à deux variables.</li>
 <li>Calculer le point moyen.</li>
 <li>Lire un nuage de points et discuter une tendance.</li>
 </ul>
+</div>
 <h2 id="voir-aussi">Voir aussi</h2>
 <ul>
 <li><a href="../N16-ajustement-affine/">N16 — Ajustement affine, interpolation et extrapolation</a></li>
@@ -1493,15 +1495,22 @@
 <!-- AUTO-DOCS:END -->
 
 <h2 id="notions-essentielles">Notions essentielles</h2>
+<div class="admonition essentiel">
 <p>Lorsqu'on observe sur les mêmes individus deux caractères quantitatifs <code>x</code> et <code>y</code>, l'ensemble des couples <code>(xᵢ ; yᵢ)</code> forme une série statistique à deux variables. Dans un repère, l'ensemble des points <code>Mᵢ(xᵢ ; yᵢ)</code> est le nuage de points : on ne relie jamais ces points entre eux. Le point moyen <code>G(x̄ ; ȳ)</code>, où <code>x̄</code> et <code>ȳ</code> sont les moyennes des deux séries, résume la position centrale du nuage — sans décrire ni sa dispersion ni sa forme, et sans être nécessairement l'un des points observés.</p>
 <p>Un nuage peut suggérer une tendance croissante, décroissante, ou l'absence de tendance nette, ainsi que des points atypiques (qu'il ne faut pas supprimer automatiquement : ils peuvent être réels et informatifs). Une tendance observée ne prouve jamais une causalité entre les deux variables.</p>
+</div>
 <h2 id="exemple">Exemple</h2>
+<div class="admonition exemple">
 <p>Une entreprise relève, pour six campagnes, la dépense publicitaire <code>x</code> (en milliers d'euros) et le chiffre d'affaires <code>y</code> (en milliers d'euros) : <code>(4;52), (6;58), (7;61), (9;70), (10;73), (12;80)</code>.</p>
 <p>Le point moyen est <code>x̄ = (4+6+7+9+10+12)/6 = 8</code> et <code>ȳ = (52+58+61+70+73+80)/6 ≈ 65,7</code>, soit <code>G(8 ; 65,7)</code>. Le nuage monte globalement de la gauche vers la droite : on observe une tendance croissante entre dépense et chiffre d'affaires.</p>
+</div>
 <h2 id="repere-historique-galton-compare-des-graines-et-leur-descendance">Repère historique — Galton compare des graines et leur descendance</h2>
+<div class="admonition historique">
+<p class="frise" data-annee="1875" data-etiquette="années 1870">Francis Galton, années 1870</p>
 <p>Dans les années 1870, Francis Galton étudie la taille de graines de pois de senteur et celle des graines produites par leur descendance. Il compare les résultats obtenus à partir de graines de tailles différentes. Cette recherche illustre une idée essentielle des statistiques à deux variables : conserver ensemble les deux mesures que l’on veut comparer. Une moyenne isolée ne montre ni l’association entre ces mesures ni la dispersion des résultats.</p>
 <p>Pour illustrer cette lecture avec des données modernes entièrement fictives, trois lots donnent les couples <code>(4 ; 5)</code>, <code>(6 ; 5)</code> et <code>(8 ; 8)</code>, où les deux coordonnées sont des diamètres en millimètres : diamètre des graines semées et diamètre moyen des graines récoltées dans chaque lot. Le point moyen est <code>G(6 ; 6)</code>, qui ne correspond à aucun des trois points observés. Le nuage suggère une tendance globalement croissante, sans que tous les points soient alignés. Ces trois couples inventés ne reproduisent pas l’expérience historique et ne suffisent pas à établir une loi générale. Le point moyen résume une position ; il ne remplace pas l’examen du nuage.</p>
 <p>Source : <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Galton/">MacTutor, université de St Andrews, Galton et ses expériences sur les graines</a>.</p>
+</div>
 
 
 
@@ -1573,6 +1582,8 @@
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
         <script src="../../javascripts/toutatice-header.js"></script>
+      
+        <script src="../../javascripts/frise.js?v=2026-11-02"></script>
       
         <script src="../../javascripts/goatcounter.js"></script>
       

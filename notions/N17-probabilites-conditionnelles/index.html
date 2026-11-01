@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-02">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1474,11 +1474,13 @@
 <!-- NOTION-NAV:END -->
 
 <h2 id="objectifs">Objectifs</h2>
+<div class="admonition objectifs">
 <ul>
 <li>Consolider les arbres et tableaux croisés.</li>
 <li>Calculer une probabilité conditionnelle.</li>
 <li>Introduire indépendance et probabilités totales.</li>
 </ul>
+</div>
 <h2 id="voir-aussi">Voir aussi</h2>
 <ul>
 <li><a href="../N18-bernoulli-arbres/">N18 — Épreuves indépendantes de Bernoulli et arbres</a></li>
@@ -1493,16 +1495,23 @@
 <!-- AUTO-DOCS:END -->
 
 <h2 id="notions-essentielles">Notions essentielles</h2>
+<div class="admonition essentiel">
 <p>Si <code>P(A) &gt; 0</code>, la probabilité de <code>B</code> sachant <code>A</code> est <code>P_A(B) = P(A∩B)/P(A)</code>, d'où la formule du produit <code>P(A∩B) = P(A) × P_A(B)</code>. Il faut bien distinguer <code>P(A∩B)</code>, <code>P_A(B)</code> et <code>P_B(A)</code> : ces trois nombres portent sur des dénominateurs différents et répondent à des questions différentes.</p>
 <p>Dans un arbre pondéré, la somme des probabilités des branches issues d'un même nœud vaut 1, et la probabilité d'un chemin est le produit des probabilités rencontrées ; on additionne les probabilités des chemins incompatibles qui réalisent le même événement final. Comme <code>A</code> et <code>Ā</code> forment une partition de l'univers, la formule des probabilités totales donne, pour tout événement <code>B</code> : <code>P(B) = P(A)×P_A(B) + P(Ā)×P_Ā(B)</code>.</p>
 <p>Deux événements <code>A</code> et <code>B</code> sont indépendants lorsque <code>P_A(B) = P(B)</code>, ce qui équivaut à <code>P(A∩B) = P(A)×P(B)</code>. Indépendance et incompatibilité sont deux notions différentes : deux événements incompatibles de probabilités non nulles ne sont jamais indépendants.</p>
+</div>
 <h2 id="exemple">Exemple</h2>
+<div class="admonition exemple">
 <p>Un site étudie 1000 commandes : 300 sont express, 80 sont en retard, et 45 sont à la fois express et en retard.</p>
 <p><code>P(E∩R) = 45/1000 = 0,045</code> ; parmi les commandes express, <code>P_E(R) = 45/300 = 0,15</code> ; parmi les commandes en retard, <code>P_R(E) = 45/80 = 0,5625</code>. Ces trois calculs portent sur les mêmes 45 commandes, mais sur des univers de référence différents : toutes les commandes, puis les commandes express, puis les commandes en retard.</p>
+</div>
 <h2 id="repere-historique-bayes-et-le-role-de-linformation-connue">Repère historique — Bayes et le rôle de l’information connue</h2>
+<div class="admonition historique">
+<p class="frise" data-annee="1763">Thomas Bayes, mémoire communiqué par Richard Price, 1763</p>
 <p>En 1763, Richard Price communique à la Royal Society un mémoire retrouvé parmi les papiers de Thomas Bayes, mort deux ans auparavant. Le travail porte sur la manière de raisonner sur une probabilité à partir d’observations. Ce problème historique contribue au développement du raisonnement probabiliste tenant compte de l’information disponible. Il ne se réduit pas à notre formule scolaire du conditionnement, et les notations du chapitre sont actuelles.</p>
 <p>Considérons une situation moderne fictive : sur 1 000 commandes, 100 viennent d’un fournisseur A ; 20 de ces commandes sont défectueuses. Les 900 autres commandes comptent 30 défauts. Parmi les commandes de A, la proportion défectueuse est <code>20/100 = 20 %</code>. Parmi les 50 commandes défectueuses, la proportion provenant de A est <code>20/50 = 40 %</code>. Les deux calculs utilisent les mêmes 20 commandes, mais l’information connue change le groupe de référence. Une forte proportion de défauts chez un fournisseur ne donne donc pas directement sa part parmi tous les défauts. Un tableau croisé permet de vérifier les effectifs et de choisir le bon dénominateur, sans nouvelle formule à apprendre.</p>
 <p>Source : <a href="https://www.gtfp.cs.rhul.ac.uk/pulskamp/Bayes/bayesessay-rjp.pdf">Mémoire de Bayes communiqué par Price, lu le 23 décembre 1763, transcription hébergée par Royal Holloway, université de Londres</a>.</p>
+</div>
 
 
 
@@ -1574,6 +1583,8 @@
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
         <script src="../../javascripts/toutatice-header.js"></script>
+      
+        <script src="../../javascripts/frise.js?v=2026-11-02"></script>
       
         <script src="../../javascripts/goatcounter.js"></script>
       

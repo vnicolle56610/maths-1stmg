@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-02">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1474,11 +1474,13 @@
 <!-- NOTION-NAV:END -->
 
 <h2 id="objectifs">Objectifs</h2>
+<div class="admonition objectifs">
 <ul>
 <li>Reconnaître un modèle discret linéaire ou exponentiel.</li>
 <li>Travailler récurrence et formule explicite.</li>
 <li>Comparer croissances arithmétique et géométrique.</li>
 </ul>
+</div>
 <h2 id="voir-aussi">Voir aussi</h2>
 <ul>
 <li><a href="../N08-suites-numeriques-modeles/">N08 — Suites numériques : modèles discrets</a></li>
@@ -1494,16 +1496,23 @@
 <!-- AUTO-DOCS:END -->
 
 <h2 id="notions-essentielles">Notions essentielles</h2>
+<div class="admonition essentiel">
 <p>Une suite <code>u</code> est arithmétique lorsqu'on passe d'un terme au suivant en ajoutant toujours le même nombre <code>r</code>, la raison : <code>u(n+1) = u(n) + r</code> ; elle modélise une évolution absolue constante, et son terme général est <code>u(n) = u(0) + nr</code>. On la reconnaît en vérifiant que les différences <code>u(n+1)-u(n)</code> sont toutes égales.</p>
 <p>Une suite <code>v</code> à termes strictement positifs est géométrique lorsqu'on passe d'un terme au suivant en multipliant toujours par le même nombre <code>q &gt; 0</code>, la raison : <code>v(n+1) = q × v(n)</code> ; elle modélise une évolution relative constante, et son terme général est <code>v(n) = v(0) × qⁿ</code>. On la reconnaît en vérifiant que les quotients <code>v(n+1)/v(n)</code> sont tous égaux. Un taux d'évolution <code>t</code> se traduit en raison géométrique par <code>q = 1+t</code>.</p>
 <p>Une suite arithmétique de raison <code>r</code> est strictement croissante si <code>r &gt; 0</code>, décroissante si <code>r &lt; 0</code>. Une suite géométrique positive de raison <code>q</code> est strictement croissante si <code>q &gt; 1</code>, décroissante si <code>0 &lt; q &lt; 1</code>. Une suite n'est pas nécessairement de l'un de ces deux types : il faut vérifier que la règle est valable pour tous les rangs étudiés.</p>
+</div>
 <h2 id="exemple">Exemple</h2>
+<div class="admonition exemple">
 <p>Deux magasins partent de 500 clients. Le magasin A gagne 40 clients par mois : <code>u(n) = 500 + 40n</code>, arithmétique de raison 40. Le magasin B gagne 8 % de clients par mois : <code>v(n) = 500 × 1,08ⁿ</code>, géométrique de raison 1,08.</p>
 <p>Au rang 12 : <code>u(12) = 980</code>, tandis que <code>v(12) ≈ 1259</code>. Le modèle géométrique donne ici l'effectif le plus élevé, mais cette comparaison ne vaut que pour les rangs étudiés.</p>
+</div>
 <h2 id="repere-historique-malthus-compare-deux-rythmes-de-croissance">Repère historique — Malthus compare deux rythmes de croissance</h2>
+<div class="admonition historique">
+<p class="frise" data-annee="1798">Thomas Robert Malthus, <em>Essai sur le principe de population</em>, 1798</p>
 <p>Dans son Essai sur le principe de population, publié en 1798, Thomas Robert Malthus oppose une population qui, sans frein, pourrait croître selon une progression géométrique à des ressources alimentaires qu’il envisage selon une progression arithmétique. Ce raisonnement met en débat des hypothèses économiques et démographiques ; il ne constitue pas une loi universelle décrivant toutes les sociétés. Son intérêt mathématique est de distinguer une multiplication répétée d’un ajout répété.</p>
 <p>Voici une illustration moderne fictive, distincte des données et des exemples de Malthus : deux indices valent initialement 100. Le premier gagne 20 points par période, le second est multiplié par 1,20. Après une période, ils valent tous deux 120 ; après deux périodes, ils valent respectivement 140 et 144. Une même première hausse peut donc cacher deux règles différentes. Avec les notations du chapitre, les modèles sont <code>u(n) = 100+20n</code> et <code>v(n) = 100 × 1,20ⁿ</code>. Pour appliquer l’un d’eux à une situation réelle, il faut justifier la règle et la durée pendant laquelle on la suppose valable : quelques valeurs ne garantissent pas une prévision indéfinie.</p>
 <p>Source : <a href="https://sourcebooks.web.fordham.edu/mod/1798malthus.asp">Université Fordham, texte du premier Essai de Malthus sur la population (1798)</a>.</p>
+</div>
 
 
 
@@ -1575,6 +1584,8 @@
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
         <script src="../../javascripts/toutatice-header.js"></script>
+      
+        <script src="../../javascripts/frise.js?v=2026-11-02"></script>
       
         <script src="../../javascripts/goatcounter.js"></script>
       

@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-02">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -1474,11 +1474,13 @@
 <!-- NOTION-NAV:END -->
 
 <h2 id="objectifs">Objectifs</h2>
+<div class="admonition objectifs">
 <ul>
 <li>Passer d’un taux à un coefficient multiplicateur.</li>
 <li>Calculer une valeur initiale ou finale.</li>
 <li>Traiter des évolutions successives ou réciproques.</li>
 </ul>
+</div>
 <h2 id="voir-aussi">Voir aussi</h2>
 <ul>
 <li><a href="../N05-taux-variation-fonctions/">N05 — Taux de variation et fonctions monotones</a></li>
@@ -1501,16 +1503,23 @@
 <!-- AUTO-EVAL:END -->
 
 <h2 id="notions-essentielles">Notions essentielles</h2>
+<div class="admonition essentiel">
 <p>Dans une population de référence d'effectif <code>N</code>, une sous-population d'effectif <code>n</code> représente la proportion <code>p = n/N</code>. Passer de <code>40 %</code> à <code>42 %</code> correspond à une hausse de 2 points de pourcentage, ce qui n'est pas la même chose qu'une hausse relative de <code>(42-40)/40 = 5 %</code> : il faut distinguer les deux.</p>
 <p>Pour une valeur passant de <code>Vi</code> à <code>Vf</code>, le taux d'évolution est <code>t = (Vf-Vi)/Vi</code>, et le coefficient multiplicateur associé est <code>CM = 1 + t</code>, avec <code>Vf = Vi × CM</code>. Pour des évolutions successives, les coefficients multiplicateurs se multiplient : <code>CM_global = CM1 × CM2 × …</code> (les taux, eux, ne s'additionnent généralement pas). L'évolution réciproque, qui ramène de la valeur finale à la valeur initiale, a pour coefficient <code>1/CM</code>.</p>
 <p>Un indice base 100 attribue la valeur 100 à une période de référence <code>V0</code> ; pour une valeur <code>V</code>, l'indice est <code>I = 100 × V/V0</code>. Entre deux indices <code>Ii</code> et <code>If</code>, le taux d'évolution se calcule comme pour deux valeurs : <code>t = (If-Ii)/Ii</code>.</p>
+</div>
 <h2 id="exemple">Exemple</h2>
+<div class="admonition exemple">
 <p>Deux remises successives de 15 % puis 10 % ont pour coefficients <code>0,85</code> et <code>0,90</code>. Le coefficient global est <code>0,85 × 0,90 = 0,765</code>.</p>
 <p>Le taux global vaut <code>0,765 - 1 = -0,235</code>, soit une remise totale de 23,5 % — et non 25 %, car les taux ne s'additionnent pas.</p>
+</div>
 <h2 id="repere-historique-stevin-et-le-calcul-des-interets-successifs">Repère historique — Stevin et le calcul des intérêts successifs</h2>
+<div class="admonition historique">
+<p class="frise" data-annee="1582">Simon Stevin, tables d’intérêts, 1582</p>
 <p>En 1582, Simon Stevin publie des tables d’intérêts, précédées de règles et d’exemples sur les intérêts simples et composés. Ces calculs répondent à un besoin financier : déterminer comment une somme évolue avec le temps. La distinction essentielle porte sur la base du calcul. Avec des intérêts simples, l’intérêt est calculé sur le capital initial ; avec des intérêts composés, les intérêts conservés s’ajoutent au capital et produisent à leur tour des intérêts.</p>
 <p>Voici une illustration moderne fictive, avec nos notations actuelles : un capital de 100 € augmente de 10 % par an pendant deux ans, les intérêts étant capitalisés, sans frais ni versement supplémentaire. Il devient <code>100 × 1,10 = 110</code> €, puis <code>110 × 1,10 = 121</code> €. La hausse totale est donc de 21 %, et non de 20 %. Comme pour les remises successives du chapitre, les coefficients se multiplient parce que la valeur de référence change. Le même outil permet de traiter une hausse ou une baisse ; le contexte précise le coefficient à employer.</p>
 <p>Source : <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Stevin/">MacTutor, université de St Andrews, Simon Stevin, tables d’intérêts de 1582</a>.</p>
+</div>
 
 
 
@@ -1582,6 +1591,8 @@
         <script src="../../javascripts/pdf-new-tab.js"></script>
       
         <script src="../../javascripts/toutatice-header.js"></script>
+      
+        <script src="../../javascripts/frise.js?v=2026-11-02"></script>
       
         <script src="../../javascripts/goatcounter.js"></script>
       
