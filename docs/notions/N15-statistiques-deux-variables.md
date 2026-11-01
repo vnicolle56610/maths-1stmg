@@ -43,3 +43,11 @@ Un nuage peut suggérer une tendance croissante, décroissante, ou l'absence de 
 Une entreprise relève, pour six campagnes, la dépense publicitaire `x` (en milliers d'euros) et le chiffre d'affaires `y` (en milliers d'euros) : `(4;52), (6;58), (7;61), (9;70), (10;73), (12;80)`.
 
 Le point moyen est `x̄ = (4+6+7+9+10+12)/6 = 8` et `ȳ = (52+58+61+70+73+80)/6 ≈ 65,7`, soit `G(8 ; 65,7)`. Le nuage monte globalement de la gauche vers la droite : on observe une tendance croissante entre dépense et chiffre d'affaires.
+
+## Repère historique — Galton compare des graines et leur descendance
+
+Dans les années 1870, Francis Galton étudie la taille de graines de pois de senteur et celle des graines produites par leur descendance. Il compare les résultats obtenus à partir de graines de tailles différentes. Cette recherche illustre une idée essentielle des statistiques à deux variables : conserver ensemble les deux mesures que l’on veut comparer. Une moyenne isolée ne montre ni l’association entre ces mesures ni la dispersion des résultats.
+
+Pour illustrer cette lecture avec des données modernes entièrement fictives, trois lots donnent les couples `(4 ; 5)`, `(6 ; 5)` et `(8 ; 8)`, où les deux coordonnées sont des diamètres en millimètres : diamètre des graines semées et diamètre moyen des graines récoltées dans chaque lot. Le point moyen est `G(6 ; 6)`, qui ne correspond à aucun des trois points observés. Le nuage suggère une tendance globalement croissante, sans que tous les points soient alignés. Ces trois couples inventés ne reproduisent pas l’expérience historique et ne suffisent pas à établir une loi générale. Le point moyen résume une position ; il ne remplace pas l’examen du nuage.
+
+Source : [MacTutor, université de St Andrews, Galton et ses expériences sur les graines](https://mathshistory.st-andrews.ac.uk/Biographies/Galton/).

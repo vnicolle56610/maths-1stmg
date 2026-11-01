@@ -44,3 +44,11 @@ La tangente à la courbe de `f` au point d'abscisse `a` a pour équation `y = f(
 Pour `P(x) = 4x³ - 3x² + 7x - 5`, on dérive terme à terme : `P'(x) = 4×3x² - 3×2x + 7 = 12x² - 6x + 7`.
 
 Pour la tangente, avec `f(x) = x³ - 2x + 1` en `a = 1` : `f(1) = 0` et `f'(x) = 3x² - 2` donne `f'(1) = 1`. L'équation réduite de la tangente est donc `y = x - 1`.
+
+## Repère historique — Leibniz organise le calcul des dérivées
+
+En 1684, Gottfried Wilhelm Leibniz publie dans les Acta Eruditorum une méthode de calcul différentiel comportant des règles de calcul. L’enjeu est de disposer d’opérations réutilisables, plutôt que de reconstruire pour chaque courbe une méthode de tangente particulière. Ses notations contribuent à la diffusion de ce calcul. Il ne faut toutefois pas lui attribuer notre définition moderne de la dérivée comme limite ni toutes les conventions actuelles du cours.
+
+Voici une illustration moderne fictive, avec les règles de ce chapitre : un coût est modélisé par `C(x) = 2x³ + 5x + 100`, pour `x` entre 0 et 10, en unités adaptées à la situation. On dérive terme à terme et l’on obtient `C'(x) = 6x² + 5`. Si le coût fixe passe de 100 à 150, la dérivée reste la même : une constante déplace la courbe verticalement, sans modifier la pente en chaque abscisse. Ce rapprochement entre formule et graphique donne du sens à la règle « la dérivée d’une constante est nulle ». Seules les règles sur les puissances, les sommes et les multiples sont nécessaires ici.
+
+Source : [MacTutor, université de St Andrews, Leibniz et sa publication de 1684](https://mathshistory.st-andrews.ac.uk/Biographies/Leibniz/).

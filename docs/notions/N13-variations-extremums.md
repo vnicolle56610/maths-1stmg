@@ -43,3 +43,11 @@ Sur un intervalle fermé, un extremum local n'est pas nécessairement l'extremum
 Le bénéfice d'une entreprise, en milliers d'euros, est `P(x) = -x² + 48x - 320` pour `x ∈ [0 ; 40]`, où `x` est un nombre de centaines d'articles.
 
 `P'(x) = -2x + 48` est positif sur `[0 ; 24[`, nul en 24, négatif sur `]24 ; 40]` : `P` croît puis décroît, avec un maximum en `x = 24`. Comme `P(24) = 256`, le bénéfice maximal est de 256 000 euros pour une production de 2400 articles.
+
+## Repère historique — Fermat cherche où une grandeur est maximale
+
+Au XVIIe siècle, Pierre de Fermat élabore des méthodes pour déterminer des maxima et des minima. Ces recherches précèdent la présentation actuelle du calcul différentiel et circulent notamment par sa correspondance avec d’autres mathématiciens. Leur question centrale reste familière : parmi les valeurs possibles d’une grandeur, laquelle est la plus grande ou la plus petite ? Le tableau de variations utilisé au lycée est notre outil actuel, et non une présentation attribuée à Fermat.
+
+Dans un exemple moderne fictif, une entreprise dispose de 40 mètres de clôture pour un enclos rectangulaire. Si un côté mesure `x` mètres, l’autre mesure `20-x` mètres, avec `0 < x < 20`. L’aire est `A(x) = x(20-x)` et sa dérivée vaut `A'(x) = 20-2x`. Elle est positive avant 10 et négative après 10 : l’aire croît puis décroît, avec un maximum de 100 m² pour un carré de côté 10 mètres. L’annulation de la dérivée fournit une valeur à examiner ; c’est l’étude du signe sur tout le domaine qui justifie ici le maximum. La conclusion combine calcul, contrainte de clôture et unité d’aire.
+
+Source : [MacTutor, université de St Andrews, Fermat et ses méthodes de maxima et minima](https://mathshistory.st-andrews.ac.uk/Biographies/Fermat/).

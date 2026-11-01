@@ -44,3 +44,11 @@ Le signe de `f'(a)` se lit sur la tangente : montante (`f'(a) > 0`), horizontale
 Le coût total de `x` articles est `C(x) = 0,05x² + 20x + 500`. Le taux `τ_h = (C(100+h)-C(100))/h` vaut successivement 31, puis 30,5, puis 30,25, puis 30,05 lorsque `h` vaut 20, 10, 5, 1.
 
 Ces valeurs se rapprochent de 30 : on obtient `C'(100) = 30`. Autour de 100 articles, produire un article de plus augmente le coût d'environ 30 euros.
+
+## Repère historique — Newton et la mesure d’un changement local
+
+Dans les années 1660, Isaac Newton étudie des grandeurs qui varient avec le temps et leurs vitesses de variation, qu’il appelle des fluxions. Le mouvement fournit ainsi une manière de penser le changement : une position et une vitesse ne décrivent pas la même chose. Ces travaux contribuent à la naissance du calcul différentiel ; la définition moderne du nombre dérivé par une limite sera précisée ultérieurement.
+
+Dans le modèle de coût moderne fictif de l’exemple, `C'(100) = 30` décrit une variation locale, et non le coût total de fabrication de 100 articles. Avec nos notations actuelles, la pente entre les productions 100 et 101 vaut `C(101)-C(100) = 30,05` euros par article. Elle est proche de 30, mais différente : le coût du prochain article est ici une différence entre deux valeurs, tandis que la dérivée donne la pente de la tangente au modèle continu. L’interprétation économique est actuelle, sans être attribuée à Newton. Rapprocher les deux points de la courbe permet de comprendre pourquoi cette pente locale peut fournir une approximation utile, dont il faut conserver les unités et les limites.
+
+Source : [MacTutor, université de St Andrews, histoire du calcul et fluxions de Newton](https://mathshistory.st-andrews.ac.uk/HistTopics/The_rise_of_calculus/).
