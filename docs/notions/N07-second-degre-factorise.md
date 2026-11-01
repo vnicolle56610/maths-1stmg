@@ -43,3 +43,11 @@ Pour `x1 < x2`, la forme `a(x-x1)(x-x2)` est du signe de `a` à l'extérieur des
 Le bénéfice d'une entreprise, en milliers d'euros, est modélisé sur `[0 ; 10]` par `B(x) = -0,5(x-2)(x-8)`, où `x` est le nombre de centaines d'articles vendus.
 
 Les racines sont 2 et 8 : ce sont les seuils d'équilibre. Comme le coefficient est négatif, `B(x) > 0` pour `x ∈ ]2 ; 8[` : l'entreprise réalise un bénéfice lorsqu'elle vend strictement entre 200 et 800 articles.
+
+## Repère historique — Des dettes de Brahmagupta aux racines admissibles
+
+En 628, le mathématicien indien Brahmagupta présente des règles de calcul faisant intervenir des quantités positives et négatives, exprimées notamment en termes de biens et de dettes. Il travaille aussi sur des problèmes du second degré. Cette prise en compte des quantités négatives élargit le calcul : un résultat négatif peut avoir un sens, mais ce sens dépend de ce que représente l’inconnue. Les notations et les tableaux de signes du cours sont toutefois modernes.
+
+Considérons un exemple moderne fictif : un rectangle a pour largeur `x` mètres, pour longueur `x+1` mètres et pour aire 6 m². Avec nos écritures, `x²+x-6 = (x-2)(x+3)`. Les deux racines du polynôme sont 2 et −3, ce que l’on vérifie par substitution. Pourtant, seule la valeur 2 convient comme largeur ; une longueur négative n’est pas admissible ici. Si l’inconnue représentait un solde financier, sa négativité ne suffirait pas à l’exclure. Résoudre l’équation et interpréter ses racines sont donc deux étapes distinctes : l’intervalle autorisé par le problème fait partie de la réponse.
+
+Source : [MacTutor, université de St Andrews, Brahmagupta, calcul des dettes et des biens](https://mathshistory.st-andrews.ac.uk/Biographies/Brahmagupta/).

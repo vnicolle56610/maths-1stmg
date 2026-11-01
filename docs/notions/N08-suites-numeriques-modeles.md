@@ -43,3 +43,11 @@ Une suite peut être définie par une formule explicite, où `u(n)` s'exprime di
 Deux modèles décrivent le nombre de comptes actifs d'une plateforme : `u(n) = 400 + 35n` (formule explicite) et `v(0) = 400`, `v(n+1) = 0,9 × v(n) + 80` (récurrence).
 
 Avec `u`, on calcule directement `u(10)`. Avec `v`, il faut calculer successivement `v(1) = 440`, puis `v(2) = 476`, etc. : la récurrence impose un calcul pas à pas.
+
+## Repère historique — Halley ordonne les données de mortalité par âge
+
+En 1693, Edmond Halley publie une table de mortalité à partir de données de la ville de Breslau, aujourd’hui Wrocław. Ce travail relie l’âge à la mortalité et contribue au développement des tables utilisées en assurance sur la vie. L’enjeu est d’organiser des nombres pour comparer les âges, plutôt que de conserver seulement un total global. Ce contexte illustre l’utilité de valeurs rangées selon un indice entier ; il ne suppose pas que leur évolution obéisse à une règle simple et constante.
+
+Dans une illustration moderne entièrement fictive, on suit un groupe initial de 1 000 personnes, sans nouvelle entrée. On note `u(n)` le nombre de personnes encore en vie au bout de `n` années : `u(0) = 1000`, `u(1) = 990`, `u(2) = 977`. Le rang mesure une durée et le terme un effectif. Ces trois observations définissent les premières valeurs, mais ne donnent pas automatiquement une formule pour `u(10)`. Une relation de récurrence serait une hypothèse supplémentaire à préciser. Les notations sont actuelles ; ces nombres ne proviennent pas de la table de Halley.
+
+Source : [MacTutor, université de St Andrews, Edmond Halley et sa table de 1693](https://mathshistory.st-andrews.ac.uk/Biographies/Halley/).
