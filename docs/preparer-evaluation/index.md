@@ -23,7 +23,7 @@ Avant chaque mini-test et chaque devoir surveillé, un **devoir blanc** est mis 
 Notions : [N03 — Calcul algébrique, équations et signes](../notions/N03-calcul-algebrique-equations.md)
 
 - 📄 [Devoir blanc : fiche « Ce que je dois savoir faire » et sujet](2026-2027/DEVOIR_BLANC_MT2_P14_N03.pdf)
-- ✅ Corrigé et grille d'auto-évaluation : en ligne le lundi 9 novembre.
+- ✅ [Corrigé et grille d'auto-évaluation](2026-2027/CORRIGE_DEVOIR_BLANC_MT2_P14_N03.pdf)
 
 ### DS1 — mardi 24 novembre {#ds1-2026-2027}
 
