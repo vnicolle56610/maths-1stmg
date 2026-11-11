@@ -35,6 +35,10 @@ Cette synthèse rassemble les outils d’analyse utiles dans des situations de g
 - [Automatismes N14 — Synthèse d’analyse et problèmes de gestion](../automatismes/AUTOMATISMES_N14_SYNTHESE_ANALYSE_PROBLEMES_GESTION.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N14 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N14-synthese-analyse-gestion.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Points essentiels à maîtriser
 
 !!! essentiel ""

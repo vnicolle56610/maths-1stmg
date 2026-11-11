@@ -34,6 +34,10 @@ L’ajustement affine propose une droite pour résumer une tendance statistique.
 - [Automatismes N16 — Ajustement affine, interpolation et extrapolation](../automatismes/AUTOMATISMES_N16_AJUSTEMENT_AFFINE_INTERPOLATION_EXTRAPOLATION.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N16 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N16-ajustement-affine.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

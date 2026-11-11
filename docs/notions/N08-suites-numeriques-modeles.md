@@ -34,6 +34,10 @@ Une suite numérique décrit une grandeur observée par étapes, souvent année 
 - [Automatismes N08 — Suites numériques : modèles discrets](../automatismes/AUTOMATISMES_N08_SUITES_NUMERIQUES_MODELES_DISCRETS.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N08 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N08-suites-numeriques-modeles.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

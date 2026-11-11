@@ -29,6 +29,10 @@ La synthèse annuelle organise les révisions autour des automatismes et du form
 - [Automatismes N20 — Synthèse annuelle et préparation à l’épreuve anticipée](../automatismes/AUTOMATISMES_N20_SYNTHESE_ANNUELLE_PREPARATION_EPREUVE_ANTICIPEE.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N20 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N20-synthese-annuelle-epreuve.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Points essentiels à maîtriser
 
 !!! essentiel ""

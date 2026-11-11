@@ -34,6 +34,10 @@ Les probabilités conditionnelles servent à tenir compte d’une information d�
 - [Automatismes N17 — Probabilités conditionnelles et indépendance](../automatismes/AUTOMATISMES_N17_PROBABILITES_CONDITIONNELLES_INDEPENDANCE.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N17 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N17-probabilites-conditionnelles.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

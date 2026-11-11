@@ -35,6 +35,10 @@ Les modèles d’évolution servent à prévoir quand une quantité franchit un 
 - [Automatismes N10 — Modèles d’évolution, seuils, tableur et Python](../automatismes/AUTOMATISMES_N10_MODELES_EVOLUTION_SEUILS_TABLEUR_PYTHON.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N10 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N10-evolution-seuils-python.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

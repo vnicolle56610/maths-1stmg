@@ -34,6 +34,10 @@ Une fonction du second degré se reconnaît souvent à sa parabole. Les ressourc
 - [Automatismes N06 — Fonctions du second degré : paraboles et formes simples](../automatismes/AUTOMATISMES_N06_FONCTIONS_SECOND_DEGRE_PARABOLES_FORMES_SIMPLES.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N06 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N06-second-degre-paraboles.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

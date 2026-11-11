@@ -35,6 +35,10 @@ Le nombre dérivé apparaît comme une pente limite : on part des sécantes pour
 - [Automatismes N11 — Nombre dérivé : sécantes, tangentes, interprétation](../automatismes/AUTOMATISMES_N11_NOMBRE_DERIVE_SECANTES_TANGENTES_INTERPRETATION.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N11 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N11-nombre-derive-tangentes.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

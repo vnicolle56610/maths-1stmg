@@ -34,6 +34,10 @@ La forme factorisée rend visibles les racines d’une expression du second degr
 - [Automatismes N07 — Second degré factorisé : racines, signe et problèmes](../automatismes/AUTOMATISMES_N07_SECOND_DEGRE_FACTORISE_RACINES_SIGNE_PROBLEMES.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N07 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N07-second-degre-factorise.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

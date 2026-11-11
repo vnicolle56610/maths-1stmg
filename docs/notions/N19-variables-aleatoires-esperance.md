@@ -34,6 +34,10 @@ Une variable aléatoire associe une valeur numérique aux issues d’une expéri
 - [Automatismes N19 — Variables aléatoires, espérance et simulation](../automatismes/AUTOMATISMES_N19_VARIABLES_ALEATOIRES_ESPERANCE_SIMULATION.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N19 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N19-variables-aleatoires-esperance.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

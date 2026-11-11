@@ -34,6 +34,10 @@ Le signe de la dérivée permet d’organiser l’étude des variations d’une 
 - [Automatismes N13 — Variations et extremums par dérivation](../automatismes/AUTOMATISMES_N13_VARIATIONS_EXTREMUMS_DERIVATION.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N13 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N13-variations-extremums.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

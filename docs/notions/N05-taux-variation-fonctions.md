@@ -35,6 +35,10 @@ Le taux de variation mesure une évolution moyenne entre deux valeurs. Les docum
 - [Automatismes N05 — Taux de variation et fonctions monotones](../automatismes/AUTOMATISMES_N05_TAUX_VARIATION_FONCTIONS_MONOTONES.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N05 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N05-taux-variation-fonctions.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

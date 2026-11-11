@@ -35,6 +35,10 @@ La fonction dérivée donne une méthode de calcul pour étudier les variations.
 - [Automatismes N12 — Fonction dérivée et polynômes de degré au plus 3](../automatismes/AUTOMATISMES_N12_FONCTION_DERIVEE_POLYNOMES_DEGRE_3.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N12 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N12-fonction-derivee-polynomes.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

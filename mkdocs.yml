@@ -31,7 +31,28 @@ nav:
       - "N19 — Variables aléatoires, espérance": notions/N19-variables-aleatoires-esperance.md
       - "N20 — Synthèse annuelle, épreuve anticipée": notions/N20-synthese-annuelle-epreuve.md
   - "📝 TD": td/index.md
-  - "⚡ Automatismes": automatismes/index.md
+  - "⚡ Automatismes":
+      - automatismes/index.md
+      - "N01 — Rentrée, données, logique et automatismes (en ligne)": automatismes/automatismes-N01-rentree-donnees-logique.md
+      - "N02 — Proportions, pourcentages et taux d’évolution (en ligne)": automatismes/automatismes-N02-proportions-pourcentages-evolutions.md
+      - "N03 — Calcul algébrique, équations et signes (en ligne)": automatismes/automatismes-N03-calcul-algebrique-equations.md
+      - "N04 — Fonctions : registres et lectures graphiques (en ligne)": automatismes/automatismes-N04-fonctions-registres-lectures.md
+      - "N05 — Taux de variation et fonctions monotones (en ligne)": automatismes/automatismes-N05-taux-variation-fonctions.md
+      - "N06 — Fonctions du second degré : paraboles et formes simples (en ligne)": automatismes/automatismes-N06-second-degre-paraboles.md
+      - "N07 — Second degré factorisé : racines, signe et problèmes (en ligne)": automatismes/automatismes-N07-second-degre-factorise.md
+      - "N08 — Suites numériques : modèles discrets (en ligne)": automatismes/automatismes-N08-suites-numeriques-modeles.md
+      - "N09 — Suites arithmétiques et géométriques (en ligne)": automatismes/automatismes-N09-suites-arithmetiques-geometriques.md
+      - "N10 — Modèles d’évolution, seuils, tableur et Python (en ligne)": automatismes/automatismes-N10-evolution-seuils-python.md
+      - "N11 — Nombre dérivé : sécantes, tangentes, interprétation (en ligne)": automatismes/automatismes-N11-nombre-derive-tangentes.md
+      - "N12 — Fonction dérivée et polynômes de degré au plus 3 (en ligne)": automatismes/automatismes-N12-fonction-derivee-polynomes.md
+      - "N13 — Variations et extremums par dérivation (en ligne)": automatismes/automatismes-N13-variations-extremums.md
+      - "N14 — Synthèse d’analyse et problèmes de gestion (en ligne)": automatismes/automatismes-N14-synthese-analyse-gestion.md
+      - "N15 — Statistiques à deux variables : nuages et point moyen (en ligne)": automatismes/automatismes-N15-statistiques-deux-variables.md
+      - "N16 — Ajustement affine, interpolation et extrapolation (en ligne)": automatismes/automatismes-N16-ajustement-affine.md
+      - "N17 — Probabilités conditionnelles et indépendance (en ligne)": automatismes/automatismes-N17-probabilites-conditionnelles.md
+      - "N18 — Épreuves indépendantes de Bernoulli et arbres (en ligne)": automatismes/automatismes-N18-bernoulli-arbres.md
+      - "N19 — Variables aléatoires, espérance et simulation (en ligne)": automatismes/automatismes-N19-variables-aleatoires-esperance.md
+      - "N20 — Synthèse annuelle et préparation à l’épreuve anticipée (en ligne)": automatismes/automatismes-N20-synthese-annuelle-epreuve.md
   - "🎯 Préparer une évaluation": preparer-evaluation/index.md
   - "✅ Corrigés publiés": corriges/index.md
   - "ℹ️ À propos & licence": a-propos.md
@@ -57,11 +78,19 @@ markdown_extensions:
   - admonition
   - attr_list
   - pymdownx.superfences
+  - pymdownx.details
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
 extra_css:
   - stylesheets/extra.css?v=2026-11-02
+  - stylesheets/automatismes.css?v=2026-11-11c
 extra_javascript:
   - javascripts/pdf-new-tab.js
   - javascripts/toutatice-header.js
   - javascripts/frise.js?v=2026-11-02
   - javascripts/goatcounter.js
   - javascripts/compteur-visites.js
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
+  - javascripts/automatismes-qcm.js?v=2026-11-11c

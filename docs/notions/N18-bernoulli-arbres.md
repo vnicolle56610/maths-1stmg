@@ -35,6 +35,10 @@ Une épreuve de Bernoulli n’a que deux issues : succès ou échec. Les ressour
 - [Automatismes N18 — Épreuves indépendantes de Bernoulli et arbres](../automatismes/AUTOMATISMES_N18_EPREUVES_INDEPENDANTES_BERNOULLI_ARBRES.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N18 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N18-bernoulli-arbres.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

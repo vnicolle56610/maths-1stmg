@@ -34,6 +34,10 @@ Une fonction décrit la dépendance entre deux grandeurs. Les ressources font pa
 - [Automatismes N04 — Fonctions : registres et lectures graphiques](../automatismes/AUTOMATISMES_N04_FONCTIONS_REGISTRES_LECTURES_GRAPHIQUES.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N04 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N04-fonctions-registres-lectures.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

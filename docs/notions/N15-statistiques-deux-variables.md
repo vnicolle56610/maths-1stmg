@@ -34,6 +34,10 @@ Une série statistique à deux variables met en relation deux grandeurs observé
 - [Automatismes N15 — Statistiques à deux variables : nuages et point moyen](../automatismes/AUTOMATISMES_N15_STATISTIQUES_DEUX_VARIABLES_NUAGE_POINT_MOYEN.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N15 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N15-statistiques-deux-variables.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

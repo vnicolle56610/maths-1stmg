@@ -30,6 +30,10 @@ Le début d’année sert à installer les routines de travail et à repérer le
 - [Corrigé TD N01](../corriges/CORRIGE_TD_N01_RENTREE_DONNEES_LOGIQUE_AUTOMATISMES.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N01 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N01-rentree-donnees-logique.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

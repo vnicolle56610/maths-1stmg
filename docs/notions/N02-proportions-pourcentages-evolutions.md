@@ -36,6 +36,10 @@ Un pourcentage permet de comparer des parts, mesurer une évolution et interpré
 - [Corrigé TD N02](../corriges/CORRIGE_TD_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N02 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N02-proportions-pourcentages-evolutions.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 <!-- AUTO-EVAL:START -->
 - 🎯 Évaluée au DS1 du mardi 24 novembre : [devoir blanc en ligne le mardi 17 novembre](../preparer-evaluation/index.md#ds1-2026-2027)
 <!-- AUTO-EVAL:END -->

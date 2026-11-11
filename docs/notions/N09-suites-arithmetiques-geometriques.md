@@ -35,6 +35,10 @@ Les suites arithmétiques et géométriques modélisent deux types d’évolutio
 - [Automatismes N09 — Suites arithmétiques et géométriques](../automatismes/AUTOMATISMES_N09_SUITES_ARITHMETIQUES_GEOMETRIQUES.pdf)
 <!-- AUTO-DOCS:END -->
 
+<!-- AUTOMATISMES-WEB:START -->
+- ⚡ [Automatismes N09 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N09-suites-arithmetiques-geometriques.md)
+<!-- AUTOMATISMES-WEB:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""

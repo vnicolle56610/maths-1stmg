@@ -1,0 +1,167 @@
+{
+  "_commentaire": "Notions publiées en ligne par scripts/generer_automatismes_web.py (pages lecture + QCM). Ajouter une entrée par notion, puis relancer le script.",
+  "niveau": "Première STMG",
+  "source_racine": "~/ENSEIGNEMENT/CLAUDE/Niveau_1stmg",
+  "notions": [
+    {
+      "code": "N01",
+      "slug": "rentree-donnees-logique",
+      "titre": "Rentrée, données, logique et automatismes",
+      "source": "N01_RENTREE_DONNEES_LOGIQUE/AUTOMATISMES_N01_RENTREE_DONNEES_LOGIQUE.tex",
+      "pdf": "AUTOMATISMES_N01_RENTREE_DONNEES_LOGIQUE.pdf",
+      "notion": "../notions/N01-rentree-donnees-logique.md"
+    },
+    {
+      "code": "N02",
+      "slug": "proportions-pourcentages-evolutions",
+      "titre": "Proportions, pourcentages et taux d’évolution",
+      "source": "N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS/AUTOMATISMES_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.tex",
+      "pdf": "AUTOMATISMES_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf",
+      "notion": "../notions/N02-proportions-pourcentages-evolutions.md"
+    },
+    {
+      "code": "N03",
+      "slug": "calcul-algebrique-equations",
+      "titre": "Calcul algébrique, équations et signes",
+      "source": "N03_CALCUL_ALGEBRIQUE_EQUATIONS/AUTOMATISMES_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.tex",
+      "pdf": "AUTOMATISMES_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.pdf",
+      "notion": "../notions/N03-calcul-algebrique-equations.md"
+    },
+    {
+      "code": "N04",
+      "slug": "fonctions-registres-lectures",
+      "titre": "Fonctions : registres et lectures graphiques",
+      "source": "N04_FONCTIONS_REGISTRES_LECTURES/AUTOMATISMES_N04_FONCTIONS_REGISTRES_LECTURES_GRAPHIQUES.tex",
+      "pdf": "AUTOMATISMES_N04_FONCTIONS_REGISTRES_LECTURES_GRAPHIQUES.pdf",
+      "notion": "../notions/N04-fonctions-registres-lectures.md"
+    },
+    {
+      "code": "N05",
+      "slug": "taux-variation-fonctions",
+      "titre": "Taux de variation et fonctions monotones",
+      "source": "N05_TAUX_VARIATION_FONCTIONS/AUTOMATISMES_N05_TAUX_VARIATION_FONCTIONS_MONOTONES.tex",
+      "pdf": "AUTOMATISMES_N05_TAUX_VARIATION_FONCTIONS_MONOTONES.pdf",
+      "notion": "../notions/N05-taux-variation-fonctions.md"
+    },
+    {
+      "code": "N06",
+      "slug": "second-degre-paraboles",
+      "titre": "Fonctions du second degré : paraboles et formes simples",
+      "source": "N06_SECOND_DEGRE_PARABOLES/AUTOMATISMES_N06_FONCTIONS_SECOND_DEGRE_PARABOLES_FORMES_SIMPLES.tex",
+      "pdf": "AUTOMATISMES_N06_FONCTIONS_SECOND_DEGRE_PARABOLES_FORMES_SIMPLES.pdf",
+      "notion": "../notions/N06-second-degre-paraboles.md"
+    },
+    {
+      "code": "N07",
+      "slug": "second-degre-factorise",
+      "titre": "Second degré factorisé : racines, signe et problèmes",
+      "source": "N07_SECOND_DEGRE_FACTORISE/AUTOMATISMES_N07_SECOND_DEGRE_FACTORISE_RACINES_SIGNE_PROBLEMES.tex",
+      "pdf": "AUTOMATISMES_N07_SECOND_DEGRE_FACTORISE_RACINES_SIGNE_PROBLEMES.pdf",
+      "notion": "../notions/N07-second-degre-factorise.md"
+    },
+    {
+      "code": "N08",
+      "slug": "suites-numeriques-modeles",
+      "titre": "Suites numériques : modèles discrets",
+      "source": "N08_SUITES_NUMERIQUES_MODELES/AUTOMATISMES_N08_SUITES_NUMERIQUES_MODELES_DISCRETS.tex",
+      "pdf": "AUTOMATISMES_N08_SUITES_NUMERIQUES_MODELES_DISCRETS.pdf",
+      "notion": "../notions/N08-suites-numeriques-modeles.md"
+    },
+    {
+      "code": "N09",
+      "slug": "suites-arithmetiques-geometriques",
+      "titre": "Suites arithmétiques et géométriques",
+      "source": "N09_SUITES_ARITHMETIQUES_GEOMETRIQUES/AUTOMATISMES_N09_SUITES_ARITHMETIQUES_GEOMETRIQUES.tex",
+      "pdf": "AUTOMATISMES_N09_SUITES_ARITHMETIQUES_GEOMETRIQUES.pdf",
+      "notion": "../notions/N09-suites-arithmetiques-geometriques.md"
+    },
+    {
+      "code": "N10",
+      "slug": "evolution-seuils-python",
+      "titre": "Modèles d’évolution, seuils, tableur et Python",
+      "source": "N10_EVOLUTION_SEUILS_PYTHON/AUTOMATISMES_N10_MODELES_EVOLUTION_SEUILS_TABLEUR_PYTHON.tex",
+      "pdf": "AUTOMATISMES_N10_MODELES_EVOLUTION_SEUILS_TABLEUR_PYTHON.pdf",
+      "notion": "../notions/N10-evolution-seuils-python.md"
+    },
+    {
+      "code": "N11",
+      "slug": "nombre-derive-tangentes",
+      "titre": "Nombre dérivé : sécantes, tangentes, interprétation",
+      "source": "N11_NOMBRE_DERIVE_TANGENTES/AUTOMATISMES_N11_NOMBRE_DERIVE_SECANTES_TANGENTES_INTERPRETATION.tex",
+      "pdf": "AUTOMATISMES_N11_NOMBRE_DERIVE_SECANTES_TANGENTES_INTERPRETATION.pdf",
+      "notion": "../notions/N11-nombre-derive-tangentes.md"
+    },
+    {
+      "code": "N12",
+      "slug": "fonction-derivee-polynomes",
+      "titre": "Fonction dérivée et polynômes de degré au plus 3",
+      "source": "N12_FONCTION_DERIVEE_POLYNOMES/AUTOMATISMES_N12_FONCTION_DERIVEE_POLYNOMES_DEGRE_3.tex",
+      "pdf": "AUTOMATISMES_N12_FONCTION_DERIVEE_POLYNOMES_DEGRE_3.pdf",
+      "notion": "../notions/N12-fonction-derivee-polynomes.md"
+    },
+    {
+      "code": "N13",
+      "slug": "variations-extremums",
+      "titre": "Variations et extremums par dérivation",
+      "source": "N13_VARIATIONS_EXTREMUMS/AUTOMATISMES_N13_VARIATIONS_EXTREMUMS_DERIVATION.tex",
+      "pdf": "AUTOMATISMES_N13_VARIATIONS_EXTREMUMS_DERIVATION.pdf",
+      "notion": "../notions/N13-variations-extremums.md"
+    },
+    {
+      "code": "N14",
+      "slug": "synthese-analyse-gestion",
+      "titre": "Synthèse d’analyse et problèmes de gestion",
+      "source": "N14_SYNTHESE_ANALYSE_GESTION/AUTOMATISMES_N14_SYNTHESE_ANALYSE_PROBLEMES_GESTION.tex",
+      "pdf": "AUTOMATISMES_N14_SYNTHESE_ANALYSE_PROBLEMES_GESTION.pdf",
+      "notion": "../notions/N14-synthese-analyse-gestion.md"
+    },
+    {
+      "code": "N15",
+      "slug": "statistiques-deux-variables",
+      "titre": "Statistiques à deux variables : nuages et point moyen",
+      "source": "N15_STATISTIQUES_DEUX_VARIABLES/AUTOMATISMES_N15_STATISTIQUES_DEUX_VARIABLES_NUAGE_POINT_MOYEN.tex",
+      "pdf": "AUTOMATISMES_N15_STATISTIQUES_DEUX_VARIABLES_NUAGE_POINT_MOYEN.pdf",
+      "notion": "../notions/N15-statistiques-deux-variables.md"
+    },
+    {
+      "code": "N16",
+      "slug": "ajustement-affine",
+      "titre": "Ajustement affine, interpolation et extrapolation",
+      "source": "N16_AJUSTEMENT_AFFINE/AUTOMATISMES_N16_AJUSTEMENT_AFFINE_INTERPOLATION_EXTRAPOLATION.tex",
+      "pdf": "AUTOMATISMES_N16_AJUSTEMENT_AFFINE_INTERPOLATION_EXTRAPOLATION.pdf",
+      "notion": "../notions/N16-ajustement-affine.md"
+    },
+    {
+      "code": "N17",
+      "slug": "probabilites-conditionnelles",
+      "titre": "Probabilités conditionnelles et indépendance",
+      "source": "N17_PROBABILITES_CONDITIONNELLES/AUTOMATISMES_N17_PROBABILITES_CONDITIONNELLES_INDEPENDANCE.tex",
+      "pdf": "AUTOMATISMES_N17_PROBABILITES_CONDITIONNELLES_INDEPENDANCE.pdf",
+      "notion": "../notions/N17-probabilites-conditionnelles.md"
+    },
+    {
+      "code": "N18",
+      "slug": "bernoulli-arbres",
+      "titre": "Épreuves indépendantes de Bernoulli et arbres",
+      "source": "N18_BERNOULLI_ARBRES/AUTOMATISMES_N18_EPREUVES_INDEPENDANTES_BERNOULLI_ARBRES.tex",
+      "pdf": "AUTOMATISMES_N18_EPREUVES_INDEPENDANTES_BERNOULLI_ARBRES.pdf",
+      "notion": "../notions/N18-bernoulli-arbres.md"
+    },
+    {
+      "code": "N19",
+      "slug": "variables-aleatoires-esperance",
+      "titre": "Variables aléatoires, espérance et simulation",
+      "source": "N19_VARIABLES_ALEATOIRES_ESPERANCE/AUTOMATISMES_N19_VARIABLES_ALEATOIRES_ESPERANCE_SIMULATION.tex",
+      "pdf": "AUTOMATISMES_N19_VARIABLES_ALEATOIRES_ESPERANCE_SIMULATION.pdf",
+      "notion": "../notions/N19-variables-aleatoires-esperance.md"
+    },
+    {
+      "code": "N20",
+      "slug": "synthese-annuelle-epreuve",
+      "titre": "Synthèse annuelle et préparation à l’épreuve anticipée",
+      "source": "N20_SYNTHESE_ANNUELLE_EPREUVE/AUTOMATISMES_N20_SYNTHESE_ANNUELLE_PREPARATION_EPREUVE_ANTICIPEE.tex",
+      "pdf": "AUTOMATISMES_N20_SYNTHESE_ANNUELLE_PREPARATION_EPREUVE_ANTICIPEE.pdf",
+      "notion": "../notions/N20-synthese-annuelle-epreuve.md"
+    }
+  ]
+}
