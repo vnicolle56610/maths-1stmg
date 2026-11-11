@@ -70,7 +70,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Distinguer intersection et conditionnement",
    "type": "flash",
    "enonce": "Traduire <span class=\"arithmatex\">\\(P_A(B)\\)<\/span> en phrase courte.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Traduire <span class=\"arithmatex\">\\(P(A\\cap B)\\)<\/span> en phrase courte."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(P_A(B)\\)<\/span> : <strong class=\"auto-resultat\">probabilité de <span class=\"arithmatex\">\\(B\\)<\/span> sachant <span class=\"arithmatex\">\\(A\\)<\/span><\/strong>.",
@@ -218,7 +220,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Tableau croisé et indépendance",
    "type": "flash",
    "enonce": "Calculer <span class=\"arithmatex\">\\(P(B)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Dans un groupe de <span class=\"arithmatex\">\\(100\\)<\/span> élèves : <span class=\"arithmatex\">\\(A\\cap B=24\\)<\/span>, <span class=\"arithmatex\">\\(A\\cap\\overline B=36\\)<\/span>, <span class=\"arithmatex\">\\(\\overline A\\cap B=16\\)<\/span>, <span class=\"arithmatex\">\\(\\overline A\\cap\\overline B=\\)<\/span><wbr><span class=\"arithmatex\">\\(24\\)<\/span>. Calculer <span class=\"arithmatex\">\\(P(A)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(P(B)=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\frac{24+16}{100}=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{0{,}40}\\)<\/span>.",
@@ -230,7 +234,10 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Tableau croisé et indépendance",
    "type": "flash",
    "enonce": "Calculer <span class=\"arithmatex\">\\(P(A\\cap B)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Dans un groupe de <span class=\"arithmatex\">\\(100\\)<\/span> élèves : <span class=\"arithmatex\">\\(A\\cap B=24\\)<\/span>, <span class=\"arithmatex\">\\(A\\cap\\overline B=36\\)<\/span>, <span class=\"arithmatex\">\\(\\overline A\\cap B=16\\)<\/span>, <span class=\"arithmatex\">\\(\\overline A\\cap\\overline B=\\)<\/span><wbr><span class=\"arithmatex\">\\(24\\)<\/span>. Calculer <span class=\"arithmatex\">\\(P(A)\\)<\/span>.",
+    "<strong>Q2.<\/strong> Calculer <span class=\"arithmatex\">\\(P(B)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(P(A\\cap B)=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\frac{24}{100}=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{0{,}24}\\)<\/span>.",
@@ -242,7 +249,11 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Tableau croisé et indépendance",
    "type": "flash",
    "enonce": "Calculer <span class=\"arithmatex\">\\(P_A(B)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Dans un groupe de <span class=\"arithmatex\">\\(100\\)<\/span> élèves : <span class=\"arithmatex\">\\(A\\cap B=24\\)<\/span>, <span class=\"arithmatex\">\\(A\\cap\\overline B=36\\)<\/span>, <span class=\"arithmatex\">\\(\\overline A\\cap B=16\\)<\/span>, <span class=\"arithmatex\">\\(\\overline A\\cap\\overline B=\\)<\/span><wbr><span class=\"arithmatex\">\\(24\\)<\/span>. Calculer <span class=\"arithmatex\">\\(P(A)\\)<\/span>.",
+    "<strong>Q2.<\/strong> Calculer <span class=\"arithmatex\">\\(P(B)\\)<\/span>.",
+    "<strong>Q3.<\/strong> Calculer <span class=\"arithmatex\">\\(P(A\\cap B)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(P_A(B)=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\frac{24}{60}=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{0{,}40}\\)<\/span>.",
@@ -254,7 +265,12 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Tableau croisé et indépendance",
    "type": "flash",
    "enonce": "Calculer <span class=\"arithmatex\">\\(P_B(A)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Dans un groupe de <span class=\"arithmatex\">\\(100\\)<\/span> élèves : <span class=\"arithmatex\">\\(A\\cap B=24\\)<\/span>, <span class=\"arithmatex\">\\(A\\cap\\overline B=36\\)<\/span>, <span class=\"arithmatex\">\\(\\overline A\\cap B=16\\)<\/span>, <span class=\"arithmatex\">\\(\\overline A\\cap\\overline B=\\)<\/span><wbr><span class=\"arithmatex\">\\(24\\)<\/span>. Calculer <span class=\"arithmatex\">\\(P(A)\\)<\/span>.",
+    "<strong>Q2.<\/strong> Calculer <span class=\"arithmatex\">\\(P(B)\\)<\/span>.",
+    "<strong>Q3.<\/strong> Calculer <span class=\"arithmatex\">\\(P(A\\cap B)\\)<\/span>.",
+    "<strong>Q4.<\/strong> Calculer <span class=\"arithmatex\">\\(P_A(B)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(P_B(A)=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\frac{24}{40}=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{0{,}60}\\)<\/span>.",
@@ -266,7 +282,13 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Tableau croisé et indépendance",
    "type": "flash",
    "enonce": "Les événements <span class=\"arithmatex\">\\(A\\)<\/span> et <span class=\"arithmatex\">\\(B\\)<\/span> sont-ils indépendants ?",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Dans un groupe de <span class=\"arithmatex\">\\(100\\)<\/span> élèves : <span class=\"arithmatex\">\\(A\\cap B=24\\)<\/span>, <span class=\"arithmatex\">\\(A\\cap\\overline B=36\\)<\/span>, <span class=\"arithmatex\">\\(\\overline A\\cap B=16\\)<\/span>, <span class=\"arithmatex\">\\(\\overline A\\cap\\overline B=\\)<\/span><wbr><span class=\"arithmatex\">\\(24\\)<\/span>. Calculer <span class=\"arithmatex\">\\(P(A)\\)<\/span>.",
+    "<strong>Q2.<\/strong> Calculer <span class=\"arithmatex\">\\(P(B)\\)<\/span>.",
+    "<strong>Q3.<\/strong> Calculer <span class=\"arithmatex\">\\(P(A\\cap B)\\)<\/span>.",
+    "<strong>Q4.<\/strong> Calculer <span class=\"arithmatex\">\\(P_A(B)\\)<\/span>.",
+    "<strong>Q5.<\/strong> Calculer <span class=\"arithmatex\">\\(P_B(A)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "Oui, car <span class=\"arithmatex\">\\(0{,}60\\times0{,}40=\\)<\/span><wbr><span class=\"arithmatex\">\\(0{,}24\\)<\/span>. <strong class=\"auto-resultat\">Indépendants<\/strong>.",

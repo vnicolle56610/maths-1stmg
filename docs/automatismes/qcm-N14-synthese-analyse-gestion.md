@@ -220,7 +220,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Passer d'un registre à l'autre",
    "type": "flash",
    "enonce": "Avec le même tableau, calculer le taux de variation entre <span class=\"arithmatex\">\\(5\\)<\/span> et <span class=\"arithmatex\">\\(10\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> <span class=\"arithmatex\">\\(\\begin{array}{c|ccc} q&amp;0&amp;5&amp;10\\\\ \\hline B(q)&amp;-40&amp;-20&amp;0\\end{array}\\)<\/span> Calculer le taux de variation entre <span class=\"arithmatex\">\\(0\\)<\/span> et <span class=\"arithmatex\">\\(5\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(\\frac{0-(-20)}{10-5}=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\frac{20}{5}=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{4}\\)<\/span>.",
@@ -232,7 +234,10 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Passer d'un registre à l'autre",
    "type": "flash",
    "enonce": "Le bénéfice augmente-t-il de façon régulière sur ces deux intervalles ?",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> <span class=\"arithmatex\">\\(\\begin{array}{c|ccc} q&amp;0&amp;5&amp;10\\\\ \\hline B(q)&amp;-40&amp;-20&amp;0\\end{array}\\)<\/span> Calculer le taux de variation entre <span class=\"arithmatex\">\\(0\\)<\/span> et <span class=\"arithmatex\">\\(5\\)<\/span>.",
+    "<strong>Q2.<\/strong> Avec le même tableau, calculer le taux de variation entre <span class=\"arithmatex\">\\(5\\)<\/span> et <span class=\"arithmatex\">\\(10\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "Oui, le taux est constant : <strong class=\"auto-resultat\">augmentation régulière<\/strong>.",

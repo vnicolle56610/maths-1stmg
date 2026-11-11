@@ -70,7 +70,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Suites : listes de termes",
    "type": "flash",
    "enonce": "Avec la même suite, calculer <span class=\"arithmatex\">\\(u(2)\\)<\/span> et <span class=\"arithmatex\">\\(u(3)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> On a <span class=\"arithmatex\">\\(u(0)=120\\)<\/span>, puis on ajoute <span class=\"arithmatex\">\\(15\\)<\/span>. Calculer <span class=\"arithmatex\">\\(u(1)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(u(2)=150\\)<\/span> et <span class=\"arithmatex\">\\(u(3)=\\boxed{165}\\)<\/span>.",
@@ -94,7 +96,11 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Suites : listes de termes",
    "type": "flash",
    "enonce": "Dans cette liste, quel est l'écart entre deux termes consécutifs ?",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> On a <span class=\"arithmatex\">\\(u(0)=120\\)<\/span>, puis on ajoute <span class=\"arithmatex\">\\(15\\)<\/span>. Calculer <span class=\"arithmatex\">\\(u(1)\\)<\/span>.",
+    "<strong>Q2.<\/strong> Avec la même suite, calculer <span class=\"arithmatex\">\\(u(2)\\)<\/span> et <span class=\"arithmatex\">\\(u(3)\\)<\/span>.",
+    "<strong>Q3.<\/strong> La suite <span class=\"arithmatex\">\\(120;135;150;165\\)<\/span> est-elle croissante ou décroissante ?"
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "L'écart vaut <span class=\"arithmatex\">\\(\\boxed{15}\\)<\/span>.",
@@ -142,7 +148,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Modes de génération",
    "type": "flash",
    "enonce": "Avec la même suite, calculer <span class=\"arithmatex\">\\(u(2)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Si <span class=\"arithmatex\">\\(u(0)=50\\)<\/span> et <span class=\"arithmatex\">\\(u(n+1)=u(n)+8\\)<\/span>, calculer <span class=\"arithmatex\">\\(u(1)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(u(2)=58+8=\\boxed{66}\\)<\/span>.",

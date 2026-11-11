@@ -70,7 +70,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Suites : réactiver les termes",
    "type": "flash",
    "enonce": "Avec la même suite, calculer <span class=\"arithmatex\">\\(u(2)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Une suite vérifie <span class=\"arithmatex\">\\(u(0)=5\\)<\/span> et <span class=\"arithmatex\">\\(u(n+1)=u(n)+3\\)<\/span>. Calculer <span class=\"arithmatex\">\\(u(1)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(u(2)=8+3=\\boxed{11}\\)<\/span>.",
@@ -94,7 +96,11 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Suites : réactiver les termes",
    "type": "flash",
    "enonce": "Avec la même suite, calculer <span class=\"arithmatex\">\\(v(2)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Une suite vérifie <span class=\"arithmatex\">\\(u(0)=5\\)<\/span> et <span class=\"arithmatex\">\\(u(n+1)=u(n)+3\\)<\/span>. Calculer <span class=\"arithmatex\">\\(u(1)\\)<\/span>.",
+    "<strong>Q2.<\/strong> Avec la même suite, calculer <span class=\"arithmatex\">\\(u(2)\\)<\/span>.",
+    "<strong>Q3.<\/strong> Une suite vérifie <span class=\"arithmatex\">\\(v(0)=4\\)<\/span> et <span class=\"arithmatex\">\\(v(n+1)=2v(n)\\)<\/span>. Calculer <span class=\"arithmatex\">\\(v(1)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(v(2)=2\\times8=\\boxed{16}\\)<\/span>.",
@@ -142,7 +148,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Suite arithmétique",
    "type": "flash",
    "enonce": "Avec les mêmes données, calculer <span class=\"arithmatex\">\\(u(4)\\)<\/span> sans tout lister.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> <span class=\"arithmatex\">\\(u(0)=12\\)<\/span> et la raison est <span class=\"arithmatex\">\\(5\\)<\/span>. Calculer <span class=\"arithmatex\">\\(u(1)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(u(4)=\\)<\/span><wbr><span class=\"arithmatex\">\\(12+4\\times5=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{32}\\)<\/span>.",
@@ -214,7 +222,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Suite géométrique",
    "type": "flash",
    "enonce": "Avec les mêmes données, calculer <span class=\"arithmatex\">\\(v(2)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> <span class=\"arithmatex\">\\(v(0)=10\\)<\/span> et la raison est <span class=\"arithmatex\">\\(1{,}2\\)<\/span>. Calculer <span class=\"arithmatex\">\\(v(1)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(v(2)=\\)<\/span><wbr><span class=\"arithmatex\">\\(12\\times1{,}2=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{14{,}4}\\)<\/span>.",

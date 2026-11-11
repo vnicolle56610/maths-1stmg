@@ -142,7 +142,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Interpolation ou extrapolation",
    "type": "flash",
    "enonce": "Mêmes données. Prévoir <span class=\"arithmatex\">\\(x=2027\\)<\/span> : interpolation ou extrapolation ?",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Les données observées vont de <span class=\"arithmatex\">\\(x=2019\\)<\/span> à <span class=\"arithmatex\">\\(x=2024\\)<\/span>. Prévoir <span class=\"arithmatex\">\\(x=2022\\)<\/span> : interpolation ou extrapolation ?"
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(2027\\)<\/span> est hors de l'intervalle : <strong class=\"auto-resultat\">extrapolation<\/strong>.",
@@ -214,7 +216,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Ajustement par deux points",
    "type": "flash",
    "enonce": "Avec ces deux points, donner l'équation réduite de la droite.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Une droite passe par <span class=\"arithmatex\">\\(A(0;12)\\)<\/span> et <span class=\"arithmatex\">\\(B(4;20)\\)<\/span>. Calculer son coefficient directeur."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "Comme <span class=\"arithmatex\">\\(b=12\\)<\/span>, l'équation est <span class=\"arithmatex\">\\(\\boxed{y=2x+12}\\)<\/span>.",
@@ -226,7 +230,10 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Ajustement par deux points",
    "type": "flash",
    "enonce": "Utiliser cette droite pour prévoir <span class=\"arithmatex\">\\(y\\)<\/span> lorsque <span class=\"arithmatex\">\\(x=6\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Une droite passe par <span class=\"arithmatex\">\\(A(0;12)\\)<\/span> et <span class=\"arithmatex\">\\(B(4;20)\\)<\/span>. Calculer son coefficient directeur.",
+    "<strong>Q2.<\/strong> Avec ces deux points, donner l'équation réduite de la droite."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(y=2\\times6+12=\\boxed{24}\\)<\/span>.",

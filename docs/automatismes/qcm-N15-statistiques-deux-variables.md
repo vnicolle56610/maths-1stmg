@@ -250,7 +250,12 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Tableau de données et interprétation",
    "type": "flash",
    "enonce": "Dans ce tableau, <span class=\"arithmatex\">\\(x\\)<\/span> peut représenter un budget publicitaire. Que peut représenter <span class=\"arithmatex\">\\(y\\)<\/span> ?",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> <span class=\"arithmatex\">\\(\\begin{array}{c|ccccc}x&amp;2&amp;4&amp;6&amp;8&amp;10\\\\ \\hline y&amp;7&amp;9&amp;12&amp;14&amp;18\\end{array}\\)<\/span> Combien y a-t-il de points ?",
+    "<strong>Q2.<\/strong> Calculer <span class=\"arithmatex\">\\(\\bar x\\)<\/span>.",
+    "<strong>Q3.<\/strong> Sans calcul détaillé, <span class=\"arithmatex\">\\(\\bar y\\)<\/span> est-elle plutôt proche de <span class=\"arithmatex\">\\(8\\)<\/span> ; <span class=\"arithmatex\">\\(12\\)<\/span> ou <span class=\"arithmatex\">\\(20\\)<\/span> ?",
+    "<strong>Q4.<\/strong> Le point <span class=\"arithmatex\">\\((10;18)\\)<\/span> est-il cohérent avec une tendance montante ?"
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(y\\)<\/span> peut représenter le <strong class=\"auto-resultat\">chiffre d'affaires<\/strong> ou les ventes.",

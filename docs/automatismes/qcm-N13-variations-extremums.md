@@ -214,7 +214,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Optimisation en gestion",
    "type": "flash",
    "enonce": "Dans le même contexte, que signifie <span class=\"arithmatex\">\\(900\\)<\/span> ?",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Un bénéfice <span class=\"arithmatex\">\\(B(q)\\)<\/span> est maximal pour <span class=\"arithmatex\">\\(q=40\\)<\/span> et <span class=\"arithmatex\">\\(B(40)=900\\)<\/span>. Que signifie <span class=\"arithmatex\">\\(40\\)<\/span> ?"
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(900\\)<\/span> est le <span class=\"arithmatex\">\\(\\boxed{\\text{bénéfice maximal}}\\)<\/span> en euros.",

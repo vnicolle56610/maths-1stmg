@@ -70,7 +70,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "N19 - Variables aléatoires, espérance et simulation",
    "type": "flash",
    "enonce": "Calculer <span class=\"arithmatex\">\\(P(X\\geqslant 10)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Une variable <span class=\"arithmatex\">\\(X\\)<\/span> prend les valeurs <span class=\"arithmatex\">\\(0\\)<\/span> ; <span class=\"arithmatex\">\\(10\\)<\/span> ; <span class=\"arithmatex\">\\(20\\)<\/span> avec probabilités <span class=\"arithmatex\">\\(0{,}2\\)<\/span> ; <span class=\"arithmatex\">\\(0{,}5\\)<\/span> ; <span class=\"arithmatex\">\\(0{,}3\\)<\/span>. Vérifier que c'est une loi."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(P(X\\geqslant 10)=\\)<\/span><wbr><span class=\"arithmatex\">\\(0{,}5+0{,}3=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{0{,}8}\\)<\/span>.",
@@ -82,7 +84,10 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "N19 - Variables aléatoires, espérance et simulation",
    "type": "flash",
    "enonce": "Calculer <span class=\"arithmatex\">\\(P(X=0)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Une variable <span class=\"arithmatex\">\\(X\\)<\/span> prend les valeurs <span class=\"arithmatex\">\\(0\\)<\/span> ; <span class=\"arithmatex\">\\(10\\)<\/span> ; <span class=\"arithmatex\">\\(20\\)<\/span> avec probabilités <span class=\"arithmatex\">\\(0{,}2\\)<\/span> ; <span class=\"arithmatex\">\\(0{,}5\\)<\/span> ; <span class=\"arithmatex\">\\(0{,}3\\)<\/span>. Vérifier que c'est une loi.",
+    "<strong>Q2.<\/strong> Calculer <span class=\"arithmatex\">\\(P(X\\geqslant 10)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(P(X=0)=\\boxed{0{,}2}\\)<\/span>.",
@@ -94,7 +99,11 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "N19 - Variables aléatoires, espérance et simulation",
    "type": "flash",
    "enonce": "Calculer l'espérance <span class=\"arithmatex\">\\(E(X)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Une variable <span class=\"arithmatex\">\\(X\\)<\/span> prend les valeurs <span class=\"arithmatex\">\\(0\\)<\/span> ; <span class=\"arithmatex\">\\(10\\)<\/span> ; <span class=\"arithmatex\">\\(20\\)<\/span> avec probabilités <span class=\"arithmatex\">\\(0{,}2\\)<\/span> ; <span class=\"arithmatex\">\\(0{,}5\\)<\/span> ; <span class=\"arithmatex\">\\(0{,}3\\)<\/span>. Vérifier que c'est une loi.",
+    "<strong>Q2.<\/strong> Calculer <span class=\"arithmatex\">\\(P(X\\geqslant 10)\\)<\/span>.",
+    "<strong>Q3.<\/strong> Calculer <span class=\"arithmatex\">\\(P(X=0)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(E(X)=\\)<\/span><wbr><span class=\"arithmatex\">\\(0\\times0{,}2+10\\times0{,}5+20\\times0{,}3=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{11}\\)<\/span>.",
@@ -118,7 +127,13 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "N19 - Variables aléatoires, espérance et simulation",
    "type": "flash",
    "enonce": "Dire en une phrase ce que signifie <span class=\"arithmatex\">\\(E(X)=11\\)<\/span> dans ce contexte.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Une variable <span class=\"arithmatex\">\\(X\\)<\/span> prend les valeurs <span class=\"arithmatex\">\\(0\\)<\/span> ; <span class=\"arithmatex\">\\(10\\)<\/span> ; <span class=\"arithmatex\">\\(20\\)<\/span> avec probabilités <span class=\"arithmatex\">\\(0{,}2\\)<\/span> ; <span class=\"arithmatex\">\\(0{,}5\\)<\/span> ; <span class=\"arithmatex\">\\(0{,}3\\)<\/span>. Vérifier que c'est une loi.",
+    "<strong>Q2.<\/strong> Calculer <span class=\"arithmatex\">\\(P(X\\geqslant 10)\\)<\/span>.",
+    "<strong>Q3.<\/strong> Calculer <span class=\"arithmatex\">\\(P(X=0)\\)<\/span>.",
+    "<strong>Q4.<\/strong> Calculer l'espérance <span class=\"arithmatex\">\\(E(X)\\)<\/span>.",
+    "<strong>Q5.<\/strong> Un jeu coûte <span class=\"arithmatex\">\\(8\\)<\/span> euros et le gain moyen brut vaut <span class=\"arithmatex\">\\(11\\)<\/span> euros. Quel est le gain moyen net ?"
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "Sur un grand nombre de jeux, le gain brut moyen est d'environ <strong class=\"auto-resultat\">11 euros par jeu<\/strong>.",
@@ -214,7 +229,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "N19 - Variables aléatoires, espérance et simulation",
    "type": "flash",
    "enonce": "Comparer cette fréquence à <span class=\"arithmatex\">\\(p=0{,}6\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Une simulation de <span class=\"arithmatex\">\\(200\\)<\/span> clients donne <span class=\"arithmatex\">\\(118\\)<\/span> achats. Calculer la fréquence observée."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(0{,}59\\)<\/span> est proche de <span class=\"arithmatex\">\\(0{,}6\\)<\/span> : écart <span class=\"arithmatex\">\\(\\boxed{0{,}01}\\)<\/span>.",
@@ -262,7 +279,13 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "N19 - Variables aléatoires, espérance et simulation",
    "type": "flash",
    "enonce": "Dire pourquoi deux simulations de même taille ne donnent pas toujours la même fréquence.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Une simulation de <span class=\"arithmatex\">\\(200\\)<\/span> clients donne <span class=\"arithmatex\">\\(118\\)<\/span> achats. Calculer la fréquence observée.",
+    "<strong>Q2.<\/strong> Comparer cette fréquence à <span class=\"arithmatex\">\\(p=0{,}6\\)<\/span>.",
+    "<strong>Q3.<\/strong> La fréquence <span class=\"arithmatex\">\\(0{,}59\\)<\/span> appartient-elle à l'intervalle <span class=\"arithmatex\">\\([0{,}55;0{,}65]\\)<\/span> ?",
+    "<strong>Q4.<\/strong> Dans un programme, que signifie l'instruction : <span class=\"arithmatex\">\\(\\texttt{alea()&lt;0.6}\\)<\/span> ?",
+    "<strong>Q5.<\/strong> Un succès rapporte <span class=\"arithmatex\">\\(4\\)<\/span> euros et un échec coûte <span class=\"arithmatex\">\\(1\\)<\/span> euro. Avec <span class=\"arithmatex\">\\(p=0{,}6\\)<\/span>, calculer le gain moyen."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "À cause de la <strong class=\"auto-resultat\">fluctuation d'échantillonnage<\/strong>.",

@@ -178,7 +178,12 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Ensembles, intervalles et logique",
    "type": "flash",
    "enonce": "Avec les mêmes ensembles, déterminer <span class=\"arithmatex\">\\(A\\cup B\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Compléter : <span class=\"arithmatex\">\\(-2\\ \\ldots\\ [-2\\,;3[\\)<\/span>.",
+    "<strong>Q2.<\/strong> Compléter : <span class=\"arithmatex\">\\(4\\ \\ldots\\ ]-\\infty\\,;4]\\)<\/span>.",
+    "<strong>Q3.<\/strong> Écrire sous forme d'intervalle : <span class=\"arithmatex\">\\(x\\geqslant1\\)<\/span> et <span class=\"arithmatex\">\\(x&lt;5\\)<\/span>.",
+    "<strong>Q4.<\/strong> Avec <span class=\"arithmatex\">\\(A=[-1\\,;4]\\)<\/span> et <span class=\"arithmatex\">\\(B=[2\\,;6]\\)<\/span>, déterminer <span class=\"arithmatex\">\\(A\\cap B\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "Les réels appartenant à au moins l'un des deux intervalles sont dans <span class=\"arithmatex\">\\(\\boxed{[-1\\,;6]}\\)<\/span>.",

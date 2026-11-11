@@ -142,7 +142,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Calculer des chemins d'arbre",
    "type": "flash",
    "enonce": "Calculer <span class=\"arithmatex\">\\(P(SSE)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> On répète <span class=\"arithmatex\">\\(3\\)<\/span> fois une épreuve avec <span class=\"arithmatex\">\\(p=0{,}3\\)<\/span>. Calculer <span class=\"arithmatex\">\\(P(SSS)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(P(SSE)=\\)<\/span><wbr><span class=\"arithmatex\">\\(0{,}3\\times0{,}3\\times0{,}7=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{0{,}063}\\)<\/span>.",
@@ -154,7 +156,10 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Calculer des chemins d'arbre",
    "type": "flash",
    "enonce": "Calculer <span class=\"arithmatex\">\\(P(SES)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> On répète <span class=\"arithmatex\">\\(3\\)<\/span> fois une épreuve avec <span class=\"arithmatex\">\\(p=0{,}3\\)<\/span>. Calculer <span class=\"arithmatex\">\\(P(SSS)\\)<\/span>.",
+    "<strong>Q2.<\/strong> Calculer <span class=\"arithmatex\">\\(P(SSE)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "<span class=\"arithmatex\">\\(P(SES)=\\)<\/span><wbr><span class=\"arithmatex\">\\(0{,}3\\times0{,}7\\times0{,}3=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{0{,}063}\\)<\/span>.",
@@ -166,7 +171,11 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Calculer des chemins d'arbre",
    "type": "flash",
    "enonce": "Comparer <span class=\"arithmatex\">\\(P(SSE)\\)<\/span> et <span class=\"arithmatex\">\\(P(SES)\\)<\/span>.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> On répète <span class=\"arithmatex\">\\(3\\)<\/span> fois une épreuve avec <span class=\"arithmatex\">\\(p=0{,}3\\)<\/span>. Calculer <span class=\"arithmatex\">\\(P(SSS)\\)<\/span>.",
+    "<strong>Q2.<\/strong> Calculer <span class=\"arithmatex\">\\(P(SSE)\\)<\/span>.",
+    "<strong>Q3.<\/strong> Calculer <span class=\"arithmatex\">\\(P(SES)\\)<\/span>."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "Elles sont <strong class=\"auto-resultat\">égales<\/strong>.",
@@ -190,7 +199,13 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Calculer des chemins d'arbre",
    "type": "flash",
    "enonce": "En déduire la probabilité d'obtenir exactement deux succès.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> On répète <span class=\"arithmatex\">\\(3\\)<\/span> fois une épreuve avec <span class=\"arithmatex\">\\(p=0{,}3\\)<\/span>. Calculer <span class=\"arithmatex\">\\(P(SSS)\\)<\/span>.",
+    "<strong>Q2.<\/strong> Calculer <span class=\"arithmatex\">\\(P(SSE)\\)<\/span>.",
+    "<strong>Q3.<\/strong> Calculer <span class=\"arithmatex\">\\(P(SES)\\)<\/span>.",
+    "<strong>Q4.<\/strong> Comparer <span class=\"arithmatex\">\\(P(SSE)\\)<\/span> et <span class=\"arithmatex\">\\(P(SES)\\)<\/span>.",
+    "<strong>Q5.<\/strong> Combien de chemins donnent exactement deux succès en <span class=\"arithmatex\">\\(3\\)<\/span> épreuves ?"
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "Donc <span class=\"arithmatex\">\\(P=\\)<\/span><wbr><span class=\"arithmatex\">\\(3\\times0{,}063=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{0{,}189}\\)<\/span>.",
@@ -214,7 +229,9 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Au moins un succès",
    "type": "flash",
    "enonce": "En déduire la probabilité d'au moins un succès.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Pour <span class=\"arithmatex\">\\(2\\)<\/span> épreuves indépendantes avec <span class=\"arithmatex\">\\(p=0{,}4\\)<\/span>, quelle est la probabilité d'aucun succès ?"
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "Au moins un succès : <span class=\"arithmatex\">\\(1-0{,}36=\\boxed{0{,}64}\\)<\/span>.",
@@ -238,7 +255,11 @@ Entraînement **sans calculatrice**. Rien n'est enregistré ni envoyé : tout se
    "theme": "Au moins un succès",
    "type": "flash",
    "enonce": "En déduire la probabilité d'au moins un succès.",
-   "contexte": [],
+   "contexte": [
+    "<strong>Q1.<\/strong> Pour <span class=\"arithmatex\">\\(2\\)<\/span> épreuves indépendantes avec <span class=\"arithmatex\">\\(p=0{,}4\\)<\/span>, quelle est la probabilité d'aucun succès ?",
+    "<strong>Q2.<\/strong> En déduire la probabilité d'au moins un succès.",
+    "<strong>Q3.<\/strong> Pour <span class=\"arithmatex\">\\(3\\)<\/span> épreuves avec <span class=\"arithmatex\">\\(p=0{,}5\\)<\/span>, calculer la probabilité d'aucun succès."
+   ],
    "choix": [],
    "bonne": null,
    "corrige": "Au moins un succès : <span class=\"arithmatex\">\\(1-0{,}125=\\)<\/span><wbr><span class=\"arithmatex\">\\(\\boxed{0{,}875}\\)<\/span>.",
