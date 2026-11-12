@@ -14,8 +14,4 @@ Aucun corrigé publié pour l'instant.
 ## N02 — Proportions, pourcentages et taux d’évolution
 
 - [Corrigé TD N02](CORRIGE_TD_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
-
-## N08 — Suites numériques : modèles discrets
-
-
 <!-- AUTO-DOCS:END -->

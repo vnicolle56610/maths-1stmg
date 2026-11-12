@@ -26,7 +26,6 @@ Le début d’année sert à installer les routines de travail et à repérer le
 <!-- AUTO-DOCS:START -->
 - [Cours N01 — Rentrée, données, logique et automatismes](../cours/COURS_N01_RENTREE_DONNEES_LOGIQUE_AUTOMATISMES.pdf)
 - [TD N01 — Rentrée, données, logique et automatismes](../td/TD_N01_RENTREE_DONNEES_LOGIQUE_AUTOMATISMES.pdf)
-- [Automatismes N01 — Rentrée, données, logique et automatismes](../automatismes/AUTOMATISMES_N01_RENTREE_DONNEES_LOGIQUE.pdf)
 - [Corrigé TD N01](../corriges/CORRIGE_TD_N01_RENTREE_DONNEES_LOGIQUE_AUTOMATISMES.pdf)
 <!-- AUTO-DOCS:END -->
 

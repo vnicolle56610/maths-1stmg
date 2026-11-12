@@ -31,7 +31,6 @@ Le signe de la dérivée permet d’organiser l’étude des variations d’une 
 <!-- AUTO-DOCS:START -->
 - [Cours N13 — Variations et extremums par dérivation](../cours/COURS_N13_VARIATIONS_EXTREMUMS_DERIVATION.pdf)
 - [TD N13 — Variations et extremums par dérivation](../td/TD_N13_VARIATIONS_EXTREMUMS_DERIVATION.pdf)
-- [Automatismes N13 — Variations et extremums par dérivation](../automatismes/AUTOMATISMES_N13_VARIATIONS_EXTREMUMS_DERIVATION.pdf)
 <!-- AUTO-DOCS:END -->
 
 <!-- AUTOMATISMES-WEB:START -->

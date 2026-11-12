@@ -31,7 +31,6 @@ Les probabilités conditionnelles servent à tenir compte d’une information d�
 <!-- AUTO-DOCS:START -->
 - [Cours N17 — Probabilités conditionnelles et indépendance](../cours/COURS_N17_PROBABILITES_CONDITIONNELLES_INDEPENDANCE.pdf)
 - [TD N17 — Probabilités conditionnelles et indépendance](../td/TD_N17_PROBABILITES_CONDITIONNELLES_INDEPENDANCE.pdf)
-- [Automatismes N17 — Probabilités conditionnelles et indépendance](../automatismes/AUTOMATISMES_N17_PROBABILITES_CONDITIONNELLES_INDEPENDANCE.pdf)
 <!-- AUTO-DOCS:END -->
 
 <!-- AUTOMATISMES-WEB:START -->
