@@ -30,7 +30,6 @@ nav:
       - "N18 — Bernoulli, arbres": notions/N18-bernoulli-arbres.md
       - "N19 — Variables aléatoires, espérance": notions/N19-variables-aleatoires-esperance.md
       - "N20 — Synthèse annuelle, épreuve anticipée": notions/N20-synthese-annuelle-epreuve.md
-  - "📝 TD": td/index.md
   - "⚡ Automatismes":
       - automatismes/index.md
       - "N01 — Rentrée, données, logique et automatismes (en ligne)": automatismes/automatismes-N01-rentree-donnees-logique.md
