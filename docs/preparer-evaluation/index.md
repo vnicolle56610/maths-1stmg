@@ -17,18 +17,22 @@ Avant chaque mini-test et chaque devoir surveillé, un **devoir blanc** est mis 
 <!-- AUTO-EVAL:START -->
 ## À venir
 
-### Mini-test 2 — jeudi 12 novembre {#mt2-2026-2027}
-
-**Mini-test · 25 min · calculatrice interdite**  
-Notions : [N03 — Calcul algébrique, équations et signes](../notions/N03-calcul-algebrique-equations.md)
-
-- 📄 [Devoir blanc : fiche « Ce que je dois savoir faire » et sujet](2026-2027/DEVOIR_BLANC_MT2_P14_N03.pdf)
-- ✅ [Corrigé et grille d'auto-évaluation](2026-2027/CORRIGE_DEVOIR_BLANC_MT2_P14_N03.pdf)
-
 ### DS1 — mardi 24 novembre {#ds1-2026-2027}
 
 **Devoir surveillé · 50 min · calculatrice autorisée, sauf pour le QCM**  
 Notions : [N02 — Proportions, pourcentages et taux d’évolution](../notions/N02-proportions-pourcentages-evolutions.md) · [N03 — Calcul algébrique, équations et signes](../notions/N03-calcul-algebrique-equations.md)
 
 - 📄 Devoir blanc et fiche « Ce que je dois savoir faire » : en ligne le mardi 17 novembre.
+
+## Pour réviser — évaluations passées
+
+Les devoirs blancs des évaluations passées restent en ligne pour les révisions.
+
+### Mini-test 2 — jeudi 12 novembre 2026 {#mt2-2026-2027}
+
+**Mini-test · 25 min · calculatrice interdite**  
+Notions : [N03 — Calcul algébrique, équations et signes](../notions/N03-calcul-algebrique-equations.md)
+
+- 📄 [Devoir blanc : fiche « Ce que je dois savoir faire » et sujet](2026-2027/DEVOIR_BLANC_MT2_P14_N03.pdf)
+- ✅ [Corrigé et grille d'auto-évaluation](2026-2027/CORRIGE_DEVOIR_BLANC_MT2_P14_N03.pdf)
 <!-- AUTO-EVAL:END -->
