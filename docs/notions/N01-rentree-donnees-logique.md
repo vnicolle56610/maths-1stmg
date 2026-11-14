@@ -33,6 +33,22 @@ Le début d’année sert à installer les routines de travail et à repérer le
 - ⚡ [Automatismes N01 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N01-rentree-donnees-logique.md)
 <!-- AUTOMATISMES-WEB:END -->
 
+<!-- PARCOURS-GUIDE:START -->
+### Parcours guidé
+
+Des fiches pour reprendre la notion en autonomie : à la maison, après une absence ou avant une évaluation. Chaque bloc commence par un **exemple résolu**. Les réponses sont imprimées **à l'envers** dans les cadres « Je vérifie » : répondre d'abord, retourner la feuille ensuite.
+
+**Pour réviser** : pour chaque bloc, tenter d'abord la dernière question sans aide. Si elle est réussie, passer au bloc suivant ; sinon, lire l'exemple résolu et faire tout le bloc. Terminer par les exercices du TD indiqués à côté des questions.
+
+- 📝 [Fiche 1 — Nombres et intervalles](../parcours-guide/PARCOURS_GUIDE_N01_FICHE_1.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N01_FICHE_1_CORRIGE.pdf) : Reconnaître les ensembles numériques, distinguer appartenance et inclusion, lire et représenter les intervalles.
+- 📝 [Fiche 2 — ET, OU, NON](../parcours-guide/PARCOURS_GUIDE_N01_FICHE_2.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N01_FICHE_2_CORRIGE.pdf) : Construire intersection, réunion et complémentaire, et justifier un contre-exemple.
+- 📝 [Fiche 3 — Lire des données](../parcours-guide/PARCOURS_GUIDE_N01_FICHE_3.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N01_FICHE_3_CORRIGE.pdf) : Lire tableaux et graphiques avec leurs unités, compléter puis construire un tableau croisé et contrôler les totaux.
+- 📝 [Fiche 4 — Écritures et calculs](../parcours-guide/PARCOURS_GUIDE_N01_FICHE_4.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N01_FICHE_4_CORRIGE.pdf) : Distinguer identité et équation, préciser le rôle d'une lettre, choisir entre exact et approché, puis contrôler un calcul simple.
+- 📝 [Fiche passerelle — ET ou OU](../parcours-guide/PARCOURS_GUIDE_N01_FICHE_5.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N01_FICHE_5_CORRIGE.pdf) : Lire un diagramme, croiser deux intervalles et choisir seul un filtre ET, OU ou NON dans une liste.
+
+À la maison, ignorer les cases « STOP ». Faire le ticket de sortie seul, à la fin, puis l'apporter au cours suivant pour le faire vérifier. Ne lire le corrigé qu'après avoir cherché.
+<!-- PARCOURS-GUIDE:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""
