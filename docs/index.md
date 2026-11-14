@@ -28,6 +28,19 @@ hide:
   </div>
 </section>
 
+<!-- AUTO-NEWS:START -->
+<!-- Zone régénérée par scripts/generer_nouveautes.py : ne pas modifier à la main. -->
+<section class="maths-news maths-news--single">
+  <div class="maths-news-box">
+    <h3>🆕 Nouveautés</h3>
+    <ul class="maths-news-list">
+      <li><span class="maths-news-date">11/11</span><span><strong><a href="automatismes/">Automatismes en ligne</a></strong> : N01 à N20</span></li>
+      <li><span class="maths-news-date">10/11</span><span><strong>Corrigé du devoir blanc MT2</strong> — <a href="preparer-evaluation/">Préparer une évaluation</a></span></li>
+    </ul>
+  </div>
+</section>
+<!-- AUTO-NEWS:END -->
+
 <section class="maths-cards">
   <a class="maths-card maths-card--blue maths-card--double" href="#acces-rapide">
     <div class="maths-card-head">
