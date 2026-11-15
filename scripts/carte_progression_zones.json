@@ -1,0 +1,177 @@
+{
+ "image": "assets/images/Progression_1STMG_site.png",
+ "alt": "Progression spiralée en Première STMG mathématiques",
+ "largeur_max": 240,
+ "hauteur_max": 140,
+ "_note": "« Tableur et Python », « Modélisation, rédaction, interprétation » et les grandes bulles de domaines n'ont pas de page : sans lien.",
+ "zones": [
+  {
+   "libelle": "N01 – Rentrée, données, logique et automatismes",
+   "lien": "notions/N01-rentree-donnees-logique.md",
+   "amorce": [
+    142,
+    95
+   ]
+  },
+  {
+   "libelle": "N02 – Proportions, pourcentages et évolutions",
+   "lien": "notions/N02-proportions-pourcentages-evolutions.md",
+   "amorce": [
+    137,
+    320
+   ]
+  },
+  {
+   "libelle": "N03 – Calcul algébrique, équations et signes",
+   "lien": "notions/N03-calcul-algebrique-equations.md",
+   "amorce": [
+    137,
+    445
+   ]
+  },
+  {
+   "libelle": "N04 – Fonctions : registres et lectures graphiques",
+   "lien": "notions/N04-fonctions-registres-lectures.md",
+   "amorce": [
+    393,
+    337
+   ]
+  },
+  {
+   "libelle": "N05 – Taux de variation, fonctions monotones, DS1",
+   "lien": "notions/N05-taux-variation-fonctions.md",
+   "amorce": [
+    572,
+    337
+   ]
+  },
+  {
+   "libelle": "N06 – Second degré : paraboles et formes simples",
+   "lien": "notions/N06-second-degre-paraboles.md",
+   "amorce": [
+    757,
+    337
+   ]
+  },
+  {
+   "libelle": "N07 – Second degré factorisé : racines, signe, problèmes",
+   "lien": "notions/N07-second-degre-factorise.md",
+   "amorce": [
+    940,
+    337
+   ]
+  },
+  {
+   "libelle": "N08 – Suites numériques : modèles discrets, DS2",
+   "lien": "notions/N08-suites-numeriques-modeles.md",
+   "amorce": [
+    462,
+    555
+   ]
+  },
+  {
+   "libelle": "N09 – Suites arithmétiques et géométriques",
+   "lien": "notions/N09-suites-arithmetiques-geometriques.md",
+   "amorce": [
+    607,
+    555
+   ]
+  },
+  {
+   "libelle": "N10 – Modèles d'évolution, seuils, tableur et Python",
+   "lien": "notions/N10-evolution-seuils-python.md",
+   "amorce": [
+    751,
+    555
+   ]
+  },
+  {
+   "libelle": "N11 – Nombre dérivé : sécantes, tangentes",
+   "lien": "notions/N11-nombre-derive-tangentes.md",
+   "amorce": [
+    855,
+    460
+   ]
+  },
+  {
+   "libelle": "N12 – Fonction dérivée, polynômes de degré ≤ 3",
+   "lien": "notions/N12-fonction-derivee-polynomes.md",
+   "amorce": [
+    1010,
+    460
+   ]
+  },
+  {
+   "libelle": "N13 – Variations et extremums par dérivation, DS3",
+   "lien": "notions/N13-variations-extremums.md",
+   "amorce": [
+    1167,
+    460
+   ]
+  },
+  {
+   "libelle": "N14 – Synthèse d'analyse, problèmes de gestion",
+   "lien": "notions/N14-synthese-analyse-gestion.md",
+   "amorce": [
+    1327,
+    460
+   ]
+  },
+  {
+   "libelle": "N15 – Statistiques à deux variables : nuages et point moyen",
+   "lien": "notions/N15-statistiques-deux-variables.md",
+   "amorce": [
+    1489,
+    210
+   ]
+  },
+  {
+   "libelle": "N16 – Ajustement affine, interpolation, extrapolation",
+   "lien": "notions/N16-ajustement-affine.md",
+   "amorce": [
+    1489,
+    315
+   ]
+  },
+  {
+   "libelle": "N17 – Probabilités conditionnelles et indépendance, DS4",
+   "lien": "notions/N17-probabilites-conditionnelles.md",
+   "amorce": [
+    1489,
+    425
+   ]
+  },
+  {
+   "libelle": "N18 – Épreuves indépendantes de Bernoulli et arbres",
+   "lien": "notions/N18-bernoulli-arbres.md",
+   "amorce": [
+    1489,
+    535
+   ]
+  },
+  {
+   "libelle": "N19 – Variables aléatoires, espérance et simulation",
+   "lien": "notions/N19-variables-aleatoires-esperance.md",
+   "amorce": [
+    1489,
+    645
+   ]
+  },
+  {
+   "libelle": "N20 – Synthèse annuelle, épreuve anticipée, DS5 / sujet blanc",
+   "lien": "notions/N20-synthese-annuelle-epreuve.md",
+   "amorce": [
+    783,
+    815
+   ]
+  },
+  {
+   "libelle": "Automatismes sans calculatrice",
+   "lien": "automatismes/index.md",
+   "amorce": [
+    508,
+    715
+   ]
+  }
+ ]
+}
