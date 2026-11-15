@@ -39,6 +39,22 @@ Un pourcentage permet de comparer des parts, mesurer une évolution et interpré
 - ⚡ [Automatismes N02 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N02-proportions-pourcentages-evolutions.md)
 <!-- AUTOMATISMES-WEB:END -->
 
+<!-- PARCOURS-GUIDE:START -->
+### Parcours guidé
+
+Des fiches pour reprendre la notion en autonomie : à la maison, après une absence ou avant une évaluation. Chaque bloc commence par un **exemple résolu**. Les réponses sont imprimées **à l'envers** dans les cadres « Je vérifie » : répondre d'abord, retourner la feuille ensuite.
+
+**Pour réviser** : pour chaque bloc, tenter d'abord la dernière question sans aide. Si elle est réussie, passer au bloc suivant ; sinon, lire l'exemple résolu et faire tout le bloc. Terminer par les exercices du TD indiqués à côté des questions.
+
+- 📝 [Fiche 1 — Proportions](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_1.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_1_CORRIGE.pdf) : Passer entre décimal et pourcentage, calculer une proportion, une partie ou un total.
+- 📝 [Fiche 2 — Évolution simple](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_2.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_2_CORRIGE.pdf) : Distinguer variation, taux et coefficient, calculer une valeur finale ou retrouver la valeur initiale.
+- 📝 [Fiche 3 — Évolutions composées](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_3.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_3_CORRIGE.pdf) : Enchaîner deux évolutions, lire le taux global et calculer le taux du retour à la valeur initiale.
+- 📝 [Fiche 4 — Indices base 100](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_4.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_4_CORRIGE.pdf) : Calculer et interpréter un indice, retrouver une valeur et comparer deux indices avec la bonne référence.
+- 📝 [Fiche passerelle — Comparer des offres](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_5.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_5_CORRIGE.pdf) : Comparer des remises, discuter une compensation et choisir seul la démarche pour une taxe suivie d'une remise.
+
+À la maison, ignorer les cases « STOP ». Faire le ticket de sortie seul, à la fin, puis l'apporter au cours suivant pour le faire vérifier. Ne lire le corrigé qu'après avoir cherché.
+<!-- PARCOURS-GUIDE:END -->
+
 <!-- AUTO-EVAL:START -->
 - 🎯 Évaluée au DS1 du mardi 24 novembre : [devoir blanc en ligne le mardi 17 novembre](../preparer-evaluation/index.md#ds1-2026-2027)
 <!-- AUTO-EVAL:END -->

@@ -19,4 +19,9 @@ Aucun corrigé publié pour l'instant.
 ## N02 — Proportions, pourcentages et taux d’évolution
 
 - [Corrigé TD N02](CORRIGE_TD_N02_PROPORTIONS_POURCENTAGES_EVOLUTIONS.pdf)
+- [Corrigé parcours guidé N02 — Fiche 1 — Proportions](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_1_CORRIGE.pdf)
+- [Corrigé parcours guidé N02 — Fiche 2 — Évolution simple](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_2_CORRIGE.pdf)
+- [Corrigé parcours guidé N02 — Fiche 3 — Évolutions composées](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_3_CORRIGE.pdf)
+- [Corrigé parcours guidé N02 — Fiche 4 — Indices base 100](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_4_CORRIGE.pdf)
+- [Corrigé parcours guidé N02 — Fiche passerelle — Comparer des offres](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_5_CORRIGE.pdf)
 <!-- AUTO-DOCS:END -->
