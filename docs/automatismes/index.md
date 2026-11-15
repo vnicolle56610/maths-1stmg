@@ -113,10 +113,6 @@ Exercices d'automatismes et mini-tests, classés par notion.
 ## N19 — Variables aléatoires, espérance et simulation
 
 - [Automatismes N19](AUTOMATISMES_N19_VARIABLES_ALEATOIRES_ESPERANCE_SIMULATION.pdf)
-
-## N20 — Synthèse annuelle et préparation à l’épreuve anticipée
-
-- [Automatismes N20](AUTOMATISMES_N20_SYNTHESE_ANNUELLE_PREPARATION_EPREUVE_ANTICIPEE.pdf)
 <!-- AUTO-DOCS:END -->
 
 </div>
