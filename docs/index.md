@@ -30,13 +30,24 @@ hide:
 
 <!-- AUTO-NEWS:START -->
 <!-- Zone régénérée par scripts/generer_nouveautes.py : ne pas modifier à la main. -->
-<section class="maths-news maths-news--single">
+<section class="maths-news">
   <div class="maths-news-box">
     <h3>🆕 Nouveautés</h3>
     <ul class="maths-news-list">
+      <li><span class="maths-news-date">15/11</span><span><strong>Parcours guidés</strong> : <a href="notions/N01-rentree-donnees-logique/#parcours-guide">N01</a> · <a href="notions/N02-proportions-pourcentages-evolutions/#parcours-guide">N02</a>, avec corrigés</span></li>
       <li><span class="maths-news-date">11/11</span><span><strong><a href="automatismes/">Automatismes en ligne</a></strong> : N01 à N20</span></li>
       <li><span class="maths-news-date">10/11</span><span><strong>Corrigé du devoir blanc MT2</strong> — <a href="preparer-evaluation/">Préparer une évaluation</a></span></li>
     </ul>
+  </div>
+  <div class="maths-news-box maths-news-box--revise">
+    <h3>🔁 Réviser avec un parcours guidé</h3>
+    <ol class="maths-steps">
+      <li>Sur la page de la notion, ouvrir le <strong>parcours guidé</strong>.</li>
+      <li>Pour chaque bloc, <strong>tenter la dernière question sans aide</strong>. Réussie : bloc suivant. Sinon : lire l'exemple résolu, puis faire tout le bloc.</li>
+      <li>Se corriger avec <strong>« Je vérifie »</strong> (réponses à l'envers) ; si besoin, relire <strong>« Dans mon cours »</strong>.</li>
+      <li>Terminer par les <strong>exercices du TD</strong> indiqués à côté de chaque question.</li>
+    </ol>
+    <p class="maths-news-foot">Avant un mini-test ou un DS : commencer par les notions qui résistent.</p>
   </div>
 </section>
 <!-- AUTO-NEWS:END -->
