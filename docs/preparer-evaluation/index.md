@@ -22,7 +22,8 @@ Avant chaque mini-test et chaque devoir surveillé, un **devoir blanc** est mis 
 **Devoir surveillé · 50 min · calculatrice autorisée, sauf pour le QCM**  
 Notions : [N02 — Proportions, pourcentages et taux d’évolution](../notions/N02-proportions-pourcentages-evolutions.md) · [N03 — Calcul algébrique, équations et signes](../notions/N03-calcul-algebrique-equations.md)
 
-- 📄 Devoir blanc et fiche « Ce que je dois savoir faire » : en ligne le mardi 17 novembre.
+- 📄 [Devoir blanc : fiche « Ce que je dois savoir faire » et sujet](2026-2027/DEVOIR_BLANC_DS1_P14.pdf)
+- ✅ Corrigé et grille d'auto-évaluation : en ligne le jeudi 19 novembre.
 
 ## Pour réviser — évaluations passées
 
