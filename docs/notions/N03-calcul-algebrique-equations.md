@@ -31,11 +31,28 @@ Le calcul algébrique permet de transformer des expressions et de résoudre des 
 <!-- AUTO-DOCS:START -->
 - [Cours N03 — Calcul algébrique, équations et signes](../cours/COURS_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.pdf)
 - [TD N03 — Calcul algébrique, équations et signes](../td/TD_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.pdf)
+- [Corrigé TD N03](../corriges/CORRIGE_TD_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.pdf)
 <!-- AUTO-DOCS:END -->
 
 <!-- AUTOMATISMES-WEB:START -->
 - ⚡ [Automatismes N03 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N03-calcul-algebrique-equations.md)
 <!-- AUTOMATISMES-WEB:END -->
+
+<!-- PARCOURS-GUIDE:START -->
+### Parcours guidé
+
+Des fiches pour reprendre la notion en autonomie : à la maison, après une absence ou avant une évaluation. Chaque bloc commence par un **exemple résolu**. Les réponses sont imprimées **à l'envers** dans les cadres « Je vérifie » : répondre d'abord, retourner la feuille ensuite.
+
+**Pour réviser** : pour chaque bloc, tenter d'abord la dernière question sans aide. Si elle est réussie, passer au bloc suivant ; sinon, lire l'exemple résolu et faire tout le bloc. Terminer par les exercices du TD indiqués à côté des questions.
+
+- 📝 [Fiche 1 — Réduire et factoriser](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_1.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_1_CORRIGE.pdf) : Réduire, développer et factoriser par un nombre, un monôme ou une parenthèse commune.
+- 📝 [Fiche 2 — Résoudre une équation](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_2.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_2_CORRIGE.pdf) : Résoudre une équation affine ou un produit nul, après factorisation si nécessaire.
+- 📝 [Fiche 3 — Signe d’une expression affine](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_3.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_3_CORRIGE.pdf) : Calculer le zéro d’une expression affine, construire son tableau de signes et lire une inégalité.
+- 📝 [Fiche 4 — Signe d’un produit](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_4.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_4_CORRIGE.pdf) : Étudier le signe d’un produit et interpréter un bénéfice ; pour aller plus loin : coût, recette et seuil de rentabilité.
+- 📝 [Fiche passerelle — Choisir une méthode](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_5.pdf) · ✔️ [corrigé](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_5_CORRIGE.pdf) : Choisir une forme et une méthode, puis corriger seul une démarche avant de revenir au TD.
+
+À la maison, ignorer les cases « STOP ». Faire le ticket de sortie seul, à la fin, puis l'apporter au cours suivant pour le faire vérifier. Ne lire le corrigé qu'après avoir cherché.
+<!-- PARCOURS-GUIDE:END -->
 
 <!-- AUTO-EVAL:START -->
 - 🎯 Pour réviser : [devoir blanc du mini-test 2 du jeudi 12 novembre 2026](../preparer-evaluation/index.md#mt2-2026-2027)

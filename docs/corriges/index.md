@@ -24,4 +24,13 @@ Aucun corrigé publié pour l'instant.
 - [Corrigé parcours guidé N02 — Fiche 3 — Évolutions composées](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_3_CORRIGE.pdf)
 - [Corrigé parcours guidé N02 — Fiche 4 — Indices base 100](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_4_CORRIGE.pdf)
 - [Corrigé parcours guidé N02 — Fiche passerelle — Comparer des offres](../parcours-guide/PARCOURS_GUIDE_N02_FICHE_5_CORRIGE.pdf)
+
+## N03 — Calcul algébrique, équations et signes
+
+- [Corrigé TD N03](CORRIGE_TD_N03_CALCUL_ALGEBRIQUE_EQUATIONS_SIGNES.pdf)
+- [Corrigé parcours guidé N03 — Fiche 1 — Réduire et factoriser](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_1_CORRIGE.pdf)
+- [Corrigé parcours guidé N03 — Fiche 2 — Résoudre une équation](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_2_CORRIGE.pdf)
+- [Corrigé parcours guidé N03 — Fiche 3 — Signe d’une expression affine](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_3_CORRIGE.pdf)
+- [Corrigé parcours guidé N03 — Fiche 4 — Signe d’un produit](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_4_CORRIGE.pdf)
+- [Corrigé parcours guidé N03 — Fiche passerelle — Choisir une méthode](../parcours-guide/PARCOURS_GUIDE_N03_FICHE_5_CORRIGE.pdf)
 <!-- AUTO-DOCS:END -->
