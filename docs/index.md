@@ -34,9 +34,10 @@ hide:
   <div class="maths-news-box">
     <h3>🆕 Nouveautés</h3>
     <ul class="maths-news-list">
-      <li><span class="maths-news-date">15/11</span><span><strong>Parcours guidés</strong> : <a href="notions/N01-rentree-donnees-logique/#parcours-guide">N01</a> · <a href="notions/N02-proportions-pourcentages-evolutions/#parcours-guide">N02</a>, avec corrigés</span></li>
-      <li><span class="maths-news-date">11/11</span><span><strong><a href="automatismes/">Automatismes en ligne</a></strong> : N01 à N20</span></li>
-      <li><span class="maths-news-date">10/11</span><span><strong>Corrigé du devoir blanc MT2</strong> — <a href="preparer-evaluation/">Préparer une évaluation</a></span></li>
+      <li><span class="maths-news-date">19/11</span><span><strong>Corrigé du devoir blanc DS1</strong> — <a href="preparer-evaluation/">Préparer une évaluation</a></span></li>
+      <li><span class="maths-news-date">16/11</span><span><strong>Devoir blanc DS1</strong> — <a href="preparer-evaluation/">Préparer une évaluation</a></span></li>
+      <li><span class="maths-news-date">16/11</span><span><strong>Parcours guidé</strong> : <a href="notions/N03-calcul-algebrique-equations/#parcours-guide">N03 Calcul algébrique, équations et signes</a>, avec corrigés</span></li>
+      <li><span class="maths-news-date">16/11</span><span><strong>Corrigé du TD</strong> : <a href="notions/N03-calcul-algebrique-equations/">N03 Calcul algébrique, équations et signes</a></span></li>
     </ul>
   </div>
   <div class="maths-news-box maths-news-box--revise">
