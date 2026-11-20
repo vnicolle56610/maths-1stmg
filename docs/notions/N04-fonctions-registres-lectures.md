@@ -37,6 +37,21 @@ Une fonction décrit la dépendance entre deux grandeurs. Les ressources font pa
 - ⚡ [Automatismes N04 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N04-fonctions-registres-lectures.md)
 <!-- AUTOMATISMES-WEB:END -->
 
+<!-- PARCOURS-GUIDE:START -->
+### Parcours guidé
+
+Des fiches pour reprendre la notion en autonomie : à la maison, après une absence ou avant une évaluation. Chaque bloc commence par un **exemple résolu**. Les réponses sont imprimées **à l'envers** dans les cadres « Je vérifie » : répondre d'abord, retourner la feuille ensuite.
+
+**Pour réviser** : pour chaque bloc, tenter d'abord la dernière question sans aide. Si elle est réussie, passer au bloc suivant ; sinon, lire l'exemple résolu et faire tout le bloc. Terminer par les exercices du TD indiqués à côté des questions.
+
+- 📝 [Fiche 1 — Comprendre une fonction](../parcours-guide/PARCOURS_GUIDE_N04_FICHE_1.pdf) : Identifier les variables, calculer une image, lire un tableau et passer entre formule et tableau.
+- 📝 [Fiche 2 — Lire sur une courbe](../parcours-guide/PARCOURS_GUIDE_N04_FICHE_2.pdf) : Placer des points, lire images et antécédents, résoudre graphiquement une équation.
+- 📝 [Fiche 3 — Exploiter un graphique](../parcours-guide/PARCOURS_GUIDE_N04_FICHE_3.pdf) : Résoudre une inéquation graphique, lire le signe, les variations et interpréter les résultats.
+- 📝 [Fiche passerelle — Construire et justifier](../parcours-guide/PARCOURS_GUIDE_N04_FICHE_4.pdf) : Construire une courbe possible, analyser les informations disponibles et réfuter une conclusion injustifiée.
+
+À la maison, ignorer les cases « STOP ». Faire le ticket de sortie seul, à la fin, puis l'apporter au cours suivant pour le faire vérifier.
+<!-- PARCOURS-GUIDE:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""
