@@ -38,6 +38,21 @@ Le taux de variation mesure une évolution moyenne entre deux valeurs. Les docum
 - ⚡ [Automatismes N05 en ligne : énoncés, corrigés et QCM interactif](../automatismes/automatismes-N05-taux-variation-fonctions.md)
 <!-- AUTOMATISMES-WEB:END -->
 
+<!-- PARCOURS-GUIDE:START -->
+### Parcours guidé
+
+Des fiches pour reprendre la notion en autonomie : à la maison, après une absence ou avant une évaluation. Chaque bloc commence par un **exemple résolu**. Les réponses sont imprimées **à l'envers** dans les cadres « Je vérifie » : répondre d'abord, retourner la feuille ensuite.
+
+**Pour réviser** : pour chaque bloc, tenter d'abord la dernière question sans aide. Si elle est réussie, passer au bloc suivant ; sinon, lire l'exemple résolu et faire tout le bloc. Terminer par les exercices du TD indiqués à côté des questions.
+
+- 📝 [Fiche 1 — Calculer et interpréter un taux](../parcours-guide/PARCOURS_GUIDE_N05_FICHE_1.pdf) : Repérer les données, calculer un taux de variation, donner son unité et le distinguer d'un taux d'évolution.
+- 📝 [Fiche 2 — Lire et comprendre les variations](../parcours-guide/PARCOURS_GUIDE_N05_FICHE_2.pdf) : Calculer la pente d'une sécante, donner le signe d'un taux, lire les variations sur une courbe et comparer des images.
+- 📝 [Fiche 3 — Sens et rythmes de variation](../parcours-guide/PARCOURS_GUIDE_N05_FICHE_3.pdf) : Relier le signe de tous les taux au sens de variation, reconnaître le taux constant d'une fonction affine et comparer des rythmes moyens dans un tableau.
+- 📝 [Fiche passerelle — Choisir et justifier](../parcours-guide/PARCOURS_GUIDE_N05_FICHE_4.pdf) : Réfuter une affirmation sur le sens de variation, choisir les taux utiles pour comparer des rythmes et rédiger une conclusion prudente.
+
+À la maison, ignorer les cases « STOP ». Faire le ticket de sortie seul, à la fin, puis l'apporter au cours suivant pour le faire vérifier.
+<!-- PARCOURS-GUIDE:END -->
+
 ## Notions essentielles
 
 !!! essentiel ""
